@@ -1,31 +1,41 @@
 import Carousel from "react-bootstrap/Carousel";
-import React, { useState } from "react";
+import React from "react";
+import { FaTruck } from "react-icons/fa";
+import { BsBank2 } from "react-icons/bs";
+import { CiCreditCard1 } from "react-icons/ci";
+import "./CardsImg.css";
 
 const Data = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex) => {
-    setIndex(selectedIndex);
-  };
+  const iconsData = [
+    {
+      icon: <FaTruck className="iconosCarrusel" />,
+      text: "Envíos a todo el pais",
+      span: "COMPRA SIN SALIR DE TU CASA",
+    },
+    {
+      icon: <CiCreditCard1 className="iconosCarrusel" />,
+      text: "3 CUOTAS SIN INTERES",
+      span: "CON TODAS LAS TARJETAS",
+    },
+    {
+      icon: <BsBank2 className="iconosCarrusel" />,
+      text: "15% OFF",
+      span: "TRANSFERENCIA BANCARIA",
+    },
+  ];
 
   return (
     <div className="container mt-4">
-      <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item>
-          <div className="d-flex justify-content-center align-items-center display-1">
-            😀
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="d-flex justify-content-center align-items-center display-1">
-            😎
-          </div>
-        </Carousel.Item>
-        <Carousel.Item>
-          <div className="d-flex justify-content-center align-items-center display-1">
-            🤩
-          </div>
-        </Carousel.Item>
+      <Carousel>
+        {iconsData.map((item, idx) => (
+          <Carousel.Item key={idx}>
+            <div className="d-flex flex-column align-items-center justify-content-center carruselInicio">
+              {item.icon}
+              <p className="text-center">{item.text}</p>
+              <span className="text-center">{item.span}</span>
+            </div>
+          </Carousel.Item>
+        ))}
       </Carousel>
     </div>
   );

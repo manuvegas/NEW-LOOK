@@ -1,0 +1,73 @@
+/* SEARCH Y TITULO */
+.tituloNav {
+  margin-top: 3rem;
+  color: black;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.formSearch {
+  margin-top: 3rem;
+  display: flex;
+}
+
+.busqueda {
+  outline: none;
+  color: black;
+  padding: 2px 20px;
+  border: solid 1px white;
+}
+
+.busqueda:hover {
+  border: solid 1px white;
+}
+
+.btnSearch {
+  border-radius: 0;
+  background-color: black;
+}
+
+.btnSearch:hover{
+  background-color: black;
+}
+
+.iconoSearch {
+  color: white;
+  padding: 4px;
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+}
+
+/* NAVBAR */
+
+.custom-navbar {
+  background-color: black; /* Fondo negro */
+}
+
+.custom-navbar .nav-link {
+  font-weight: 00;
+  color: white; /* Color de texto blanco */
+}
+
+.custom-navbar .nav-link:hover {
+  color: white;
+}
+
+.btnCarrito {
+    background-color: black;
+    border: 0;
+    margin-left: 1.2rem;
+    height: 2.3rem;
+}
+
+.carrito{
+    color: white;
+}

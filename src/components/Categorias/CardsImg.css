@@ -1,0 +1,42 @@
+.btnCard {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 5rem;
+}
+.linkCard {
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imgCard {
+  width: 490px; /* Ajusta el ancho de la imagen según tus necesidades */
+  height: 35rem; /* Para mantener la proporción */
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0.5;
+}
+
+.btnCard:hover .imgCard {
+  transform: scale(1.1); /* Ajusta el nivel de acercamiento */
+  opacity: 0.7;
+}
+
+.tituloCard {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 700;
+  background-color: transparent; /* Color de fondo del título */
+  padding: 10px 20px; /* Ajusta el espaciado del título */
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}

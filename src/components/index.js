@@ -1,7 +1,7 @@
 
 import ListPrincipales from "./Categorias/ListPrincipales";
-import Navbar from "./Navbar/Navbar";
+import AppNavbar from "./Navbar/Navbar";
 import Data from "./Categorias/Data";
 
 
-export {Navbar,ListPrincipales,Data}
+export {AppNavbar,ListPrincipales,Data}

@@ -9,7 +9,7 @@ const Data = () => {
   const iconsData = [
     {
       icon: <FaTruck className="iconosCarrusel" />,
-      text: "Envíos a todo el pais",
+      text: "ENVIOS GRATIS A TODO EL PAIS",
       span: "COMPRA SIN SALIR DE TU CASA",
     },
     {

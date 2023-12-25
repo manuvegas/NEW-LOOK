@@ -1,123 +1,44 @@
 import React from "react";
 import "./Inicio.css";
-import { RiSearch2Line } from "react-icons/ri";
-import { IoCartSharp } from "react-icons/io5";
 
-const Navbar = () => {
+const AppNavbar = () => {
   return (
-    <section className="navBar">
-      <h1 className="tituloNav">NEW LOOK</h1>
+    <nav className="navbar-tesla">
       <div>
-        <div className="container-fluid">
-          <form className="formSearch">
-            <input className="busqueda" type="search" placeholder="Search" />
-            <button className="btn btnSearch" type="submit">
-              <i>
-                <RiSearch2Line className="iconoSearch" />
-              </i>
-            </button>
-          </form>
-        </div>
+        <h1 className="navbar-tesla__logo">TESLA</h1>
       </div>
-      <div>
-        <nav className="navbar navbar-expand-lg custom-navbar">
-          <div className="container-fluid">
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
-                    INICIO
-                  </a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    PRODUCTOS
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    INFORMACION
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    CAMBIOS
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    CONTACTO
-                  </a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    CUENTA
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        CREAR CUENTA
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-item" href="#">
-                        INICIAR SESION
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-                <button className="btnCarrito">
-                  <i>
-                    <IoCartSharp className="carrito" />
-                  </i>
-                </button>
-              </ul>
+      <div className="navbar-tesla__links">
+        <ul>
+          <li>
+            <a href="#model-s">HOME</a>
+          </li>
+          <li className="dropdown">
+            <a href="#model-3" className="dropbtn">
+              PRODUCTOS
+            </a>
+            <div className="dropdown-content">
+              <a href="#interior">.</a>
+              <a href="#exterior">.</a>
+              <a href="#specs">.</a>
             </div>
-          </div>
-        </nav>
+          </li>
+          <li>
+            <a href="#model-x">INFORMACION</a>
+          </li>
+          <li>
+            <a href="#model-y">ENVIOS</a>
+          </li>
+          <li>
+            <a href="#model-x">CONTACTOS</a>
+          </li>
+        </ul>
       </div>
-    </section>
+      <div className="navbar-tesla__cta">
+        <a href="#shop">CARRITO</a>
+        <a href="#account">SEARCH</a>
+      </div>
+    </nav>
   );
 };
 
-export default Navbar;
+export default AppNavbar;

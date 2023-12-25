@@ -1,73 +1,68 @@
-/* SEARCH Y TITULO */
-.tituloNav {
-  margin-top: 3rem;
-  color: black;
-  font-weight: 800;
-  font-size: 3rem;
-}
-
-.navBar {
+.navbar-tesla {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 50px;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-.formSearch {
-  margin-top: 3rem;
+.navbar-tesla__logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0; /* Ajustar el margen para centrar verticalmente */
+}
+
+.navbar-tesla__links ul {
   display: flex;
+  list-style: none;
+  margin: 0; /* Ajustar el margen para centrar verticalmente */
+  padding: 0; /* Eliminar el relleno predeterminado */
 }
 
-.busqueda {
-  outline: none;
-  color: black;
-  padding: 2px 20px;
-  border: solid 1px white;
+.navbar-tesla__links ul li {
+  margin-right: 20px;
 }
 
-.busqueda:hover {
-  border: solid 1px white;
-}
-
-.btnSearch {
-  border-radius: 0;
-  background-color: black;
-}
-
-.btnSearch:hover{
-  background-color: black;
-}
-
-.iconoSearch {
-  color: white;
-  padding: 4px;
-  width: 2rem;
-  height: 2rem;
-  background-color: black;
-}
-
-/* NAVBAR */
-
-.custom-navbar {
-  background-color: black; /* Fondo negro */
-}
-
-.custom-navbar .nav-link {
-  font-weight: 00;
-  color: white; /* Color de texto blanco */
-}
-
-.custom-navbar .nav-link:hover {
+.navbar-tesla__links ul li a {
+  text-decoration: none;
   color: white;
 }
 
-.btnCarrito {
-    background-color: black;
-    border: 0;
-    margin-left: 1.2rem;
-    height: 2.3rem;
+.navbar-tesla__cta a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
 }
 
-.carrito{
-    color: white;
+.navbar-tesla__links ul li.dropdown {
+  position: relative;
+}
+
+/* Estilos del menú desplegable */
+.navbar-tesla__links ul li.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  min-width: 120px;
+}
+
+.navbar-tesla__links ul li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar-tesla__links ul li.dropdown .dropdown-content a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
 }

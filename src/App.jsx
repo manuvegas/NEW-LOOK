@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css'
-import { Data, ListPrincipales, Navbar } from './components' 
+import { Data, ListPrincipales, AppNavbar } from './components' 
 
 
 function App() {
   return (
     <>
-    <Navbar/>
+    <AppNavbar/>
     <ListPrincipales/>
     <Data/>
     </>

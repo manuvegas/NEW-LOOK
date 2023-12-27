@@ -53,6 +53,7 @@ const principales = [
             titulo={item.titulo}
             img={item.img}
             key={item.id}
+            routeTo={`/List${item.titulo.charAt(0).toUpperCase()}${item.titulo.slice(1).toLowerCase()}`}
           />
         ))}
       </nav>

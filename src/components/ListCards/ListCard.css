@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 7rem;
 }
 
 .card {
@@ -59,7 +60,7 @@
 
 .product-title-link {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
 }
 
 .product-title {
@@ -68,9 +69,13 @@
 
 .product-price {
   font-weight: bold;
+  text-decoration:line-through;
+  display: inline;
+  color: white;
 }
 .price-divider {
   position: relative;
+  text-decoration:line-through;
   display: inline-block;
   margin: 0 15px;
 }
@@ -80,18 +85,22 @@
   position: absolute;
   top: 50%;
   transform: translateY(-80%);
-  color: #000000;
+  color: #ffffff;
 }
 
 .price-text {
-  color: #000000;
+  color: #ffffff;
+  text-decoration: none;
   font-weight: bold;
 }
 
 .installments {
+  background-color: rgba(26, 26, 26, 0.735);
+  padding: 18px;
+  font-size: 1.1rem;
   display: block;
   margin-top: 10px;
-  color: #2e2e2e;
+  color: #fefefe;
 }
 
 .add-to-cart-btn {
@@ -99,7 +108,7 @@
   width: 100%;
   padding: 10px;
   margin-top: 10px;
-  background-color: #040404;
+  background-color: #060606;
   color: white;
   border: none;
   border-radius: 5px;
@@ -107,5 +116,5 @@
 }
 
 .add-to-cart-btn:hover {
-  background-color: #080808;
+  background-color: #151515;
 }

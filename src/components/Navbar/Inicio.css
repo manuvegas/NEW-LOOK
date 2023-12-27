@@ -38,7 +38,7 @@
 .navbar-tesla__cta a {
   text-decoration: none;
   color: white;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .navbar-tesla__links ul li.dropdown {
@@ -66,3 +66,4 @@
   text-decoration: none;
   padding: 5px 10px;
 }
+

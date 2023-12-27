@@ -1,0 +1,111 @@
+.navCard{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 320px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent;
+  margin: 20px;
+}
+
+.product-image-link {
+  display: block;
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: 26rem;
+}
+
+.free-shipping-top-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(26, 26, 26, 0.735);
+  color: white;
+  padding: 5px;
+}
+
+.free-shipping-bottom-inside {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+  left: 50px;
+  right: 50px;
+  text-align: center;
+  background-color: rgba(26, 26, 26, 0.735);
+  padding: 7px ;
+  color: white;
+  font-size: 14px; 
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.product-title-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.product-title {
+  margin-top: 0;
+}
+
+.product-price {
+  font-weight: bold;
+}
+.price-divider {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.price-divider::after {
+  content: '|'; /* Cambio del contenido */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-80%);
+  color: #000000;
+}
+
+.price-text {
+  color: #000000;
+  font-weight: bold;
+}
+
+.installments {
+  display: block;
+  margin-top: 10px;
+  color: #2e2e2e;
+}
+
+.add-to-cart-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #040404;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #080808;
+}

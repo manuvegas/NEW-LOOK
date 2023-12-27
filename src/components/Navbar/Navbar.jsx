@@ -1,41 +1,44 @@
 import React from "react";
 import "./Inicio.css";
+import { RiSearchLine } from "react-icons/ri";
+import { IoCartSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const AppNavbar = () => {
   return (
     <nav className="navbar-tesla">
       <div>
-        <h1 className="navbar-tesla__logo">TESLA</h1>
+        <h1 className="navbar-tesla__logo">NEW LOOK</h1>
       </div>
       <div className="navbar-tesla__links">
         <ul>
           <li>
-            <a href="#model-s">HOME</a>
+            <Link to="/">HOME</Link>
           </li>
           <li className="dropdown">
             <a href="#model-3" className="dropbtn">
               PRODUCTOS
             </a>
             <div className="dropdown-content">
-              <a href="#interior">.</a>
-              <a href="#exterior">.</a>
-              <a href="#specs">.</a>
+              <Link to="#">.</Link>
+              <Link to="#">.</Link>
+              <Link to="#">.</Link>
             </div>
           </li>
           <li>
-            <a href="#model-x">INFORMACION</a>
+            <Link to="#">INFORMACION</Link>
           </li>
           <li>
-            <a href="#model-y">ENVIOS</a>
+            <Link to="#">ENVIOS</Link>
           </li>
           <li>
-            <a href="#model-x">CONTACTOS</a>
+            <Link to="#">CONTACTOS</Link>
           </li>
         </ul>
       </div>
       <div className="navbar-tesla__cta">
-        <a href="#shop">CARRITO</a>
-        <a href="#account">SEARCH</a>
+        <a href="#shop"><IoCartSharp className="carito" size={20} /></a>
+        <a href="#account"><RiSearchLine className=" search" size={20}/></a>
       </div>
     </nav>
   );

@@ -29,7 +29,7 @@ const principales = [
     },
     {
       id: 6,
-      titulo: "CARGO",
+      titulo: "CARGOS",
       img: "cargo.jpeg",
     },
     {
@@ -39,7 +39,7 @@ const principales = [
     },
     {
       id: 8,
-      titulo: "GORRA",
+      titulo: "GORRAS",
       img: "gorra.jpeg",
     }
   ];

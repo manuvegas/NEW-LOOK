@@ -1,15 +1,16 @@
 import React from "react";
 import "./CardsImg.css";
+import { Link } from "react-router-dom";
 
 const CardsImg = ({ titulo, img }) => {
   return (
     <div className="divCard">
-      <a href="#">
+      <Link to="">
         <div className="btnCard">
           <img src={img} alt={titulo} className="imgCard" />
           <div className="tituloCard">{titulo}</div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

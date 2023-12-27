@@ -24,7 +24,7 @@ const principales = [
     },
     {
       id: 5,
-      titulo: "ZAPATILLAS",
+      titulo: "ZAPAS",
       img: "retro.jpeg",
     },
     {

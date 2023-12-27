@@ -2,11 +2,11 @@ import React from "react";
 import ListCard from "./ListCard";
 import { v4 as uuidv4 } from "uuid";
 
-const zapas =[
+const buzos = [
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa1.jpeg",
-    titulo: "ZAPA 1",
+    img: "../../../public/img(buzos)/buzo1.jpeg",
+    titulo: "BUZO 1",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -14,8 +14,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa2.jpeg",
-    titulo: "ZAPA 2",
+    img: "../../../public/img(buzos)/buzo2.jpeg",
+    titulo: "BUZO 2",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -23,8 +23,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa3.jpeg",
-    titulo: "ZAPA 3",
+    img: "../../../public/img(buzos)/buzo3.jpeg",
+    titulo: "BUZO 3",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -32,8 +32,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa4.jpeg",
-    titulo: "ZAPA 4",
+    img: "../../../public/img(buzos)/buzo4.jpeg",
+    titulo: "BUZO 4",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -41,8 +41,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa5.jpeg",
-    titulo: "ZAPA 5",
+    img: "../../../public/img(buzos)/buzo5.jpeg",
+    titulo: "BUZO 5",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -50,8 +50,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa6.jpeg",
-    titulo: "ZAPA 6",
+    img: "../../../public/img(buzos)/buzo6.jpeg",
+    titulo: "BUZO 6",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -59,8 +59,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa7.jpeg",
-    titulo: "ZAPA 7",
+    img: "../../../public/img(buzos)/buzo7.jpeg",
+    titulo: "BUZO 7",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -68,8 +68,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa8.jpeg",
-    titulo: "ZAPA 8",
+    img: "../../../public/img(buzos)/buzo8.jpeg",
+    titulo: "BUZO 8",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -77,8 +77,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa9.jpeg",
-    titulo: "ZAPA 9",
+    img: "../../../public/img(buzos)/buzo9.jpeg",
+    titulo: "BUZO 9",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -86,8 +86,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa10.jpeg",
-    titulo: "ZAPA 10",
+    img: "../../../public/img(buzos)/buzo10.jpeg",
+    titulo: "BUZO 10",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -95,8 +95,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa11.jpeg",
-    titulo: "ZAPA 11",
+    img: "../../../public/img(buzos)/buzo11.jpeg",
+    titulo: "BUZO 11",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -104,8 +104,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa12.jpeg",
-    titulo: "ZAPA 12",
+    img: "../../../public/img(buzos)/buzo12.jpeg",
+    titulo: "BUZO 12",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -113,8 +113,8 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa13.jpeg",
-    titulo: "ZAPA 13",
+    img: "../../../public/img(buzos)/buzo13.jpeg",
+    titulo: "BUZO 13",
     off: "30",
     antiguo: 40000,
     precio: 20000,
@@ -122,19 +122,19 @@ const zapas =[
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa14.jpeg",
-    titulo: "Back 14",
+    img: "../../../public/img(buzos)/buzo14.jpeg",
+    titulo: "BUZO 14",
     off: "30",
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
   },
-]
+];
 
-const ListZapas = () => {
+const ListBuzo = () => {
   return (
     <nav className="navCard">
-      {zapas.map((item, index) => (
+      {buzos.map((item, index) => (
         <ListCard
           id={item.id}
           titulo={item.titulo}
@@ -150,4 +150,4 @@ const ListZapas = () => {
   );
 };
 
-export default ListZapas;
+export default ListBuzo;

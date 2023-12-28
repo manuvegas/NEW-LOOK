@@ -2,7 +2,7 @@ import React from "react";
 import ListCard from "./ListCard";
 import { v4 as uuidv4 } from "uuid";
 
-const zapas =[
+const zapas = [
   {
     id: uuidv4(),
     img: "../../../public/zapas/zapa1.jpeg",
@@ -129,7 +129,7 @@ const zapas =[
     precio: 20000,
     cuotas: "",
   },
-]
+];
 
 const ListZapas = () => {
   return (

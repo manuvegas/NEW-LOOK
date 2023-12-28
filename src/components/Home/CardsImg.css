@@ -9,7 +9,7 @@
 }
 
 .linkCard {
-  margin-top: 8rem;
+  margin-top: 3rem;
   gap: 20px;
   display: flex;
   flex-direction: row;
@@ -59,8 +59,86 @@
   margin-bottom: 15px;
 }
 
+/* TITULO DE LAS CATEGORIAS */
+.titulos{
+  color: white;
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-weight: 800;
+}
+/* IMAGEN DE OFERTAS */
+.ofertas{
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+}
+/* DESTACADOS */
+.destacados{
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+/* PRE FOOTER */
+.instagram{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* FOOTER */
+.footer{
+  background-color: rgb(10, 10, 10);
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:2rem ;
+}
+.titulosFooter{
+  font-weight: 800;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  font-size: 1.6rem;
+}
+
+.metodos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.datoFooter1{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.datoFooter2{
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+
+
+
+
 @media (max-width: 576px) {
- .imgCard{
-  width: 350px;
- }
+  .imgCard {
+    width: 350px;
+  }
 }

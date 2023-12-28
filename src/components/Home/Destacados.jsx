@@ -77,7 +77,7 @@ const destacados = [
   },
   {
     id: uuidv4(),
-    img: "../../../public/zapas/zapa14.jpeg",
+    img: "/zapas/zapa14.jpeg",
     titulo: "ZAPAS 14",
     off: "30",
     antiguo: 40000,

@@ -13,7 +13,7 @@ const Home = () => {
       <main>
         <section>
           <div className="ofertas">
-            <img src="ofertas.png" alt="OFERTAS" />
+            <img className="ofertasImg" src="ofertas.png" alt="OFERTAS" />
           </div>
         </section>
         <section>
@@ -21,6 +21,10 @@ const Home = () => {
           <h1 className="titulos">CATEGORIAS</h1>
           <ListPrincipales />
         </section>
+        <div className="divSpan">
+          <h1 className="tituloSpan">SOMOS LO QUE LE FALTA A TU ARMARIO</h1>
+          <span className="span">Tenemos mas +5000 clientes que compraron nuestros productos</span>
+        </div>
         <section>
           <h1 className="titulos">DESTACADOS</h1>
           <Destacados />

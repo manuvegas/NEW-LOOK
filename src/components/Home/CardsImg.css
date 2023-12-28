@@ -3,7 +3,7 @@
   display: inline-block;
   overflow: hidden;
   text-align: center;
-  max-width: 490px;
+  width: 450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -47,16 +47,27 @@
   transform: translate(-50%, -50%);
 }
 
-/* CARRUSEL */
+/* DATA */
 .carruselInicio {
   margin-top: 3rem;
   color: rgb(253, 253, 253);
   margin-bottom: 4rem;
+  display: flex;
+  gap: 5px;
+  font-size: 1rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.iconosCarrusel {
-  width: 4%;
-  height: 1.7rem;
-  margin-bottom: 15px;
+
+/* INFO MINIMA */
+.divSpan{
+  text-align: center;
+  margin: 6rem;
+}
+.tituloSpan{
+  font-size: 2rem;
 }
 
 /* TITULO DE LAS CATEGORIAS */
@@ -135,7 +146,16 @@
 
 
 @media (max-width: 576px) {
+  .btnCard{
+    width: 330px;
+  }
+  .titulos{
+    font-size: 2rem;
+  }
   .imgCard {
     width: 350px;
+  }
+  .ofertasImg{
+    width: 18rem;
   }
 }

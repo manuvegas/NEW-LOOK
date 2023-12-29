@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 const gorras = [
   {
     id: uuidv4(),
-    img: "../../../public/gorras/gorra1.jpeg",
+    img: "/gorras/gorra1.jpeg",
     titulo: "GORRAS 1",
     off: "30",
     antiguo: 40000,
@@ -14,7 +14,7 @@ const gorras = [
   },
   {
     id: uuidv4(),
-    img: "../../../public/gorras/gorra2.jpeg",
+    img: "/gorras/gorra2.jpeg",
     titulo: "GORRAS 2",
     off: "30",
     antiguo: 40000,
@@ -23,7 +23,7 @@ const gorras = [
   },
   {
     id: uuidv4(),
-    img: "../../../public/gorras/gorra3.jpeg",
+    img: "/gorras/gorra3.jpeg",
     titulo: "GORRAS 3",
     off: "30",
     antiguo: 40000,
@@ -32,7 +32,7 @@ const gorras = [
   },
   {
     id: uuidv4(),
-    img: "../../../public/gorras/gorra4.jpeg",
+    img: "/gorras/gorra4.jpeg",
     titulo: "GORRAS 4",
     off: "30",
     antiguo: 40000,
@@ -41,7 +41,7 @@ const gorras = [
   },
   {
     id: uuidv4(),
-    img: "../../../public/gorras/gorra5.jpeg",
+    img: "/gorras/gorra5.jpeg",
     titulo: "GORRAS 5",
     off: "30",
     antiguo: 40000,
@@ -50,7 +50,7 @@ const gorras = [
   },
   {
     id: uuidv4(),
-    img: "../../../public/gorras/gorra6.jpeg",
+    img: "/gorras/gorra6.jpeg",
     titulo: "GORRAS 6",
     off: "30",
     antiguo: 40000,

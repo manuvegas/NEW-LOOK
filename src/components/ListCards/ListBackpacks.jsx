@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 const backs = [
   {
     id: uuidv4(),
-    img: "../../../public/mochilas/back1.jpeg",
+    img: "/mochilas/back1.jpeg",
     titulo: "Back 1",
     off: "30",
     antiguo: 40000,
@@ -14,7 +14,7 @@ const backs = [
   },
   {
     id: uuidv4(),
-    img: "../../../public/mochilas/back2.jpeg",
+    img: "/mochilas/back2.jpeg",
     titulo: "Back 2",
     off: "30",
     antiguo: 40000,
@@ -23,7 +23,7 @@ const backs = [
   },
   {
     id: uuidv4(),
-    img: "../../../public/mochilas/back3.jpeg",
+    img: "/mochilas/back3.jpeg",
     titulo: "Back 3",
     off: "30",
     antiguo: 40000,
@@ -32,7 +32,7 @@ const backs = [
   },
   {
     id: uuidv4(),
-    img: "../../../public/mochilas/back4.jpeg",
+    img: "/mochilas/back4.jpeg",
     titulo: "Back 4",
     off: "30",
     antiguo: 40000,

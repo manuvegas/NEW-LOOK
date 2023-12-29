@@ -6,7 +6,7 @@ import ListCard from "./ListCards/ListCard";
 import ListRemeras from "./ListCards/ListRemeras";
 import Home from "./Home/Home";
 import ListBuzo from "./ListCards/ListBuzos";
-import ListGorras from "./ListCards/ListGorras"
+import ListGorras from "./ListCards/ListGorras";
 import ListBackpacks from "./ListCards/ListBackpacks";
 import ListJoggins from "./ListCards/ListJoggins";
 import ListBermudas from "./ListCards/ListBermudas";

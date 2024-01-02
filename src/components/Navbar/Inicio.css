@@ -10,12 +10,13 @@
   left: 0;
   width: 100%;
   z-index: 1000;
+  height: 80px; /* Ajusta la altura según sea necesario */
 }
 
 .navbar-tesla__logo {
   font-size: 1.5rem;
   font-weight: 800;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 0; /* Ajustar el margen para centrar verticalmente */
 }
 
@@ -26,10 +27,6 @@
   padding: 0; /* Eliminar el relleno predeterminado */
 }
 
-.navbar-tesla__links ul li {
-  margin-right: 20px;
-}
-
 .navbar-tesla__links ul li a {
   text-decoration: none;
   color: white;
@@ -38,7 +35,7 @@
 .navbar-tesla__cta a {
   text-decoration: none;
   color: white;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .navbar-tesla__links ul li.dropdown {
@@ -56,6 +53,17 @@
   min-width: 120px;
 }
 
+.navbar-toggle{
+  margin-left: 20px;
+  background-color: #1f1f1f;
+  border: 0;
+  color: white;
+}
+
+.burguer{
+  background-color: #1f1f1f;
+}
+
 .navbar-tesla__links ul li.dropdown:hover .dropdown-content {
   display: block;
 }
@@ -67,3 +75,56 @@
   padding: 5px 10px;
 }
 
+@media (max-width: 767px) {
+  .navbar-tesla__cta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar-tesla__links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    color: white;
+    background-color: #1f1f1f;
+    text-align: center;
+  }
+
+  .navbar-tesla__links.open {
+    display: block;
+  }
+
+  .navbar-tesla__links ul {
+    padding: 15px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección de los elementos a una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .navbar-tesla__links ul li {
+    margin-bottom: 10px;
+    width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none; /* Oculta el botón de hamburguesa en pantallas más grandes */
+  }
+
+  .navbar-tesla__links ul {
+    display: flex; /* Muestra los elementos del menú horizontalmente en pantallas más grandes */
+    list-style: none;
+    padding: 0;
+  }
+
+  .navbar-tesla__links ul li {
+    margin: 0 15px;
+  }
+}

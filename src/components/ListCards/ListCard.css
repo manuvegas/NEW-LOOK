@@ -118,3 +118,10 @@
 .add-to-cart-btn:hover {
   background-color: #151515;
 }
+
+
+@media (min-width: 768px){
+  .card{
+    width: 315px;
+  }
+}

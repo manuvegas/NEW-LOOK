@@ -1,16 +1,27 @@
-import React from "react";
 import "./Inicio.css";
+import React, { useState } from "react";
 import { RiSearchLine } from "react-icons/ri";
+import { FiAlignJustify } from "react-icons/fi";
 import { IoCartSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const AppNavbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <nav className="navbar-tesla">
       <div>
         <h1 className="navbar-tesla__logo">NEW LOOK</h1>
       </div>
-      <div className="navbar-tesla__links">
+
+      <div
+        className={
+          isOpen ? "navbar-tesla__links open" : "navbar-tesla__links hidden"
+        }
+      >
         <ul>
           <li>
             <Link to="/">HOME</Link>
@@ -37,8 +48,15 @@ const AppNavbar = () => {
         </ul>
       </div>
       <div className="navbar-tesla__cta">
-        <a href="#shop"><IoCartSharp className="carito" size={20} /></a>
-        <a href="#account"><RiSearchLine className=" search" size={20}/></a>
+        <a href="#account">
+          <RiSearchLine className=" search" size={20} />
+        </a>
+        <a href="#shop">
+          <IoCartSharp className="carito" size={20} />
+        </a>
+        <button className="navbar-toggle" onClick={toggleMenu}>
+          <FiAlignJustify className="burguer" size={20}/>
+        </button>
       </div>
     </nav>
   );

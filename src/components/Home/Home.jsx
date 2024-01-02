@@ -32,7 +32,7 @@ const Home = () => {
         </section>
         <section>
           <div className="instagram">
-            <a href="https://www.instagram.com/_manuvegas_/">
+            <a href="https://www.instagram.com/_manuvegas_/" target="_blank">
               <FaInstagram size={60} color="white" />
             </a>
           </div>

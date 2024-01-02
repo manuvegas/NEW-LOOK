@@ -1,9 +1,7 @@
 .btnCard {
   position: relative;
-  display: inline-block;
   overflow: hidden;
   text-align: center;
-  width: 450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -19,7 +17,7 @@
 }
 
 .imgCard {
-  width: 450px; /* Ajusta el ancho al 100% */
+  width: 320px; /* Ajusta el ancho al 100% */
   height: 500px; /* Ajusta la altura fija */
   object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
@@ -62,31 +60,34 @@
 }
 
 /* INFO MINIMA */
-.divSpan{
+.divSpan {
+  background-color: rgba(18, 18, 18, 0.842);
+  padding: 20px 40px;
   text-align: center;
-  margin: 6rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
-.tituloSpan{
+.tituloSpan {
   font-size: 2rem;
 }
 
 /* TITULO DE LAS CATEGORIAS */
-.titulos{
+.titulos {
   color: white;
   margin-top: 2rem;
   font-size: 3rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-weight: 800;
 }
 /* IMAGEN DE OFERTAS */
-.ofertas{
+.ofertas {
   margin-top: 7rem;
   display: flex;
   justify-content: center;
 }
 /* DESTACADOS */
-.destacados{
+.destacados {
   gap: 50px;
   display: flex;
   flex-direction: row;
@@ -97,45 +98,44 @@
 }
 
 /* PRE FOOTER */
-.instagram{
+.instagram {
   margin-top: 3rem;
   margin-bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* FOOTER */
-.footer{
+.footer {
   background-color: rgb(10, 10, 10);
   font-size: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding:2rem ;
+  padding: 2rem;
 }
-.titulosFooter{
+.titulosFooter {
   font-weight: 800;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.6rem;
 }
 
-.metodos{
+.metodos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.datoFooter1{
+.datoFooter1 {
   display: flex;
   flex-direction: row;
   gap: 20px;
   flex-wrap: nowrap;
 }
 
-.datoFooter2{
+.datoFooter2 {
   display: flex;
   font-size: 1rem;
   flex-direction: column;
@@ -144,18 +144,103 @@
   flex-wrap: nowrap;
 }
 
-
 @media (max-width: 576px) {
-  .btnCard{
-    width: 330px;
+  .titulosFooter {
+    font-size: 1.5rem;
+    margin: 1.5rem;
   }
-  .titulos{
+  .datoFooter2{
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .divCard {
+    width: 320px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tituloSpan {
+    font-size: 1.3rem;
+  }
+  .span {
+    font-size: 16px;
+  }
+
+  .titulos {
     font-size: 2rem;
   }
   .imgCard {
     width: 350px;
   }
-  .ofertasImg{
+  .ofertasImg {
     width: 18rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .ofertasImg {
+    width: 20rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .datoFooter2{
+    width: 35vw;
+  }
+  .navbar-toggle {
+    display: none; /* Oculta el botón de hamburguesa en pantallas más grandes */
+  }
+  .tituloSpan {
+    font-size: 1.6rem;
+  }
+  .span {
+    font-size: 19px;
+  }
+
+  .navbar-tesla__links ul {
+    display: flex; /* Muestra los elementos del menú horizontalmente en pantallas más grandes */
+    list-style: none;
+    padding: 0;
+  }
+
+  .navbar-tesla__links ul li {
+    margin: 0 15px;
+  }
+
+  .ofertasImg {
+    width: 45rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+  .datoFooter2{
+    width: 30vw;
+  }
+  .ofertasImg {
+    width: 55rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ofertasImg {
+    width: 65rem;
   }
 }

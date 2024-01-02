@@ -3,7 +3,10 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   AppNavbar,
+  Contactos,
+  Envios,
   Home,
+  Informacion,
   ListBackpacks,
   ListBermudas,
   ListBuzo,
@@ -32,6 +35,10 @@ function App() {
             <Route path="/ListZapas" element={<ListZapas />} />
             <Route path="/ListBermudas" element={<ListBermudas />} />
             <Route path="/" element={<Home />} />
+            <Route path="/Contactos" element={<Contactos />} />
+            <Route path="/Informacion" element={<Informacion />} />
+            <Route path="/Envios" element={<Envios />} />
+         
           </Routes>
         </div>
       </Router>

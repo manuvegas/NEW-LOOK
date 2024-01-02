@@ -31,19 +31,24 @@ const AppNavbar = () => {
               PRODUCTOS
             </a>
             <div className="dropdown-content">
-              <Link to="#">.</Link>
-              <Link to="#">.</Link>
-              <Link to="#">.</Link>
+              <Link to="#">REMERAS</Link>
+              <Link to="#">BUZOS</Link>
+              <Link to="#">JOGGINS</Link>
+              <Link to="#">BERMUDAS</Link>
+              <Link to="#">ZAPAS</Link>
+              <Link to="#">CARGOS</Link>
+              <Link to="#">BACKPACKS</Link>
+              <Link to="#">GORRAS</Link>
             </div>
           </li>
           <li>
-            <Link to="#">INFORMACION</Link>
+            <Link to="/Navegacion">INFORMACION</Link>
           </li>
           <li>
-            <Link to="#">ENVIOS</Link>
+            <Link to="/Envios">ENVIOS</Link>
           </li>
           <li>
-            <Link to="#">CONTACTOS</Link>
+            <Link to="/Contactos">CONTACTOS</Link>
           </li>
         </ul>
       </div>
@@ -55,7 +60,7 @@ const AppNavbar = () => {
           <IoCartSharp className="carito" size={20} />
         </a>
         <button className="navbar-toggle" onClick={toggleMenu}>
-          <FiAlignJustify className="burguer" size={20}/>
+          <FiAlignJustify className="burguer" size={20} />
         </button>
       </div>
     </nav>

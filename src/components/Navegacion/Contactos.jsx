@@ -3,7 +3,7 @@ import "./Navegacion.css"
 
 const Contactos = () => {
   return (
-    <div>muy pronto</div>
+    <div></div>
   )
 }
 

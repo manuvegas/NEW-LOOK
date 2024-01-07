@@ -49,7 +49,6 @@
 .carruselInicio {
   margin-top: 3rem;
   color: rgb(253, 253, 253);
-  margin-bottom: 4rem;
   display: flex;
   gap: 5px;
   font-size: 1rem;
@@ -57,6 +56,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.divData {
+  width: 21rem;
 }
 
 /* INFO MINIMA */
@@ -116,6 +119,9 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 2rem;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
 }
 .titulosFooter {
   font-weight: 800;
@@ -149,7 +155,7 @@
     font-size: 1.5rem;
     margin: 1.5rem;
   }
-  .datoFooter2{
+  .datoFooter2 {
     font-size: 1.1rem;
     text-align: center;
   }
@@ -178,22 +184,41 @@
     width: 350px;
   }
   .ofertasImg {
-    width: 18rem;
+    width: 98%;
   }
 }
 
 @media (min-width: 576px) {
+  .titulosFooter{
+    margin: 1.5rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .datoFooter2{
+    text-align: center;
+  }
   .ofertasImg {
-    width: 20rem;
+    width: 98%;
   }
 }
 
 @media (min-width: 768px) {
+  .carruselInicio {
+    display: flex;
+    gap: 10px;
+  }
+
+  .divData {
+    width: 240px;
+    font-size: 12px;
+  }
   .footer {
     display: flex;
     flex-direction: row;
   }
-  .datoFooter2{
+  .datoFooter2 {
     width: 35vw;
   }
   .navbar-toggle {
@@ -217,30 +242,47 @@
   }
 
   .ofertasImg {
-    width: 45rem;
+    width: 98%;
   }
 }
 
 @media (min-width: 992px) {
+  .divData {
+    width: 290px;
+    font-size: 14px;
+  }
+
   .footer {
     display: flex;
     flex-direction: row;
   }
-  .datoFooter2{
+  .datoFooter2 {
     width: 30vw;
   }
   .ofertasImg {
-    width: 55rem;
+    width: 98%;
   }
 }
 
 @media (min-width: 1200px) {
+  .imgCard {
+    width: 100%;
+  }
+
+  .divData {
+    width: 330px;
+    font-size: 15px;
+  }
+  .btnCard {
+    width: 410px;
+  }
+
   .footer {
     display: flex;
     flex-direction: row;
   }
 
   .ofertasImg {
-    width: 65rem;
+    width: 90%;
   }
 }

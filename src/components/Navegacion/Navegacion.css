@@ -1,0 +1,51 @@
+/* CATEGORIA INFORMACION*/
+.sectionInfo {
+  margin-top: 7rem;
+  text-align: center;
+  font-size: 16px;
+}
+.tituloInfo {
+  margin: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 550;
+}
+.divInfo {
+  background-color: #141414;
+  padding: 20px;
+  text-align: left;
+  max-width: 1000px;
+  margin: 2rem auto;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+}
+.opcionesInfo {
+    margin: 1.1rem;
+  text-decoration: underline;
+  font-size: 20px;
+}
+.tituloTexto {
+  margin: 1.5rem 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+i {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.textoInfo {
+  font-size: 18px;
+}
+.liInfo{
+    font-size: 1.1rem;
+    margin: 1.5rem;
+}
+
+/* CATEGORIA CAMBIOS */
+
+.sectionCambios{
+  margin-top: 7rem;
+  text-align: center;
+  font-size: 16px;
+  min-height: 685px;
+}

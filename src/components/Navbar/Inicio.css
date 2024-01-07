@@ -13,6 +13,7 @@
   height: 80px; /* Ajusta la altura según sea necesario */
 }
 
+
 .navbar-tesla__logo {
   font-size: 1.5rem;
   font-weight: 800;
@@ -35,7 +36,7 @@
 .navbar-tesla__cta a {
   text-decoration: none;
   color: white;
-  margin-left: 20px;
+  margin-left: 60px;
 }
 
 .navbar-tesla__links ul li.dropdown {
@@ -53,15 +54,17 @@
   min-width: 120px;
 }
 
-.navbar-toggle{
+.navbar-toggle {
   margin-left: 20px;
   background-color: #1f1f1f;
   border: 0;
   color: white;
 }
-
-.burguer{
+.iconos{
+  margin-left: 20px;
   background-color: #1f1f1f;
+  border: 0;
+  color: white;
 }
 
 .navbar-tesla__links ul li.dropdown:hover .dropdown-content {
@@ -73,6 +76,18 @@
   color: white;
   text-decoration: none;
   padding: 5px 10px;
+}
+
+@media (max-width: 576px) {
+  .navbar-tesla__logo {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-tesla__logo {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -88,11 +103,12 @@
     position: absolute;
     top: 100%;
     right: 0;
-    width: 70vw;
+    width: 50vw;
     height: 100vh;
     color: white;
-    background-color: #1f1f1f;
+    background-color: #151515ea;
     text-align: center;
+    padding: 10px;
   }
 
   .navbar-tesla__links.open {
@@ -126,5 +142,9 @@
 
   .navbar-tesla__links ul li {
     margin: 0 15px;
+  }
+
+  .navbar-tesla__logo {
+    font-size: 1.4rem;
   }
 }

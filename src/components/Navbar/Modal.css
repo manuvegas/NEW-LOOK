@@ -1,0 +1,124 @@
+/* MODAL SEARCH */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.559); /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 500px; /* Ancho del contenido del modal */
+  height: 210px;
+  padding: 0 20px;
+  background-color: #141414;
+  border-radius: 15px; /* Esquinas redondeadas */
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.505); /* Sombra */
+}
+
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.close:hover {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  background-color: #141414;
+  padding: 15px; /* Espaciado interno */
+  border-radius: 8px; /* Esquinas redondeadas */
+}
+
+.search-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.search-button {
+  padding: 10px 20px; /* Tamaño del botón */
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #b6b6b6; /* Cambia el color del botón al pasar el mouse por encima */
+}
+
+/* MODAL CONTACTOS */
+.modalCarrito {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw;
+  height: 100vh;
+  background-color: rgba(16, 16, 16, 0.797);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.canvas-content {
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 80%;
+}
+
+.divCarrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tituloCarrito {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+.cerrar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+.cerrarCarrito {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cerrarCarrito:focus {
+  outline: none;
+}
+
+.CarritoVacio {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: #111111;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}

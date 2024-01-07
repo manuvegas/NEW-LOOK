@@ -12,9 +12,11 @@ import ListJoggins from "./ListCards/ListJoggins";
 import ListBermudas from "./ListCards/ListBermudas";
 import ListZapas from "./ListCards/ListZapas";
 import ListCargos from "./ListCards/ListCargos";
-import Envios from "./Navegacion/Envios"
+import Cambios from "./Navegacion/Cambios"
 import Informacion from "./Navegacion/Informacion"
 import Contactos from "./Navegacion/Contactos"
+import Footer from "./Home/Footer";
 
 
-export { AppNavbar, ListPrincipales, Data, ListCard, ListRemeras, Home, ListBuzo, ListGorras, ListBackpacks, ListJoggins, ListBermudas, ListZapas, ListCargos,Envios,Contactos,Informacion }
+
+export { AppNavbar,Footer, ListPrincipales, Data, ListCard, ListRemeras, Home, ListBuzo, ListGorras, ListBackpacks, ListJoggins, ListBermudas, ListZapas, ListCargos,Cambios,Contactos,Informacion }

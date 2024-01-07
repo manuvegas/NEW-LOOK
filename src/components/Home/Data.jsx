@@ -11,7 +11,7 @@ const Data = () => {
             <div className="iconosCarrusel">
               <FaTruck size={30} />
             </div>
-            <div>
+            <div className="divData">
               <p>ENVIOS GRATIS A TODO EL PAIS</p>
               <span>
                 Enviamos por correo a todo el pais y dentro de CABA/GBA
@@ -27,7 +27,7 @@ const Data = () => {
             <div className="iconosCarrusel">
               <CiCreditCard1 size={30} />
             </div>
-            <div>
+            <div className="divData">
               <p>3 CUOTAS SIN INTERES</p>
               <span>
                 TODOS LOS MEDIOS DE PAGO 3 CUOTAS SIN INTERES! 20% DE DESCUENTO
@@ -43,7 +43,7 @@ const Data = () => {
             <div className="iconosCarrusel">
               <BsBank2 size={30} />
             </div>
-            <div>
+            <div className="divData">
               <p>15% OFF</p>
               <span>TRANSFERENCIA BANCARIA</span>
             </div>

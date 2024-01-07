@@ -3,8 +3,9 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   AppNavbar,
+  Cambios,
   Contactos,
-  Envios,
+  Footer,
   Home,
   Informacion,
   ListBackpacks,
@@ -36,11 +37,14 @@ function App() {
             <Route path="/ListBermudas" element={<ListBermudas />} />
             <Route path="/" element={<Home />} />
             <Route path="/Contactos" element={<Contactos />} />
-            <Route path="/Informacion" element={<Informacion />} />
-            <Route path="/Envios" element={<Envios />} />
-         
+            <Route path="/Navegacion" element={<Informacion />} />
+            <Route path="/Cambios" element={<Cambios />} />
+      
           </Routes>
         </div>
+          <footer>
+            <Footer/>
+          </footer>
       </Router>
     </>
   );

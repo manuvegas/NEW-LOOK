@@ -68,7 +68,7 @@
   right: 0;
   width: 30vw;
   height: 100vh;
-  background-color: rgba(16, 16, 16, 0.797);
+  background-color: rgba(16, 16, 16, 0.995);
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -117,7 +117,7 @@
 .CarritoVacio {
   margin-top: 2rem;
   padding: 10px 20px;
-  background-color: #111111;
+  background-color: #1c1c1c;
   font-weight: 600;
   font-size: 20px;
   text-align: center;

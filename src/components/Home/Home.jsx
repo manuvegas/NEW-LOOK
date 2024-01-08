@@ -21,7 +21,7 @@ const Home = () => {
         </section>
         <div className="divSpan">
           <h1 className="tituloSpan">SOMOS LO QUE LE FALTA A TU ARMARIO</h1>
-          <span className="span">Tenemos mas +5000 clientes que compraron nuestros productos</span>
+          <span className="span">Tenemos mas de 5000 clientes que compraron nuestros productos</span>
         </div>
         <section>
           <h1 className="titulos">DESTACADOS</h1>

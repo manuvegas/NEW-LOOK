@@ -19,7 +19,7 @@
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
 }
 .opcionesInfo {
-    margin: 1.1rem;
+  margin: 1.1rem;
   text-decoration: underline;
   font-size: 20px;
 }
@@ -36,16 +36,79 @@ i {
 .textoInfo {
   font-size: 18px;
 }
-.liInfo{
-    font-size: 1.1rem;
-    margin: 1.5rem;
+.liInfo {
+  font-size: 1.1rem;
+  margin: 1.5rem;
 }
 
 /* CATEGORIA CAMBIOS */
 
-.sectionCambios{
+.sectionCambios {
   margin-top: 7rem;
   text-align: center;
   font-size: 16px;
   min-height: 685px;
+}
+
+/* CATEGORIAS CONTACTOS */
+.contactoForm {
+  background-color: #141414;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 8rem auto;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+}
+
+.contacto-titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contacto-formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-label {
+  margin-bottom: 5px;
+}
+
+.contacto-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: rgb(16, 16, 16);
+  color: white;
+}
+
+.contacto-textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: rgb(16, 16, 16);
+  color: white;
+  resize: vertical;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.contacto-boton {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contacto-boton:hover {
+  background-color: #a9a9a9;
+  color: black;
 }

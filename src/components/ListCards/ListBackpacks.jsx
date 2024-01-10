@@ -1,6 +1,7 @@
-import React from "react";
+import React,{ useEffect }  from "react";
 import ListCard from "./ListCard";
 import { v4 as uuidv4 } from "uuid";
+import { useLocation } from "react-router-dom";
 
 const backs = [
   {
@@ -42,6 +43,12 @@ const backs = [
 ];
 
 const ListBackpacks = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Desplázate al principio cada vez que la ruta cambie
+    window.scrollTo(0, 0);
+  }, [location.pathname]); // La dependencia es la ruta actual
   return (
     <nav className="navCard">
       {backs.map((item, index) => (

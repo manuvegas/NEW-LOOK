@@ -56,13 +56,13 @@
 
 .navbar-toggle {
   margin-left: 20px;
-  background-color: #1f1f1f;
+  background-color: #1e1e1e;
   border: 0;
   color: white;
 }
 .iconos{
   margin-left: 20px;
-  background-color: #1f1f1f;
+  background-color: #1e1e1e;
   border: 0;
   color: white;
 }
@@ -106,7 +106,7 @@
     width: 50vw;
     height: 100vh;
     color: white;
-    background-color: #151515ea;
+    background-color: #1e1e1e;
     text-align: center;
     padding: 10px;
   }

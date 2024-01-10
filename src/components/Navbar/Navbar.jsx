@@ -13,7 +13,7 @@ const AppNavbar = () => {
   const [showOutsideCanvas, setShowOutsideCanvas] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setIsOpen((prevIsOpen) => !prevIsOpen);
   };
   const openCanvas = () => {
     setShowOutsideCanvas(true);
@@ -26,6 +26,10 @@ const AppNavbar = () => {
   };
   const closeCanvas = () => {
     setShowOutsideCanvas(false);
+  };
+
+  const handleLinkClick = () => {
+    setIsOpen((prevIsOpen) => !prevIsOpen);
   };
   return (
     <nav className="navbar-tesla">
@@ -42,39 +46,39 @@ const AppNavbar = () => {
       >
         <ul>
           <li>
-            <Link to="/">HOME</Link>
+            <Link to="/" onClick={handleLinkClick}>HOME</Link>
           </li>
           <li className="dropdown">
             <a href="#model-3" className="dropbtn">
               PRODUCTOS
             </a>
             <div className="dropdown-content">
-              <Link to="#">REMERAS</Link>
-              <Link to="#">BUZOS</Link>
-              <Link to="#">JOGGINS</Link>
-              <Link to="#">BERMUDAS</Link>
-              <Link to="#">ZAPAS</Link>
-              <Link to="#">CARGOS</Link>
-              <Link to="#">BACKPACKS</Link>
-              <Link to="#">GORRAS</Link>
+              <Link to="#" onClick={handleLinkClick}>REMERAS</Link>
+              <Link to="#" onClick={handleLinkClick}>BUZOS</Link>
+              <Link to="#" onClick={handleLinkClick}>JOGGINS</Link>
+              <Link to="#" onClick={handleLinkClick}>BERMUDAS</Link>
+              <Link to="#" onClick={handleLinkClick}>ZAPAS</Link>
+              <Link to="#" onClick={handleLinkClick}>CARGOS</Link>
+              <Link to="#" onClick={handleLinkClick}>BACKPACKS</Link>
+              <Link to="#" onClick={handleLinkClick}>GORRAS</Link>
             </div>
           </li>
           <li>
-            <Link to="/Navegacion">INFORMACION</Link>
+            <Link to="/Navegacion" onClick={handleLinkClick}>INFORMACION</Link>
           </li>
           <li>
-            <Link to="/Cambios">CAMBIOS</Link>
+            <Link to="/Cambios" onClick={handleLinkClick}>CAMBIOS</Link>
           </li>
           <li>
-            <Link to="/Contactos">CONTACTOS</Link>
+            <Link to="/Contactos" onClick={handleLinkClick}>CONTACTOS</Link>
           </li>
           <li className="dropdown">
             <a href="#model-3" className="dropbtn">
               LOGIN
             </a>
             <div className="dropdown-content">
-              <Link to="#">INICIAR SESION</Link>
-              <Link to="#">REGISTRARSE</Link>
+              <Link to="#" onClick={handleLinkClick}>INICIAR SESION</Link>
+              <Link to="#" onClick={handleLinkClick}>REGISTRARSE</Link>
             </div>
           </li>
         </ul>

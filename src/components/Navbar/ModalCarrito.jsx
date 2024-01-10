@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTimes } from "react-icons/fa";
+import { IoCloseOutline } from "react-icons/io5";
 
 const ModalCarrito = ({ closeCanvas }) => {
   return (
@@ -8,7 +8,7 @@ const ModalCarrito = ({ closeCanvas }) => {
         <div className="divCarrito">
           <h2 className="tituloCarrito">CARRITO DE COMPRAS</h2>
           <button className="cerrarCarrito">
-            <FaTimes className="cerrar" size={35} onClick={closeCanvas} />
+            <IoCloseOutline className="cerrar" size={45} onClick={closeCanvas} />
           </button>
         </div>
         <p className="CarritoVacio">CARRITO VACÍO</p>

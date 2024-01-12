@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 const cargos=[
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo1.jpeg",
+    img: "/cargos/cargo1.jpeg",
     titulo: "CARGO 1",
     off: "30",
     antiguo: 40000,
@@ -15,7 +15,7 @@ const cargos=[
   },
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo2.jpeg",
+    img: "/cargos/cargo2.jpeg",
     titulo: "CARGO 2",
     off: "30",
     antiguo: 40000,
@@ -24,7 +24,7 @@ const cargos=[
   },
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo3.jpeg",
+    img: "/cargos/cargo3.jpeg",
     titulo: "CARGO 3",
     off: "30",
     antiguo: 40000,
@@ -33,7 +33,7 @@ const cargos=[
   },
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo4.jpeg",
+    img: "/cargos/cargo4.jpeg",
     titulo: "CARGO 4",
     off: "30",
     antiguo: 40000,
@@ -42,7 +42,7 @@ const cargos=[
   },
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo5.jpeg",
+    img: "/cargos/cargo5.jpeg",
     titulo: "CARGO 5",
     off: "30",
     antiguo: 40000,
@@ -51,7 +51,7 @@ const cargos=[
   },
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo6.jpeg",
+    img: "/cargos/cargo6.jpeg",
     titulo: "CARGO 6",
     off: "30",
     antiguo: 40000,
@@ -60,7 +60,7 @@ const cargos=[
   },
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo7.jpeg",
+    img: "/cargos/cargo7.jpeg",
     titulo: "CARGO 7",
     off: "30",
     antiguo: 40000,
@@ -69,7 +69,7 @@ const cargos=[
   },
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo8.jpeg",
+    img: "/cargos/cargo8.jpeg",
     titulo: "CARGO 8",
     off: "30",
     antiguo: 40000,
@@ -78,7 +78,7 @@ const cargos=[
   },
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo9.jpeg",
+    img: "/cargos/cargo9.jpeg",
     titulo: "CARGO 9",
     off: "30",
     antiguo: 40000,
@@ -87,7 +87,7 @@ const cargos=[
   },
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo10.jpeg",
+    img: "/cargos/cargo10.jpeg",
     titulo: "CARGO 10",
     off: "30",
     antiguo: 40000,
@@ -96,7 +96,7 @@ const cargos=[
   },
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo11.jpeg",
+    img: "/cargos/cargo11.jpeg",
     titulo: "CARGO 11",
     off: "30",
     antiguo: 40000,
@@ -105,7 +105,7 @@ const cargos=[
   },
   {
     id: uuidv4(),
-    img: "/public/cargos/cargo12.jpeg",
+    img: "/cargos/cargo12.jpeg",
     titulo: "CARGO 12",
     off: "30",
     antiguo: 40000,

@@ -1,7 +1,14 @@
-import React from "react";
+import {React,useEffect} from "react";
 import "./Navegacion.css";
+import { useLocation } from "react-router-dom";
 
 const Informacion = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Desplázate al principio cada vez que la ruta cambie
+    window.scrollTo(0, 0);
+  }, [location.pathname]); // La dependencia es la ruta actual
   return (
     <section className="sectionInfo">
       <div>

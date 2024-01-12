@@ -91,14 +91,33 @@
   align-items: center;
 }
 /* DESTACADOS */
-.destacados {
-  gap: 50px;
+
+.carousel {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-button {
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.carousel-button.prev {
+  margin-right: 10px;
+}
+
+.carousel-button.next {
+  margin-left: 10px;
+}
+
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
 }
 
 /* PRE FOOTER */

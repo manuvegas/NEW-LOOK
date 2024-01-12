@@ -90,13 +90,6 @@
   margin-bottom: 10px;
 }
 
-.tituloCarrito {
-  color: white;
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  margin: 0;
-}
 .cerrar {
   position: absolute;
   top: 0;
@@ -152,10 +145,6 @@
     height: 100%;
   }
 
-  .tituloCarrito {
-    font-size: 1.1rem;
-  }
-
   .CarritoVacio {
     font-size: 11px;
   }
@@ -165,10 +154,6 @@
   .modalCarrito {
     width: 50vw;
     height: 100%;
-  }
-
-  .tituloCarrito {
-    font-size: 1.8rem;
   }
 
   .CarritoVacio {
@@ -182,10 +167,6 @@
     height: 100%;
   }
 
-  .tituloCarrito {
-    font-size: 1.8rem;
-  }
-
   .CarritoVacio {
     font-size: 1.5rem;
   }
@@ -194,10 +175,6 @@
   .modalCarrito {
     width: 35vw;
     height: 100%;
-  }
-
-  .tituloCarrito {
-    font-size: 2rem;
   }
 
   .CarritoVacio {

@@ -1,5 +1,6 @@
-import React from "react";
+import {React,useState} from "react";
 import ListCard from "../ListCards/ListCard";
+import Carrusel from "./Carrusel";
 import { v4 as uuidv4 } from "uuid";
 
 const destacados = [
@@ -96,9 +97,17 @@ const destacados = [
 ];
 
 const Destacados = () => {
-  return (
-    <nav className="destacados">
-      {destacados.map((item, index) => (
+  const cardsPerSlide = 4;
+  const totalSlides = Math.ceil(destacados.length / cardsPerSlide);
+  const [currentSlide, setCurrentSlide] = useState(1);
+
+  const renderSlides = () => {
+    const startIndex = (currentSlide - 1) * cardsPerSlide;
+    const endIndex = startIndex + cardsPerSlide;
+
+    return destacados
+      .slice(startIndex, endIndex)
+      .map((item, index) => (
         <ListCard
           id={item.id}
           titulo={item.titulo}
@@ -109,8 +118,27 @@ const Destacados = () => {
           precio={item.precio}
           key={index}
         />
-      ))}
-    </nav>
+      ));
+  };
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 1 ? totalSlides : prevSlide - 1
+    );
+  };
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === totalSlides ? 1 : prevSlide + 1
+    );
+  };
+
+  return (
+    <div className="destacados-carousel">
+      <Carrusel prevSlide={handlePrevSlide} nextSlide={handleNextSlide}>
+        {renderSlides()}
+      </Carrusel>
+    </div>
   );
 };
 

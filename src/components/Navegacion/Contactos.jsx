@@ -1,7 +1,16 @@
-import {React,useState} from 'react'
+import {React,useState,useEffect} from 'react'
 import "./Navegacion.css"
+import { useLocation } from "react-router-dom";
 
 function Contactos() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Desplázate al principio cada vez que la ruta cambie
+    window.scrollTo(0, 0);
+  }, [location.pathname]); // La dependencia es la ruta actual
+
+
   const [formData, setFormData] = useState({
     nombre: '',
     email: '',

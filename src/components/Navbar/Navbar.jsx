@@ -32,16 +32,16 @@ const AppNavbar = () => {
     setIsOpen((prevIsOpen) => !prevIsOpen);
   };
   return (
-    <nav className="navbar-tesla">
+    <nav className="navbar">
       <div className="divNavbar">
-        <h1 className="navbar-tesla__logo">NEW LOOK</h1>
+        <h1 className="navbarLogo">NEW LOOK</h1>
       </div>
 
       <div
         className={
           isOpen
-            ? "navbar-tesla__links open "
-            : "navbar-tesla__links hidden divNavbar"
+            ? "navbarLinks open "
+            : "navbarLinks hidden divNavbar"
         }
       >
         <ul>
@@ -49,8 +49,8 @@ const AppNavbar = () => {
             <Link to="/" onClick={handleLinkClick}>HOME</Link>
           </li>
           <li className="dropdown">
-            <a href="#model-3" className="dropbtn">
-              PRODUCTOS
+            <a href="#" className="dropbtn">
+              PRODUCTOS 
             </a>
             <div className="dropdown-content">
               <Link to="#" onClick={handleLinkClick}>REMERAS</Link>
@@ -73,7 +73,7 @@ const AppNavbar = () => {
             <Link to="/Contactos" onClick={handleLinkClick}>CONTACTOS</Link>
           </li>
           <li className="dropdown">
-            <a href="#model-3" className="dropbtn">
+            <a href="#" className="dropbtn">
               LOGIN
             </a>
             <div className="dropdown-content">
@@ -83,15 +83,15 @@ const AppNavbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navbar-tesla__cta divNavbar">
+      <div className="navbarCta divNavbar">
         <button className="iconos" onClick={openModal}>
-          <RiSearchLine size={20} />
+          <RiSearchLine className="icono" size={20} />
         </button>
         <button className="iconos" onClick={openCanvas}>
-          <IoCartSharp size={20} />
+          <IoCartSharp className="icono"  size={20} />
         </button>
         <button className="navbar-toggle" onClick={toggleMenu}>
-          <FiAlignJustify size={20} />
+          <FiAlignJustify className="icono" size={20} />
         </button>
       </div>
       {showModal && <ModalSearch closeModal={closeModal} />}

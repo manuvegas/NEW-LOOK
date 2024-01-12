@@ -1,4 +1,4 @@
-.navbar-tesla {
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,38 +13,37 @@
   height: 80px; /* Ajusta la altura según sea necesario */
 }
 
-
-.navbar-tesla__logo {
+.navbarLogo {
   font-size: 1.5rem;
   font-weight: 800;
   font-family: Georgia, "Times New Roman", Times, serif;
-  margin: 0; /* Ajustar el margen para centrar verticalmente */
+  margin: 0;
 }
 
-.navbar-tesla__links ul {
+.navbarLinks ul {
   display: flex;
   list-style: none;
-  margin: 0; /* Ajustar el margen para centrar verticalmente */
-  padding: 0; /* Eliminar el relleno predeterminado */
+  margin: 0;
+  padding: 0;
 }
 
-.navbar-tesla__links ul li a {
+.navbarLinks ul li a {
   text-decoration: none;
   color: white;
 }
 
-.navbar-tesla__cta a {
+.navbarCta a {
   text-decoration: none;
   color: white;
   margin-left: 60px;
 }
 
-.navbar-tesla__links ul li.dropdown {
+.navbarLinks ul li.dropdown {
   position: relative;
 }
 
 /* Estilos del menú desplegable */
-.navbar-tesla__links ul li.dropdown .dropdown-content {
+.navbarLinks ul li.dropdown .dropdown-content {
   display: none;
   position: absolute;
   background-color: #333;
@@ -60,18 +59,18 @@
   border: 0;
   color: white;
 }
-.iconos{
+.iconos {
   margin-left: 20px;
   background-color: #1e1e1e;
   border: 0;
   color: white;
 }
 
-.navbar-tesla__links ul li.dropdown:hover .dropdown-content {
+.navbarLinks ul li.dropdown:hover .dropdown-content {
   display: block;
 }
 
-.navbar-tesla__links ul li.dropdown .dropdown-content a {
+.navbarLinks ul li.dropdown .dropdown-content a {
   display: block;
   color: white;
   text-decoration: none;
@@ -79,26 +78,30 @@
 }
 
 @media (max-width: 576px) {
-  .navbar-tesla__logo {
-    font-size: 1.1rem;
+  .navbar {
+    display: flex;
+    
+    align-items: center;
+  }
+  .navbarLogo {
+    font-size: 1.2rem;
   }
 }
 
 @media (min-width: 576px) {
-  .navbar-tesla__logo {
+  .navbarLogo {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 767px) {
-  .navbar-tesla__cta {
+  .navbarCta { 
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
   }
 
-  .navbar-tesla__links {
+  .navbarLinks {
     display: none;
     position: absolute;
     top: 100%;
@@ -111,11 +114,11 @@
     padding: 10px;
   }
 
-  .navbar-tesla__links.open {
+  .navbarLinks.open {
     display: block;
   }
 
-  .navbar-tesla__links ul {
+  .navbarLinks ul {
     padding: 15px 0;
     margin: 0;
     display: flex;
@@ -123,28 +126,56 @@
     align-items: center; /* Centra los elementos horizontalmente */
   }
 
-  .navbar-tesla__links ul li {
+  .navbarLinks ul li {
     margin-bottom: 10px;
     width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
   }
 }
 
 @media (min-width: 768px) {
+  .navbar{
+    display: flex;
+  }
   .navbar-toggle {
     display: none; /* Oculta el botón de hamburguesa en pantallas más grandes */
   }
 
-  .navbar-tesla__links ul {
+  .navbarLinks ul {
     display: flex; /* Muestra los elementos del menú horizontalmente en pantallas más grandes */
     list-style: none;
     padding: 0;
   }
 
-  .navbar-tesla__links ul li {
+  .navbarLinks ul li {
+    font-size: 14px;
+    margin: 0 8px;
+  }
+
+  .navbarLogo {
+    font-size: 1.2rem;
+  }
+
+}
+@media (min-width: 992px) {
+  .navbarLinks ul li {
+    font-size: 14.5px;
     margin: 0 15px;
   }
 
-  .navbar-tesla__logo {
+  .navbarLogo {
     font-size: 1.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .navbarLinks ul li {
+    font-size: 16px;
+    margin: 0 15px;
+  }
+  .navbarLinks ul{
+    margin-right: 3.1rem;
+  }
+
+  .navbarLogo {
+    font-size: 1.6rem;
   }
 }

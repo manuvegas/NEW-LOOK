@@ -6,7 +6,6 @@ const ModalCarrito = ({ closeCanvas }) => {
     <div className="modalCarrito">
       <div className="canvas-content">
         <div className="divCarrito">
-          <h2 className="tituloCarrito">CARRITO DE COMPRAS</h2>
           <button className="cerrarCarrito">
             <IoCloseOutline className="cerrar" size={45} onClick={closeCanvas} />
           </button>

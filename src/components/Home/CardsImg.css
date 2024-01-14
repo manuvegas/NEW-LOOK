@@ -90,35 +90,7 @@
   justify-content: center;
   align-items: center;
 }
-/* DESTACADOS */
 
-.carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  overflow: hidden;
-}
-
-.carousel-button {
-  font-size: 1.5rem;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.carousel-button.prev {
-  margin-right: 10px;
-}
-
-.carousel-button.next {
-  margin-left: 10px;
-}
-
-.carousel-content {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
 
 /* PRE FOOTER */
 .instagram {
@@ -209,6 +181,7 @@
 }
 
 @media (min-width: 576px) {
+  
   .titulosFooter{
     margin: 1.5rem;
   }
@@ -225,6 +198,7 @@
 }
 
 @media (min-width: 768px) {
+  
   .carruselInicio {
     display: flex;
     gap: 10px;

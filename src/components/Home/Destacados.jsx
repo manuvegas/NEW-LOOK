@@ -1,7 +1,7 @@
 import {React,useState} from "react";
-import ListCard from "../ListCards/ListCard";
 import Carrusel from "./Carrusel";
 import { v4 as uuidv4 } from "uuid";
+import ListDestacados from "./ListDestacados";
 
 const destacados = [
   {
@@ -94,10 +94,28 @@ const destacados = [
     precio: 20000,
     cuotas: "",
   },
+  {
+    id: uuidv4(),
+    img: "/mochilas/back3.jpeg",
+    titulo: "BACK 3",
+    off: "30",
+    antiguo: 40000,
+    precio: 20000,
+    cuotas: "",
+  },
+  {
+    id: uuidv4(),
+    img: "/gorras/gorra6.jpeg",
+    titulo: "GORRA 6",
+    off: "30",
+    antiguo: 40000,
+    precio: 20000,
+    cuotas: "",
+  }
 ];
 
 const Destacados = () => {
-  const cardsPerSlide = 4;
+  const cardsPerSlide = 3;
   const totalSlides = Math.ceil(destacados.length / cardsPerSlide);
   const [currentSlide, setCurrentSlide] = useState(1);
 
@@ -107,8 +125,8 @@ const Destacados = () => {
 
     return destacados
       .slice(startIndex, endIndex)
-      .map((item, index) => (
-        <ListCard
+      .map((item, index) => (<div className="card-content-destacados">
+        <ListDestacados
           id={item.id}
           titulo={item.titulo}
           img={item.img}
@@ -117,7 +135,7 @@ const Destacados = () => {
           off={item.off}
           precio={item.precio}
           key={index}
-        />
+        /></div>
       ));
   };
 

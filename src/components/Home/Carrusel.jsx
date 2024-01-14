@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardsImg.css"; // Asegúrate de tener la ruta correcta
+import "./Carrusel.css"; // Asegúrate de tener la ruta correcta
 
 const Carrusel = ({ prevSlide, nextSlide, children }) => {
   return (

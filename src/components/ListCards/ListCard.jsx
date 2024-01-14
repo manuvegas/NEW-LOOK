@@ -5,7 +5,7 @@ import { FaTruck } from "react-icons/fa";
 const ListCard = ({ precio, titulo, img, off, antiguo }) => {
   return (
     <div className="card">
-      <a href="#product-link" className="product-image-link">
+      <a href="" className="product-image-link">
         <div className="image-container">
           <img src={img} alt={titulo} className="product-image" />
           <span className="free-shipping-bottom-inside">ENVIOS GRATIS <FaTruck  size={12}/> </span>

@@ -3,6 +3,7 @@ import "./Carrusel.css"; // Asegúrate de tener la ruta correcta
 
 const Carrusel = ({ prevSlide, nextSlide, children }) => {
   return (
+    
     <div className="carousel">
       <button className="carousel-button prev" onClick={prevSlide}>
         &lt;

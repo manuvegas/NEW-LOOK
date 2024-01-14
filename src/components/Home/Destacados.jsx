@@ -1,4 +1,4 @@
-import {React,useState} from "react";
+import {React,useState,useEffect} from "react";
 import Carrusel from "./Carrusel";
 import { v4 as uuidv4 } from "uuid";
 import ListDestacados from "./ListDestacados";
@@ -115,7 +115,7 @@ const destacados = [
 ];
 
 const Destacados = () => {
-  const cardsPerSlide = 3;
+  const [cardsPerSlide, setCardsPerSlide] = useState(3);
   const totalSlides = Math.ceil(destacados.length / cardsPerSlide);
   const [currentSlide, setCurrentSlide] = useState(1);
 
@@ -125,17 +125,18 @@ const Destacados = () => {
 
     return destacados
       .slice(startIndex, endIndex)
-      .map((item, index) => (<div className="card-content-destacados">
-        <ListDestacados
-          id={item.id}
-          titulo={item.titulo}
-          img={item.img}
-          antiguo={item.antiguo}
-          cuotas={item.cuotas}
-          off={item.off}
-          precio={item.precio}
-          key={index}
-        /></div>
+      .map((item, index) => (
+        <div className="card-content-destacados" key={index}>
+          <ListDestacados
+            id={item.id}
+            titulo={item.titulo}
+            img={item.img}
+            antiguo={item.antiguo}
+            cuotas={item.cuotas}
+            off={item.off}
+            precio={item.precio}
+          />
+        </div>
       ));
   };
 
@@ -150,6 +151,28 @@ const Destacados = () => {
       prevSlide === totalSlides ? 1 : prevSlide + 1
     );
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 576) {
+        setCardsPerSlide(1);
+      } else if (screenWidth < 768) {
+        setCardsPerSlide(2);
+      } else if (screenWidth < 1200) {
+        setCardsPerSlide(3);
+      } else {
+        setCardsPerSlide(4);
+      }
+    };
+    // Agrega un listener para manejar cambios en el tamaño de la ventana
+    window.addEventListener("resize", handleResize);
+
+    // Limpia el listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); // El segundo argumento del useEffect asegura que este efecto solo se ejecute una vez al montar el componente
 
   return (
     <div className="destacados-carousel">

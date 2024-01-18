@@ -11,7 +11,7 @@ const Home = () => {
       <main>
         <section>
           <div className="ofertas">
-            <img className="ofertasImg" src="ofertas.png" alt="OFERTAS" />
+            <img className="ofertasImg" src="./img(principales)/oferta1.png" alt="OFERTAS" />
           </div>
         </section>
         <section>

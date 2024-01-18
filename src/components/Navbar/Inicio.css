@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #1e1e1e;
+  background-color:#0c0c0c;
   color: white;
   position: fixed;
   top: 0;
@@ -46,7 +46,7 @@
 .navbarLinks ul li.dropdown .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #333;
+  background-color:#0c0c0c;
   padding: 10px;
   top: 100%;
   left: 0;
@@ -55,13 +55,13 @@
 
 .navbar-toggle {
   margin-left: 20px;
-  background-color: #1e1e1e;
+  background-color:#0c0c0c;
   border: 0;
   color: white;
 }
 .iconos {
   margin-left: 20px;
-  background-color: #1e1e1e;
+  background-color:#0c0c0c;
   border: 0;
   color: white;
 }
@@ -109,7 +109,7 @@
     width: 50vw;
     height: 100vh;
     color: white;
-    background-color: #1e1e1e;
+    background-color:#0c0c0c;
     text-align: center;
     padding: 10px;
   }

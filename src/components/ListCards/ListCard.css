@@ -1,9 +1,8 @@
-.navCard{
+.navCard {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   margin-top: 7rem;
 }
 
@@ -14,8 +13,10 @@
   border-radius: 1px;
   overflow: hidden;
   text-align: center;
-  background-color:#0c0c0c;
+  background-color: #0c0c0c;
   margin: 20px;
+  height: 100%; /* Ajusta la altura al 100% del contenedor principal */
+  max-height: 650px;
 }
 
 .product-image-link {
@@ -29,7 +30,8 @@
 
 .product-image {
   width: 100%;
-  height: 26rem;
+  height: 26rem; /* Ajusta la altura de la imagen al 100% del contenedor */
+  object-fit: cover; /* Ajusta el comportamiento de la imagen */
 }
 
 .free-shipping-top-right {
@@ -50,9 +52,9 @@
   right: 50px;
   text-align: center;
   background-color: rgba(26, 26, 26, 0.735);
-  padding: 7px ;
+  padding: 7px;
   color: white;
-  font-size: 14px; 
+  font-size: 14px;
 }
 
 .card-body {
@@ -70,19 +72,19 @@
 
 .product-price {
   font-weight: bold;
-  text-decoration:line-through;
+  text-decoration: line-through;
   display: inline;
   color: white;
 }
 .price-divider {
   position: relative;
-  text-decoration:line-through;
+  text-decoration: line-through;
   display: inline-block;
   margin: 0 15px;
 }
 
 .price-divider::after {
-  content: '|'; /* Cambio del contenido */
+  content: "|"; /* Cambio del contenido */
   position: absolute;
   top: 50%;
   transform: translateY(-80%);
@@ -120,9 +122,114 @@
   background-color: #151515;
 }
 
+/* PARTE DE FILTROS */
 
-@media (min-width: 768px){
-  .card{
-    width: 315px;
+.containerPrincipal {
+  display: flex;
+}
+.contenedor {
+  min-width: 280px;
+}
+.filtros {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contenedorFiltros {
+  width: 300px; /* Ajusta el ancho según tu preferencia */
+  margin-top: 20px; /* Ajusta la distancia desde la parte superior según tu diseño */
+  padding: 16px;
+  border-right: 1px solid #ffffff;
+  position: sticky;
+  top: 20px; /* Ajusta la distancia desde la parte superior según tu diseño */
+  height: 1000px; /* Ajusta según sea necesario */
+}
+
+.filtroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.filtroButton {
+  display: block;
+  width: 80%;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.filtroButton:hover {
+  border: 1px solid #333;
+  transform: translateY(-5px);
+}
+
+.filtroButtonSelected {
+  display: block;
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border: 1px solid #333;
+  text-align: center;
+  cursor: pointer;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.filtroButtonSelected:hover {
+  border: 1px solid #000000;
+  transform: translateY(-5px);
+}
+
+.divErrorFiltro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150vh;
+  height: 100vh;
+}
+.errorFiltro {
+  background-color: #0a0a0a;
+  padding: 30px;
+  text-align: center;
+}
+
+.ordenarPor{
+  padding: 10px;
+  border: 1px solid #bcbcbc;
+  cursor: pointer;
+  transition: border 0.3s ease, transform 0.3s ease;
+}
+
+.ordenarPor:hover {
+  border: 1px solid #333;
+  transform: translateY(-5px);
+}
+
+.opcionesOrdenarPor{
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+@media (min-width: 768px) {
+  .card {
+    width: 320px;
   }
 }

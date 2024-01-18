@@ -7,42 +7,42 @@ const principales = [
   {
     id: uuidv4(),
     titulo: "REMERAS",
-    img: "air jordan.jpeg",
+    img: "./img(remeras)/remera2.jpeg",
   },
   {
     id: uuidv4(),
     titulo: "BUZOS",
-    img: "jordan overside.jpeg",
+    img: "./img(buzos)/buzo4.jpeg",
   },
   {
     id: uuidv4(),
     titulo: "JOGGINS",
-    img: "classic nike.jpeg",
+    img: "./img(joggins)/joggin6.jpeg",
   },
   {
     id: uuidv4(),
     titulo: "BERMUDAS",
-    img: "bermuda.jpeg",
+    img: "./bermudas/bermuda2.jpeg",
   },
   {
     id: uuidv4(),
     titulo: "ZAPAS",
-    img: "retro.jpeg",
+    img: "./zapas/zapa13.jpeg",
   },
   {
     id: uuidv4(),
     titulo: "CARGOS",
-    img: "cargo.jpeg",
+    img: "./cargos/cargo5.jpeg",
   },
   {
     id: uuidv4(),
     titulo: "BACKPACKS",
-    img: "mochila.jpeg",
+    img: "./mochilas/back2.jpeg",
   },
   {
     id: uuidv4(),
     titulo: "GORRAS",
-    img: "gorra.jpeg",
+    img: "./gorras/gorra2.jpeg",
   },
 ];
 

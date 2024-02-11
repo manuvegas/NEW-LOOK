@@ -1,0 +1,49 @@
+/* DATA */
+.carruselInicio {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: rgb(253, 253, 253);
+  display: flex;
+  gap: 5px;
+  font-size: 1rem;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divData {
+  width: 21rem;
+}
+
+@media (max-width: 576px) {
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  .carruselInicio {
+    display: flex;
+    gap: 10px;
+  }
+
+  .divData {
+    width: 240px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 992px) {
+  .divData {
+    width: 290px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .divData {
+    width: 330px;
+    font-size: 16px;
+  }
+}

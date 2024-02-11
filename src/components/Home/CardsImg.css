@@ -1,28 +1,33 @@
+.divCard {
+  display: flex;
+  justify-content: center;
+}
+
 .btnCard {
   position: relative;
   overflow: hidden;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
 }
 
 .linkCard {
-  margin-top: 3rem;
   gap: 20px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
+  margin: 3rem auto;
+  max-width: 1400px;
 }
 
 .imgCard {
-  width: 320px; /* Ajusta el ancho al 100% */
-  height: 500px; /* Ajusta la altura fija */
+  width: 100%; /* Ancho al 100% del contenedor */
+  max-width: 410px; /* Máximo ancho de la imagen */
+  height: 500px; /* Altura automática para mantener la proporción */
   object-fit: cover; /* Mantiene la proporción y recorta la imagen si es necesario */
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   opacity: 0.5;
   position: relative;
+  display: block;
 }
 
 .btnCard:hover .imgCard {
@@ -45,31 +50,20 @@
   transform: translate(-50%, -50%);
 }
 
-/* DATA */
-.carruselInicio {
-  margin-top: 3rem;
-  color: rgb(253, 253, 253);
-  display: flex;
-  gap: 5px;
-  font-size: 1rem;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.divData {
-  width: 21rem;
-}
-
 /* INFO MINIMA */
+.span-container {
+  display: flex;
+  justify-content: center;
+}
+
 .divSpan {
-  background-color: rgba(18, 18, 18, 0.842);
+  background-color: rgba(10, 10, 10, 0.841);
   padding: 20px 40px;
   text-align: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  border-radius: 10px;
+  display: inline-block;
 }
+
 .tituloSpan {
   font-size: 2rem;
 }
@@ -85,83 +79,16 @@
 }
 /* IMAGEN DE OFERTAS */
 .ofertas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 7rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-/* PRE FOOTER */
-.instagram {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* FOOTER */
-.footer {
-  background-color: rgb(10, 10, 10);
-  font-size: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 2rem;
-  position: sticky;
-  bottom: 0;
-  width: 100%;
-}
-.titulosFooter {
-  font-weight: 800;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1.6rem;
-}
-
-.metodos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.datoFooter1 {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  flex-wrap: nowrap;
-}
-
-.datoFooter2 {
-  display: flex;
-  font-size: 1rem;
-  flex-direction: column;
-  text-align: left;
-  gap: 10px;
-  flex-wrap: nowrap;
 }
 
 @media (max-width: 576px) {
-  .titulosFooter {
-    font-size: 1.5rem;
-    margin: 1.5rem;
+  .imgCard {
+    max-width: 100%;
   }
-  .datoFooter2 {
-    font-size: 1.1rem;
-    text-align: center;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-  }
-  .divCard {
-    width: 320px;
-    display: flex;
-    justify-content: center;
-  }
-
   .tituloSpan {
     font-size: 1.3rem;
   }
@@ -173,66 +100,32 @@
     font-size: 2rem;
   }
   .imgCard {
-    width: 350px;
+    width: 380px;
   }
   .ofertasImg {
-    width: 98%;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 576px) {
-  
-  .titulosFooter{
-    margin: 1.5rem;
+  .imgCard {
+    width: 380px;
   }
-  .footer {
-    display: flex;
-    flex-direction: column;
-  }
-  .datoFooter2{
-    text-align: center;
+
+  .titulos {
+    font-size: 2rem;
   }
   .ofertasImg {
-    width: 98%;
+    width: 90%;
   }
 }
 
 @media (min-width: 768px) {
-  
-  .carruselInicio {
-    display: flex;
-    gap: 10px;
-  }
-
-  .divData {
-    width: 240px;
-    font-size: 12px;
-  }
-  .footer {
-    display: flex;
-    flex-direction: row;
-  }
-  .datoFooter2 {
-    width: 35vw;
-  }
-  .navbar-toggle {
-    display: none; /* Oculta el botón de hamburguesa en pantallas más grandes */
-  }
   .tituloSpan {
     font-size: 1.6rem;
   }
   .span {
     font-size: 19px;
-  }
-
-  .navbar-tesla__links ul {
-    display: flex; /* Muestra los elementos del menú horizontalmente en pantallas más grandes */
-    list-style: none;
-    padding: 0;
-  }
-
-  .navbar-tesla__links ul li {
-    margin: 0 15px;
   }
 
   .ofertasImg {
@@ -241,18 +134,13 @@
 }
 
 @media (min-width: 992px) {
-  .divData {
-    width: 290px;
-    font-size: 14px;
+  .tituloSpan {
+    font-size: 1.8rem;
+  }
+  .span {
+    font-size: 21px;
   }
 
-  .footer {
-    display: flex;
-    flex-direction: row;
-  }
-  .datoFooter2 {
-    width: 30vw;
-  }
   .ofertasImg {
     width: 98%;
   }
@@ -263,20 +151,22 @@
     width: 100%;
   }
 
-  .divData {
-    width: 330px;
-    font-size: 15px;
-  }
+  
   .btnCard {
     width: 410px;
   }
 
-  .footer {
-    display: flex;
-    flex-direction: row;
+  .ofertasImg {
+    width: 67%;
   }
 
-  .ofertasImg {
-    width: 90%;
+  .titulos {
+    font-size: 3rem;
+  }
+  .tituloSpan {
+    font-size: 1.9rem;
+  }
+  .span {
+    font-size: 23px;
   }
 }

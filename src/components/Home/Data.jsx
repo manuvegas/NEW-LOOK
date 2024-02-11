@@ -1,6 +1,7 @@
 import { FaTruck } from "react-icons/fa";
 import { CiCreditCard1 } from "react-icons/ci";
 import { BsBank2 } from "react-icons/bs";
+import "./Data.css"
 
 const Data = () => {
   return (
@@ -14,9 +15,7 @@ const Data = () => {
             <div className="divData">
               <p>ENVIOS GRATIS A TODO EL PAIS</p>
               <span>
-                Enviamos por correo a todo el pais y dentro de CABA/GBA
-                trabajamos con moto mensajería abonas al recibir tu producto
-                Dentro de Caba y GBA
+              PARA COMPRAS SUPERIORES A $60.000!
               </span>
             </div>
           </div>
@@ -30,9 +29,7 @@ const Data = () => {
             <div className="divData">
               <p>3 CUOTAS SIN INTERES</p>
               <span>
-                TODOS LOS MEDIOS DE PAGO 3 CUOTAS SIN INTERES! 20% DE DESCUENTO
-                SI ABONAS POR TRANSFERENCIA (El descuento aplica al finalizar la
-                compra)
+                TODOS LOS MEDIOS DE PAGO 3 CUOTAS SIN INTERES!
               </span>
             </div>
           </div>

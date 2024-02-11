@@ -34,16 +34,6 @@ const principales = [
     titulo: "CARGOS",
     img: "./cargos/cargo5.jpeg",
   },
-  {
-    id: uuidv4(),
-    titulo: "BACKPACKS",
-    img: "./mochilas/back2.jpeg",
-  },
-  {
-    id: uuidv4(),
-    titulo: "GORRAS",
-    img: "./gorras/gorra2.jpeg",
-  },
 ];
 
 const ListPrincipales = () => {

@@ -6,8 +6,6 @@ import ListCard from "./ListCards/ListCard";
 import ListRemeras from "./ListCards/ListRemeras";
 import Home from "./Home/Home";
 import ListBuzo from "./ListCards/ListBuzos";
-import ListGorras from "./ListCards/ListGorras";
-import ListBackpacks from "./ListCards/ListBackpacks";
 import ListJoggins from "./ListCards/ListJoggins";
 import ListBermudas from "./ListCards/ListBermudas";
 import ListZapas from "./ListCards/ListZapas";
@@ -16,7 +14,9 @@ import Cambios from "./Navegacion/Cambios"
 import Informacion from "./Navegacion/Informacion"
 import Contactos from "./Navegacion/Contactos"
 import Footer from "./Home/Footer";
+import Whatsapp from "./whatsapp/Whatsapp";
 
 
 
-export { AppNavbar,Footer, ListPrincipales, Data, ListCard, ListRemeras, Home, ListBuzo, ListGorras, ListBackpacks, ListJoggins, ListBermudas, ListZapas, ListCargos,Cambios,Contactos,Informacion }
+
+export { AppNavbar,Whatsapp, Footer, ListPrincipales, Data, ListCard, ListRemeras, Home, ListBuzo, ListJoggins, ListBermudas, ListZapas, ListCargos, Cambios, Contactos, Informacion }

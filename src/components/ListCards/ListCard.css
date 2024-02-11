@@ -140,11 +140,14 @@
   border-radius: 5px;
 }
 
+.tituloFiltros{
+  margin-bottom: 20px;
+}
 .contenedorFiltros {
   width: 300px; /* Ajusta el ancho según tu preferencia */
   margin-top: 20px; /* Ajusta la distancia desde la parte superior según tu diseño */
   padding: 16px;
-  border-right: 1px solid #ffffff;
+  
   position: sticky;
   top: 20px; /* Ajusta la distancia desde la parte superior según tu diseño */
   height: 1000px; /* Ajusta según sea necesario */
@@ -164,14 +167,16 @@
   text-align: center;
   padding: 8px;
   margin-bottom: 8px;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
+  color: white;
+  background-color: #1b1b1b;
+  border: 1px solid #1b1b1b;
   cursor: pointer;
   transition: border 0.3s ease, transform 0.3s ease;
 }
 
 .filtroButton:hover {
   border: 1px solid #333;
+  color: white;
   transform: translateY(-5px);
 }
 
@@ -180,7 +185,8 @@
   width: 80%;
   padding: 8px;
   margin-bottom: 8px;
-  background-color: #ffffff;
+  color: white;
+  background-color: #1b1b1b;
   border: 1px solid #333;
   text-align: center;
   cursor: pointer;
@@ -188,7 +194,8 @@
 }
 
 .filtroButtonSelected:hover {
-  border: 1px solid #000000;
+  border: 1px solid #333;
+  color: white;
   transform: translateY(-5px);
 }
 
@@ -205,9 +212,18 @@
   text-align: center;
 }
 
+.inputPrice{
+  width: 80%;
+  height: 35px;
+  background-color: #1b1b1b;
+  border: #333;
+  color: white;
+}
+
 .ordenarPor{
   padding: 10px;
-  border: 1px solid #bcbcbc;
+  border: 1px solid #333;
+  background-color: #1b1b1b;
   cursor: pointer;
   transition: border 0.3s ease, transform 0.3s ease;
 }
@@ -226,7 +242,14 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-
+/* CIRCULO DE COLORES */
+.colorCircle {
+  width: 20px;
+  height: 20px;
+  border-radius:50%;
+  display: inline-block;
+  margin-right: 10px;
+}
 
 @media (min-width: 768px) {
   .card {

@@ -13,6 +13,7 @@
   height: 80px; /* Ajusta la altura según sea necesario */
 }
 
+
 .navbarLogo {
   font-size: 1.5rem;
   font-weight: 800;
@@ -25,6 +26,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.navbarLinks ul li {
+  transition: transform 0.2s ease-in-out; /* Agrega una transición suave al efecto */
+  backface-visibility: hidden; 
+}
+
+.navbarLinks ul li:hover {
+  transform: translateY(-5px); /* Levanta el elemento 3 píxeles al pasar el ratón por encima */
 }
 
 .navbarLinks ul li a {

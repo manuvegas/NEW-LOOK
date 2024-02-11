@@ -1,160 +1,156 @@
-import React,{ useEffect }  from "react";
-import ListCard from "./ListCard";
+import React from "react";
 import { v4 as uuidv4 } from "uuid";
-import { useLocation } from "react-router-dom";
+import CardCompleta from "./CardCompleta";
 
-const bermudas=[
+const bermudas = [
   {
     id: uuidv4(),
     img: "/bermudas/bermuda1.jpeg",
     titulo: "BERMUDA 1",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BLACK",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda2.jpeg",
     titulo: "BERMUDA 2",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BLACK",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda3.jpeg",
     titulo: "BERMUDA 3",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BLACK",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda4.jpeg",
     titulo: "BERMUDA 4",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BLACK",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda5.jpeg",
     titulo: "BERMUDA 5",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BLACK",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda6.jpeg",
     titulo: "BERMUDA 6",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BLACK",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda7.jpeg",
     titulo: "BERMUDA 7",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "WHITE",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda8.jpeg",
     titulo: "BERMUDA 8",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BEIGE",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda9.jpeg",
     titulo: "BERMUDA 9",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BLACK",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda10.jpeg",
     titulo: "BERMUDA 10",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BLACK",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda11.jpeg",
     titulo: "BERMUDA 11",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BLACK",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda12.jpeg",
     titulo: "BERMUDA 12",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BLACK",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda13.jpeg",
     titulo: "BERMUDA 13",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "BLACK",
   },
   {
     id: uuidv4(),
     img: "/bermudas/bermuda14.jpeg",
     titulo: "BERMUDA 14",
-    off: "30",
+    off: 30,
     antiguo: 40000,
     precio: 20000,
     cuotas: "",
+    color: "WHITE",
   },
-]
+];
 
 const ListBermudas = () => {
-  const location = useLocation();
+  bermudas.forEach((bermuda) => {
+    bermuda.precio = bermuda.antiguo - (bermuda.antiguo * bermuda.off) / 100;
+  });
 
-  useEffect(() => {
-    // Desplázate al principio cada vez que la ruta cambie
-    window.scrollTo(0, 0);
-  }, [location.pathname]); // La dependencia es la ruta actual
-  return (
-    <nav className="navCard">
-      {bermudas.map((item, index) => (
-        <ListCard
-          id={item.id}
-          titulo={item.titulo}
-          img={item.img}
-          antiguo={item.antiguo}
-          cuotas={item.cuotas}
-          off={item.off}
-          precio={item.precio}
-          key={index}
-        />
-      ))}
-    </nav>
-  )
-}
+  return <CardCompleta data={bermudas} defaultSortBy="default" />;
+};
 
-export default ListBermudas
+export default ListBermudas;

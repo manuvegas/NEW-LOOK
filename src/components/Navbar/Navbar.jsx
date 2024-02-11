@@ -39,46 +39,72 @@ const AppNavbar = () => {
 
       <div
         className={
-          isOpen
-            ? "navbarLinks open "
-            : "navbarLinks hidden divNavbar"
+          isOpen ? "navbarLinks open " : "navbarLinks hidden divNavbar"
         }
       >
         <ul>
           <li>
-            <Link to="/" onClick={handleLinkClick}>HOME</Link>
+            <Link to="/" onClick={handleLinkClick}>
+              HOME
+            </Link>
           </li>
           <li className="dropdown">
             <a href="#" className="dropbtn">
-              PRODUCTOS 
+              PRODUCTOS
             </a>
             <div className="dropdown-content">
-              <Link to="#" onClick={handleLinkClick}>REMERAS</Link>
-              <Link to="#" onClick={handleLinkClick}>BUZOS</Link>
-              <Link to="#" onClick={handleLinkClick}>JOGGINS</Link>
-              <Link to="#" onClick={handleLinkClick}>BERMUDAS</Link>
-              <Link to="#" onClick={handleLinkClick}>ZAPAS</Link>
-              <Link to="#" onClick={handleLinkClick}>CARGOS</Link>
-              <Link to="#" onClick={handleLinkClick}>BACKPACKS</Link>
-              <Link to="#" onClick={handleLinkClick}>GORRAS</Link>
+              <Link to="#" onClick={handleLinkClick}>
+                REMERAS
+              </Link>
+              <Link to="#" onClick={handleLinkClick}>
+                BUZOS
+              </Link>
+              <Link to="#" onClick={handleLinkClick}>
+                JOGGINS
+              </Link>
+              <Link to="#" onClick={handleLinkClick}>
+                BERMUDAS
+              </Link>
+              <Link to="#" onClick={handleLinkClick}>
+                ZAPAS
+              </Link>
+              <Link to="#" onClick={handleLinkClick}>
+                CARGOS
+              </Link>
+              <Link to="#" onClick={handleLinkClick}>
+                BACKPACKS
+              </Link>
+              <Link to="#" onClick={handleLinkClick}>
+                GORRAS
+              </Link>
             </div>
           </li>
           <li>
-            <Link to="/Navegacion" onClick={handleLinkClick}>INFORMACION</Link>
+            <Link to="/Navegacion" onClick={handleLinkClick}>
+              INFORMACION
+            </Link>
           </li>
           <li>
-            <Link to="/Cambios" onClick={handleLinkClick}>CAMBIOS</Link>
+            <Link to="/Cambios" onClick={handleLinkClick}>
+              CAMBIOS
+            </Link>
           </li>
           <li>
-            <Link to="/Contactos" onClick={handleLinkClick}>CONTACTOS</Link>
+            <Link to="/Contactos" onClick={handleLinkClick}>
+              CONTACTOS
+            </Link>
           </li>
           <li className="dropdown">
             <a href="#" className="dropbtn">
               LOGIN
             </a>
             <div className="dropdown-content">
-              <Link to="#" onClick={handleLinkClick}>INICIAR SESION</Link>
-              <Link to="#" onClick={handleLinkClick}>REGISTRARSE</Link>
+              <Link to="#" onClick={handleLinkClick}>
+                INICIAR SESION
+              </Link>
+              <Link to="#" onClick={handleLinkClick}>
+                REGISTRARSE
+              </Link>
             </div>
           </li>
         </ul>
@@ -88,16 +114,14 @@ const AppNavbar = () => {
           <RiSearchLine className="icono" size={20} />
         </button>
         <button className="iconos" onClick={openCanvas}>
-          <IoCartSharp className="icono"  size={20} />
+          <IoCartSharp className="icono" size={20} />
         </button>
         <button className="navbar-toggle" onClick={toggleMenu}>
           <FiAlignJustify className="icono" size={20} />
         </button>
       </div>
       {showModal && <ModalSearch closeModal={closeModal} />}
-      {showOutsideCanvas && (
-        <ModalCarrito closeCanvas={closeCanvas} />
-      )}
+      {showOutsideCanvas && <ModalCarrito closeCanvas={closeCanvas} />}
     </nav>
   );
 };

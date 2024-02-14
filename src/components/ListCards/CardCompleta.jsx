@@ -94,7 +94,7 @@ const CardCompleta = ({ data, defaultSortBy }) => {
             <h3 className="tituloFiltros">PRECIO</h3>
             <label htmlFor="precioDesde">DESDE:</label>
             <input
-            className="inputPrice"
+              className="inputPrice"
               type="number"
               id="precioDesde"
               value={precioDesde}
@@ -102,7 +102,7 @@ const CardCompleta = ({ data, defaultSortBy }) => {
             />
             <label htmlFor="precioHasta">HASTA:</label>
             <input
-            className="inputPrice"
+              className="inputPrice"
               type="number"
               id="precioHasta"
               value={precioHasta}

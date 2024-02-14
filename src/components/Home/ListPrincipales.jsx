@@ -37,24 +37,14 @@ const principales = [
 ];
 
 const ListPrincipales = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    // Desplázate al principio cada vez que la ruta cambie
-    window.scrollTo(0, 0);
-  }, [location.pathname]); // La dependencia es la ruta actual
-
   return (
     <nav className="linkCard">
-      {principales.map((item) => (
+      {principales.map((item, index) => (
         <CardsImg
           id={item.id}
           titulo={item.titulo}
           img={item.img}
-          key={item.id}
-          routeTo={`/List${item.titulo.charAt(0).toUpperCase()}${item.titulo
-            .slice(1)
-            .toLowerCase()}`}
+          key={index}
         />
       ))}
     </nav>

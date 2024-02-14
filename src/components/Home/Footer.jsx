@@ -68,20 +68,19 @@ const Footer = () => {
       <div className="footer-content">
         <h3 className="footer-title">CONTACTANOS</h3>
         <div className="footer-content-contacts">
-          <p>
-            <FaPhoneAlt size={20} /> +54 11-4543-2960
+          <p className="footer-text">
+            <FaPhoneAlt size={20}/>+54 11-4543-2960
           </p>
-          <p>
-            <FaLocationDot size={20} />
+          <p className="footer-text">
+            <FaLocationDot size={20}/>
             Paraná 3745 Unicenter Shopping, B1640 Martínez
           </p>
-          <p>
-            <MdEmail size={20} />
-            NewLook@hotmail.com
+          <p className="footer-text">
+            <MdEmail size={20} />NewLook@hotmail.com
           </p>
         </div>
       </div>
-      
+
       <div className="footer-content">
         <h3 className="footer-title">ESTAMOS EN</h3>
         <iframe

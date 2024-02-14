@@ -34,7 +34,7 @@ const AppNavbar = () => {
   return (
     <nav className="navbar">
       <div className="divNavbar">
-        <h1 className="navbarLogo">NEW LOOK</h1>
+        <img src="../UI/newlook.ico" className="navbarLogo"></img>
       </div>
 
       <div

@@ -3,125 +3,101 @@ import React, { useState } from "react";
 import { RiSearchLine } from "react-icons/ri";
 import { FiAlignJustify } from "react-icons/fi";
 import { IoCartSharp } from "react-icons/io5";
+import { FaUser } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import ModalSearch from "./ModalSearch";
-import ModalCarrito from "./ModalCarrito";
+import OffCanvasSearch from "./OffCanvasSearch";
+import OffCanvasCarrito from "./OffCanvasCarrito";
+import OffCanvasProducts from "./OffCanvasProducts";
 
 const AppNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const [showOutsideCanvas, setShowOutsideCanvas] = useState(false);
+  const [showSearchCanvas, setShowSearchCanvas] = useState(false);
+  const [showCarritoCanvas, setShowCarritoCanvas] = useState(false);
+  const [showProductsCanvas, setShowProductsCanvas] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen((prevIsOpen) => !prevIsOpen);
   };
-  const openCanvas = () => {
-    setShowOutsideCanvas(true);
+
+  const openSearchCanvas = () => {
+    setShowSearchCanvas(true);
   };
-  const openModal = () => {
-    setShowModal(true);
+
+  const openCarritoCanvas = () => {
+    setShowCarritoCanvas(true);
   };
-  const closeModal = () => {
-    setShowModal(false);
+
+  const openProductsCanvas = () => {
+    setShowProductsCanvas(true);
   };
+
   const closeCanvas = () => {
-    setShowOutsideCanvas(false);
+    setShowSearchCanvas(false);
+    setShowCarritoCanvas(false);
+    setShowProductsCanvas(false);
   };
 
   const handleLinkClick = () => {
-    setIsOpen((prevIsOpen) => !prevIsOpen);
+    setIsOpen(false); // Cerrar el menú al hacer clic en un enlace
   };
+
   return (
     <nav className="navbar">
-      <div className="divNavbar">
-        <img src="../UI/newlook.ico" className="navbarLogo"></img>
+      <div className="logo-container">
+        <Link to="/">
+          <img src="../UI/Logo.png" alt="NewLook" className="logo" />
+        </Link>
       </div>
 
-      <div
-        className={
-          isOpen ? "navbarLinks open " : "navbarLinks hidden divNavbar"
-        }
-      >
-        <ul>
-          <li>
+      <div className={isOpen ? "navbarLinks open" : "navbarLinks"}>
+        <ul className="ul-navbar">
+          <li className="li-navbar">
             <Link to="/" onClick={handleLinkClick}>
               HOME
             </Link>
           </li>
-          <li className="dropdown">
-            <a href="#" className="dropbtn">
+          <li className="li-navbar">
+            <button className="btn-products" onClick={openProductsCanvas}>
               PRODUCTOS
-            </a>
-            <div className="dropdown-content">
-              <Link to="#" onClick={handleLinkClick}>
-                REMERAS
-              </Link>
-              <Link to="#" onClick={handleLinkClick}>
-                BUZOS
-              </Link>
-              <Link to="#" onClick={handleLinkClick}>
-                JOGGINS
-              </Link>
-              <Link to="#" onClick={handleLinkClick}>
-                BERMUDAS
-              </Link>
-              <Link to="#" onClick={handleLinkClick}>
-                ZAPAS
-              </Link>
-              <Link to="#" onClick={handleLinkClick}>
-                CARGOS
-              </Link>
-              <Link to="#" onClick={handleLinkClick}>
-                BACKPACKS
-              </Link>
-              <Link to="#" onClick={handleLinkClick}>
-                GORRAS
-              </Link>
-            </div>
+            </button>
           </li>
-          <li>
-            <Link to="/Navegacion" onClick={handleLinkClick}>
-              INFORMACION
-            </Link>
-          </li>
-          <li>
-            <Link to="/Cambios" onClick={handleLinkClick}>
-              CAMBIOS
-            </Link>
-          </li>
-          <li>
+          <li className="li-navbar">
             <Link to="/Contactos" onClick={handleLinkClick}>
               CONTACTOS
             </Link>
           </li>
-          <li className="dropdown">
-            <a href="#" className="dropbtn">
-              LOGIN
-            </a>
-            <div className="dropdown-content">
-              <Link to="#" onClick={handleLinkClick}>
-                INICIAR SESION
-              </Link>
-              <Link to="#" onClick={handleLinkClick}>
-                REGISTRARSE
-              </Link>
-            </div>
-          </li>
         </ul>
       </div>
-      <div className="navbarCta divNavbar">
-        <button className="iconos" onClick={openModal}>
-          <RiSearchLine className="icono" size={20} />
+
+      <div className="navbarCta">
+        <Link className="user-navbar">
+          <FaUser className="icono" size={22} />
+        </Link>
+        <button className="iconos" onClick={openSearchCanvas}>
+          <RiSearchLine className="icono" size={25} />
         </button>
-        <button className="iconos" onClick={openCanvas}>
-          <IoCartSharp className="icono" size={20} />
+        <button className="iconos" onClick={openCarritoCanvas}>
+          <IoCartSharp className="icono" size={25} />
         </button>
-        <button className="navbar-toggle" onClick={toggleMenu}>
-          <FiAlignJustify className="icono" size={20} />
+        <button className="iconos" onClick={toggleMenu}>
+          <FiAlignJustify className="icono" size={25} />
         </button>
       </div>
-      {showModal && <ModalSearch closeModal={closeModal} />}
-      {showOutsideCanvas && <ModalCarrito closeCanvas={closeCanvas} />}
+      {showSearchCanvas && (
+        <OffCanvasSearch isOpen={showSearchCanvas} closeCanvas={closeCanvas} />
+      )}
+      {showCarritoCanvas && (
+        <OffCanvasCarrito
+          isOpen={showCarritoCanvas}
+          closeCanvas={closeCanvas}
+        />
+      )}
+      {showProductsCanvas && (
+        <OffCanvasProducts
+          isOpen={showProductsCanvas}
+          closeCanvas={closeCanvas}
+        />
+      )}
     </nav>
   );
 };

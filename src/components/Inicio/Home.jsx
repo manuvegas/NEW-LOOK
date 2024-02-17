@@ -1,17 +1,12 @@
 import React from "react";
 import Data from "./Data";
 import ListPrincipales from "./ListPrincipales";
+import "./Home.css"
 
 const Home = () => {
   return (
     <>
       <main>
-        <div>
-          <div className="ofertas">
-            <img className="ofertasImg" src="./UI/oferta1.png" alt="OFERTAS" />
-          </div>
-        </div>
-
         <div>
           <h1 className="titulos">CATEGORIAS</h1>
           <ListPrincipales />

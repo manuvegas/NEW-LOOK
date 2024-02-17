@@ -5,11 +5,11 @@ import "./Data.css"
 
 const Data = () => {
   return (
-    <div className="container mt-4">
-      <div className="row">
-        <div className="col-md-4">
-          <div className="carruselInicio">
-            <div className="iconosCarrusel">
+    <div className="">
+      <div className="contenedor-data">
+        <div className="">
+          <div className="data">
+            <div className="">
               <FaTruck size={30} />
             </div>
             <div className="divData">
@@ -21,9 +21,9 @@ const Data = () => {
           </div>
         </div>
 
-        <div className="col-md-4">
-          <div className="carruselInicio">
-            <div className="iconosCarrusel">
+        <div className="">
+          <div className="data">
+            <div className="">
               <CiCreditCard1 size={30} />
             </div>
             <div className="divData">
@@ -35,9 +35,9 @@ const Data = () => {
           </div>
         </div>
 
-        <div className="col-md-4">
-          <div className="carruselInicio">
-            <div className="iconosCarrusel">
+        <div className="">
+          <div className="data">
+            <div className="">
               <BsBank2 size={30} />
             </div>
             <div className="divData">

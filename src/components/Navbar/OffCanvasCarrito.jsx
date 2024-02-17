@@ -1,9 +1,10 @@
 import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
+import "./OffCanvas.css"
 
-const ModalCarrito = ({ closeCanvas }) => {
+const OffCanvasCarrito = ({ closeCanvas,isOpen }) => {
   return (
-    <div className="modalCarrito">
+    <div className={`offcanvas ${isOpen ? "open" : ""}`} onClick={closeCanvas}>
       <div className="canvas-content">
         <div className="divCarrito">
           <button className="cerrarCarrito">
@@ -16,4 +17,4 @@ const ModalCarrito = ({ closeCanvas }) => {
   );
 };
 
-export default ModalCarrito;
+export default OffCanvasCarrito;

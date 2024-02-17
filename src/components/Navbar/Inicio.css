@@ -1,43 +1,33 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-  background-color:#0c0c0c;
+  justify-content: space-around;
+  background-color: rgb(3, 3, 3);
   color: white;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  height: 80px; /* Ajusta la altura según sea necesario */
+  height: 65px; /* Ajusta la altura según sea necesario */
 }
 
-
-.navbarLogo {
-  width: 40px;
-  height: 40px;
-}
-
-.navbarLinks ul {
+.ul-navbar {
   display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
-.navbarLinks ul li {
-  transition: transform 0.2s ease-in-out; /* Agrega una transición suave al efecto */
-  backface-visibility: hidden; 
-}
-
-.navbarLinks ul li:hover {
-  transform: translateY(-5px); /* Levanta el elemento 3 píxeles al pasar el ratón por encima */
-}
-
-.navbarLinks ul li a {
+.navbarLinks a {
   text-decoration: none;
   color: white;
+}
+
+.btn-products {
+  font-size: 1rem;
+  background-color: rgb(3, 3, 3);
+  color: white;
+  border: 0;
+  cursor: pointer;
 }
 
 .navbarCta a {
@@ -46,144 +36,63 @@
   margin-left: 60px;
 }
 
-.navbarLinks ul li.dropdown {
+.navbarLinks .dropdown {
   position: relative;
 }
 
+.logo {
+  width: 35px;
+  height: auto;
+}
+
 /* Estilos del menú desplegable */
-.navbarLinks ul li.dropdown .dropdown-content {
+.navbarLinks .dropdown {
   display: none;
   position: absolute;
-  background-color:#0c0c0c;
+  background-color: rgb(3, 3, 3);
   padding: 10px;
   top: 100%;
   left: 0;
   min-width: 120px;
 }
 
-.navbar-toggle {
-  margin-left: 20px;
-  background-color:#0c0c0c;
-  border: 0;
-  color: white;
-}
 .iconos {
   margin-left: 20px;
-  background-color:#0c0c0c;
+  background-color: rgb(3, 3, 3);
   border: 0;
+  cursor: pointer;
   color: white;
 }
 
-.navbarLinks ul li.dropdown:hover .dropdown-content {
-  display: block;
-}
 
-.navbarLinks ul li.dropdown .dropdown-content a {
-  display: block;
+.navbarLinks {
+  display: none;
+  position: fixed;
+  top: 65px;
+  right: 0;
+  width: 30vw;
+  height: 100vw;
   color: white;
-  text-decoration: none;
-  padding: 5px 10px;
+  background-color: rgb(3, 3, 3);
+  text-align: center;
+  padding: 10px;
+  z-index: 999;
 }
 
-@media (max-width: 576px) {
-  .navbar {
-    display: flex;
-    
-    align-items: center;
-  }
-  .navbarLogo {
-    font-size: 1.2rem;
-  }
+.navbarLinks.open {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (min-width: 576px) {
-  .navbarLogo {
-    font-size: 1.2rem;
-  }
+.navbarLinks ul {
+  padding: 15px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (max-width: 767px) {
-  .navbarCta { 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .navbarLinks {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 50vw;
-    height: 100vh;
-    color: white;
-    background-color:#0c0c0c;
-    text-align: center;
-    padding: 10px;
-  }
-
-  .navbarLinks.open {
-    display: block;
-  }
-
-  .navbarLinks ul {
-    padding: 15px 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Cambia la dirección de los elementos a una columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-  }
-
-  .navbarLinks ul li {
-    margin-bottom: 10px;
-    width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
-  }
-}
-
-@media (min-width: 768px) {
-  .navbar{
-    display: flex;
-  }
-  .navbar-toggle {
-    display: none; /* Oculta el botón de hamburguesa en pantallas más grandes */
-  }
-
-  .navbarLinks ul {
-    display: flex; /* Muestra los elementos del menú horizontalmente en pantallas más grandes */
-    list-style: none;
-    padding: 0;
-  }
-
-  .navbarLinks ul li {
-    font-size: 14px;
-    margin: 0 8px;
-  }
-
-  .navbarLogo {
-    font-size: 1.2rem;
-  }
-
-}
-@media (min-width: 992px) {
-  .navbarLinks ul li {
-    font-size: 14.5px;
-    margin: 0 15px;
-  }
-
-  .navbarLogo {
-    font-size: 1.4rem;
-  }
-}
-@media (min-width: 1200px) {
-  .navbarLinks ul li {
-    font-size: 16px;
-    margin: 0 15px;
-  }
-  .navbarLinks ul{
-    margin-right: 3.1rem;
-  }
-
-  .navbarLogo {
-    font-size: 1.6rem;
-  }
+.navbarLinks ul li {
+  margin-bottom: 10px;
+  width: 100%;
 }

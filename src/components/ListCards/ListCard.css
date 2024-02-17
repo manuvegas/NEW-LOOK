@@ -1,9 +1,12 @@
+
 .navCard {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 7rem;
+  align-items: center;
+  margin:1rem auto;
+  max-width: 1500px;
 }
 
 .card {
@@ -13,8 +16,8 @@
   border-radius: 1px;
   overflow: hidden;
   text-align: center;
-  background-color: #0c0c0c;
-  margin: 20px;
+  background-color: #080808;
+  margin: 5px;
   height: 100%; /* Ajusta la altura al 100% del contenedor principal */
   max-height: 650px;
 }
@@ -124,31 +127,25 @@
 
 /* PARTE DE FILTROS */
 
-.containerPrincipal {
-  display: flex;
-}
 .contenedor {
   min-width: 280px;
 }
+
 .filtros {
   text-align: center;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 2.5rem;
   font-weight: 800;
   padding: 10px;
   border-radius: 5px;
 }
 
-.tituloFiltros{
+.tituloFiltros {
   margin-bottom: 20px;
 }
+
 .contenedorFiltros {
   width: 300px; /* Ajusta el ancho según tu preferencia */
-  margin-top: 20px; /* Ajusta la distancia desde la parte superior según tu diseño */
-  padding: 16px;
-  position: sticky;
-  top: 20px; /* Ajusta la distancia desde la parte superior según tu diseño */
   height: 1000px; /* Ajusta según sea necesario */
 }
 
@@ -157,7 +154,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .filtroButton {
@@ -211,7 +208,7 @@
   text-align: center;
 }
 
-.inputPrice{
+.inputPrice {
   width: 80%;
   height: 35px;
   background-color: #1b1b1b;
@@ -219,7 +216,7 @@
   color: white;
 }
 
-.ordenarPor{
+.ordenarPor {
   padding: 10px;
   border: 1px solid #333;
   background-color: #1b1b1b;
@@ -232,7 +229,7 @@
   transform: translateY(-5px);
 }
 
-.opcionesOrdenarPor{
+.opcionesOrdenarPor {
   padding: 10px;
   margin-bottom: 8px;
   background-color: #ffffff;
@@ -245,13 +242,71 @@
 .colorCircle {
   width: 20px;
   height: 20px;
-  border-radius:50%;
+  border-radius: 50%;
   display: inline-block;
   margin-right: 10px;
 }
 
-@media (min-width: 768px) {
-  .card {
-    width: 320px;
-  }
+
+.filtros-toggle {
+  display: block;
+  background-color: rgb(11, 11, 11);
+  color: white;
+  border: 0;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+/* Estilos de la parte superior de las cards*/
+
+.container-section-filtros{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 6rem;
+}
+.titulo-cards{
+  font-size: 1.5rem;
+  font-weight: 800;
+
+}
+
+/* Estilos del botón de filtros */
+
+
+/*OFFCANVAS FILTROS */
+.offcanvas-filtros {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100vh;
+  background-color: rgb(3, 3, 3);
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+}
+
+.offcanvas-filtros.open {
+  transform: translateX(0);
+}
+
+.offcanvas-content-filtros {
+  padding: 20px; 
+}
+
+.offcanvas-overlay-filtros {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.offcanvas-overlay-filtros.open {
+  display: block;
 }

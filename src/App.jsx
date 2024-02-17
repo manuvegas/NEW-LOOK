@@ -3,13 +3,11 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   AppNavbar,
-  Cambios,
   Contactos,
   Footer,
-  Home,
-  Informacion,
+  Inicio,
   CardMap,
-  Whatsapp,
+  Whatsapp
 } from "./components";
 
 function App() {
@@ -21,10 +19,8 @@ function App() {
             <AppNavbar />
           </header>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Inicio/>} />
             <Route path="/Contactos" element={<Contactos />} />
-            <Route path="/Navegacion" element={<Informacion />} />
-            <Route path="/Cambios" element={<Cambios />} />
             <Route path="/CardMap/:titulo" element={<CardMap />} />
           </Routes>
         </div>

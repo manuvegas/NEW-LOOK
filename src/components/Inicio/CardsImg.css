@@ -50,50 +50,19 @@
   transform: translate(-50%, -50%);
 }
 
-/* INFO MINIMA */
-.span-container {
-  display: flex;
-  justify-content: center;
-}
-
-.divSpan {
-  background-color: rgba(10, 10, 10, 0.841);
-  padding: 20px 40px;
-  text-align: center;
-  border-radius: 10px;
-  display: inline-block;
-}
-
-.tituloSpan {
-  font-size: 2rem;
-}
-
 /* TITULO DE LAS CATEGORIAS */
 .titulos {
   color: white;
-  margin-top: 2rem;
+  margin-top: 5rem;
   font-size: 3rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   font-weight: 800;
 }
-/* IMAGEN DE OFERTAS */
-.ofertas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 7rem;
-}
 
 @media (max-width: 576px) {
   .imgCard {
     max-width: 100%;
-  }
-  .tituloSpan {
-    font-size: 1.3rem;
-  }
-  .span {
-    font-size: 16px;
   }
 
   .titulos {
@@ -101,9 +70,6 @@
   }
   .imgCard {
     width: 380px;
-  }
-  .ofertasImg {
-    max-width: 100%;
   }
 }
 
@@ -115,22 +81,9 @@
   .titulos {
     font-size: 2rem;
   }
-  .ofertasImg {
-    width: 90%;
-  }
 }
 
 @media (min-width: 768px) {
-  .tituloSpan {
-    font-size: 1.6rem;
-  }
-  .span {
-    font-size: 19px;
-  }
-
-  .ofertasImg {
-    width: 98%;
-  }
 }
 
 @media (min-width: 992px) {
@@ -150,23 +103,10 @@
   .imgCard {
     width: 100%;
   }
-
-  
   .btnCard {
     width: 410px;
   }
-
-  .ofertasImg {
-    width: 67%;
-  }
-
   .titulos {
     font-size: 3rem;
-  }
-  .tituloSpan {
-    font-size: 1.9rem;
-  }
-  .span {
-    font-size: 23px;
   }
 }

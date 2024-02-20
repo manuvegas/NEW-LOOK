@@ -1,13 +1,12 @@
-import "./Inicio.css";
 import React, { useState } from "react";
 import { RiSearchLine } from "react-icons/ri";
 import { FiAlignJustify } from "react-icons/fi";
 import { IoCartSharp } from "react-icons/io5";
 import { FaUser } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import OffCanvasSearch from "./OffCanvasSearch";
-import OffCanvasCarrito from "./OffCanvasCarrito";
-import OffCanvasProducts from "./OffCanvasProducts";
+import OffCanvasSearch from "../UI/OffCanvasSearch";
+import OffCanvasCarrito from "../UI/OffCanvasCarrito";
+import OffCanvasProducts from "../UI/OffCanvasProducts";
 
 const AppNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,6 +34,7 @@ const AppNavbar = () => {
     setShowSearchCanvas(false);
     setShowCarritoCanvas(false);
     setShowProductsCanvas(false);
+    setIsOpen(false); // Cerrar el menú al cerrar otros elementos
   };
 
   const handleLinkClick = () => {
@@ -42,55 +42,79 @@ const AppNavbar = () => {
   };
 
   return (
-    <nav className="navbar">
-      <div className="logo-container">
-        <Link to="/">
-          <img src="../UI/Logo.png" alt="NewLook" className="logo" />
-        </Link>
+    <nav className="bg-dark text-white fixed top-0 w-full z-50">
+      <div className="max-w-[1020px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
+          <div className="flex items-center">
+            <Link to="/" className="hiden">
+              <img className="h-8 w-auto" src="../UI/Logo.png" alt="NewLook" />
+            </Link>
+          </div>
+          <div className="flex items-center space-x-4">
+            <Link to="/Login" className="text-white">
+              <FaUser className="h-5 w-5" />
+            </Link>
+            <button
+              onClick={openSearchCanvas}
+              className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
+            >
+              <RiSearchLine className="h-6 w-6" />
+            </button>
+            <button
+              onClick={openCarritoCanvas}
+              className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
+            >
+              <IoCartSharp className="h-6 w-6" />
+            </button>
+            <div className="-ml-2 mr-2 flex items-center">
+              <button
+                onClick={toggleMenu}
+                type="button"
+                className="text-white hover:text-white focus:outline-none focus:text-white transition duration-300 lg"
+                aria-controls="mobile-menu"
+                aria-expanded={isOpen ? "true" : "false"}
+              >
+                <FiAlignJustify className="h-6 w-6" aria-hidden="true" />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div className={isOpen ? "navbarLinks open" : "navbarLinks"}>
-        <ul className="ul-navbar">
-          <li className="li-navbar">
-            <Link to="/" onClick={handleLinkClick}>
+      {isOpen && (
+        <div className="">
+          <div className="flex flex-col items-end px-2 pb-2  space-y-1 sm:px-3 max-w-[1450px]">
+            <Link
+              to="/"
+              className="text-gray-300 hover:bg-black hover:text-white  px-3 py-2 rounded-md text-base font-medium inline-block"
+              onClick={closeCanvas}
+            >
               HOME
             </Link>
-          </li>
-          <li className="li-navbar">
-            <button className="btn-products" onClick={openProductsCanvas}>
+            <button
+              onClick={openProductsCanvas}
+              className="text-gray-300 hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium focus:outline-none focus:text-white"
+            >
               PRODUCTOS
             </button>
-          </li>
-          <li className="li-navbar">
-            <Link to="/Contactos" onClick={handleLinkClick}>
+            <Link
+              to="/Contactos"
+              className="text-gray-300 hover:bg-black hover:text-white inline-block px-3 py-2 rounded-md text-base font-medium"
+              onClick={closeCanvas}
+            >
               CONTACTOS
             </Link>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </div>
+      )}
 
-      <div className="navbarCta">
-        <Link className="user-navbar">
-          <FaUser className="icono" size={22} />
-        </Link>
-        <button className="iconos" onClick={openSearchCanvas}>
-          <RiSearchLine className="icono" size={25} />
-        </button>
-        <button className="iconos" onClick={openCarritoCanvas}>
-          <IoCartSharp className="icono" size={25} />
-        </button>
-        <button className="iconos" onClick={toggleMenu}>
-          <FiAlignJustify className="icono" size={25} />
-        </button>
-      </div>
       {showSearchCanvas && (
         <OffCanvasSearch isOpen={showSearchCanvas} closeCanvas={closeCanvas} />
       )}
       {showCarritoCanvas && (
-        <OffCanvasCarrito
-          isOpen={showCarritoCanvas}
-          closeCanvas={closeCanvas}
-        />
+        <OffCanvasCarrito isOpen={showCarritoCanvas} closeCanvas={closeCanvas}>
+          <p className="text-xs md:text-1xl text-center ">CARRITO VACÍO</p>
+        </OffCanvasCarrito>
       )}
       {showProductsCanvas && (
         <OffCanvasProducts

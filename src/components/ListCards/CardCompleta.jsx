@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import ListCard from "./ListCard";
-import OffCanvasFiltros from "./OffCanvasFiltros";
+import OffCanvasFiltros from "../UI/OffCanvasFiltros";
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
+import BreadCumbs from "../UI/BreadCumbs";
+import "animate.css";
 
-const CardCompleta = ({ data, defaultSortBy,categoria }) => {
+const CardCompleta = ({ data, defaultSortBy, categoria }) => {
   const [selectedCategory, setSelectedCategory] = useState("TODO");
   const [selectedColor, setSelectedColor] = useState("TODO");
   const [precioDesde, setPrecioDesde] = useState("");
@@ -71,25 +73,31 @@ const CardCompleta = ({ data, defaultSortBy,categoria }) => {
     setIsOpen(!isOpen);
   };
 
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <div className="container-card">
-      <div className="container-section-filtros">
-        <div className="filtros-button-content">
-          <button className="filtros-open-button" onClick={toggleFilters}>
-            <HiAdjustmentsHorizontal className="icono-filtros" size={30} />
-          </button>
+    <div className="mx-auto px-4 animate__animated animate__fadeIn">
+      <div className="max-w-[980px] mx-auto">
+        <div className="flex justify-center items-center mt-20 mx-auto sm:justify-between">
+          <div className=" rounded-full bg-dark">
+            <button onClick={toggleFilters} className="flex items-center">
+              <HiAdjustmentsHorizontal size={30}/>
+            </button>
+          </div>
+          <div>
+            <h1 className="text-2xl font-semibold">{categoria}</h1>
+          </div>
         </div>
-        <div className="titulo-cards-content">
-          <h1 className="titulo-cards">{categoria}</h1>
-        </div>
-        <div>
-          <h1>Bread</h1>
+        <div className="mt-3 flex justify-center">
+          <BreadCumbs />
         </div>
       </div>
       <div>
-        <nav className="navCard">
+        <nav className="flex flex-wrap justify-center items-center mx-auto my-1 max-w-[1020px] ">
           {sortedItems.length === 0 ? (
-            <p className="noResults">
+            <p className="text-white">
               No se encontraron resultados con tu búsqueda.
             </p>
           ) : (
@@ -108,72 +116,71 @@ const CardCompleta = ({ data, defaultSortBy,categoria }) => {
           )}
         </nav>
 
-        {/* OffCanvas con filtros */}
-        <OffCanvasFiltros isOpen={isOpen} toggleFilters={toggleFilters}>
-          <div className="contenedorFiltros">
-            <h2 className="filtros">FILTROS</h2>
-            <div className="filtroSection">
-              <h3 className="tituloFiltros">COLOR</h3>
-              {colors.map((color, index) => (
-                <button
-                  key={index}
-                  className={
-                    selectedColor === color
-                      ? "filtroButtonSelected"
-                      : "filtroButton"
-                  }
-                  onClick={() => setSelectedColor(color)}
+        <OffCanvasFiltros
+          isOpen={isOpen}
+          toggleFilters={toggleFilters}
+          handleClose={handleClose}
+        >
+          <div className="bg-dark text-white p-4 rounded max-w-lg">
+            <h2 className="text-center text-3xl font-bold pb-4">FILTROS</h2>
+            <div className="space-y-4">
+              <h2 className="text-2xl font-semibold my-3">COLOR</h2>
+              <div className="flex flex-row gap-2 flex-wrap">
+                {colors.map((color, index) => (
+                  <button
+                    key={index}
+                    className={
+                      selectedColor === color
+                        ? "bg-black text-white rounded p-2 flex items-center space-x-2"
+                        : "bg-black text-white rounded p-2 flex items-center space-x-2"
+                    }
+                    onClick={() => setSelectedColor(color)}
+                  >
+                    <span
+                      className="w-4 h-4 rounded-full border"
+                      style={{ backgroundColor: color.toLowerCase() }}
+                    ></span>
+                    <span>
+                      {color === "TODO" ? "Todos" : color} (
+                      {getCountByCategory(color, "color")})
+                    </span>
+                  </button>
+                ))}
+              </div>
+              <div className="flex flex-col">
+                <h2 className="text-2xl font-semibold my-3">PRECIO</h2>
+                <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 ">
+                  <label htmlFor="precioDesde">DESDE:</label>
+                  <input
+                    className="w-24 h-8 bg-black text-white rounded px-2"
+                    type="number"
+                    id="precioDesde"
+                    value={precioDesde}
+                    onChange={(e) => setPrecioDesde(e.target.value)}
+                  />
+                  <label htmlFor="precioHasta">HASTA:</label>
+                  <input
+                    className="w-24 h-8 bg-black text-white rounded px-2"
+                    type="number"
+                    id="precioHasta"
+                    value={precioHasta}
+                    onChange={(e) => setPrecioHasta(e.target.value)}
+                  />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <h3 className="text-lg font-semibold">ORDENAR POR:</h3>
+                <select
+                  className="w-full p-2 bg-black text-white rounded"
+                  onChange={(e) => setSortBy(e.target.value)}
                 >
-                  <span
-                    className="colorCircle"
-                    style={{ backgroundColor: color.toLowerCase() }}
-                  ></span>
-                  {color === "TODO" ? "Todos" : color} (
-                  {getCountByCategory(color, "color")})
-                </button>
-              ))}
-            </div>
-            <div className="filtroSection">
-              <h3 className="tituloFiltros">PRECIO</h3>
-              <label htmlFor="precioDesde">DESDE:</label>
-              <input
-                className="inputPrice"
-                type="number"
-                id="precioDesde"
-                value={precioDesde}
-                onChange={(e) => setPrecioDesde(e.target.value)}
-              />
-              <label htmlFor="precioHasta">HASTA:</label>
-              <input
-                className="inputPrice"
-                type="number"
-                id="precioHasta"
-                value={precioHasta}
-                onChange={(e) => setPrecioHasta(e.target.value)}
-              />
-            </div>
-            <div className="filtroSection">
-              <h3 className="tituloFiltros">ORDENAR POR:</h3>
-              <select
-                className="ordenarPor"
-                onChange={(e) => setSortBy(e.target.value)}
-              >
-                <option className="opcionesOrdenarPor" value="default">
-                  Predeterminado
-                </option>
-                <option className="opcionesOrdenarPor" value="loMasVendidos">
-                  Lo más vendidos
-                </option>
-                <option className="opcionesOrdenarPor" value="precioMayor">
-                  Precio de mayor a menor
-                </option>
-                <option className="opcionesOrdenarPor" value="precioMenor">
-                  Precio de menor a mayor
-                </option>
-                <option className="opcionesOrdenarPor" value="losMasNuevos">
-                  Los más nuevos
-                </option>
-              </select>
+                  <option value="default">Predeterminado</option>
+                  <option value="loMasVendidos">Lo más vendidos</option>
+                  <option value="precioMayor">Precio de mayor a menor</option>
+                  <option value="precioMenor">Precio de menor a mayor</option>
+                  <option value="losMasNuevos">Los más nuevos</option>
+                </select>
+              </div>
             </div>
           </div>
         </OffCanvasFiltros>

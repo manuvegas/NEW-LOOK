@@ -1,5 +1,4 @@
-import {React,useState,useEffect} from 'react'
-import "./Navegacion.css"
+import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 function Contactos() {
@@ -10,80 +9,60 @@ function Contactos() {
     window.scrollTo(0, 0);
   }, [location.pathname]); // La dependencia es la ruta actual
 
-
-  const [formData, setFormData] = useState({
-    nombre: '',
-    email: '',
-    telefono: '', // Campo de teléfono
-    mensaje: ''
-  });
-
-  const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Aquí puedes realizar la lógica para validar los datos del formulario antes de enviarlos
-    // Por ejemplo, puedes verificar si los campos están llenos o si el formato del correo electrónico es válido
-    // Puedes usar librerías como Yup para validaciones más complejas
-    console.log('Datos del formulario:', formData);
-    // Lógica de envío o manejo de datos aquí...
-  };
-
   return (
-    <div className="contactoForm">
-      <h2 className="contacto-titulo">Formulario de Contacto</h2>
-      <form className="contacto-formulario" onSubmit={handleSubmit}>
-        <label className="contacto-label" htmlFor="nombre">Nombre:</label>
+    <div className="bg-black text-white p-8 rounded-lg max-w-sm lg:max-w-xl mx-auto mt-32 shadow-lg mb-10 animate__animated animate__fadeIn">
+      <h2 className="text-2xl font-bold text-center mb-4">
+        Formulario de Contacto
+      </h2>
+      <form className="flex flex-col" onSubmit={(e) => e.preventDefault()}>
+        <label htmlFor="nombre" className="mb-2">
+          Nombre:
+        </label>
         <input
-          className="contacto-input"
           type="text"
           id="nombre"
           name="nombre"
-          value={formData.nombre}
-          onChange={handleInputChange}
+          className="bg-dark text-white px-3 py-2 rounded-md mb-4"
           required
         />
 
-        <label className="contacto-label" htmlFor="email">Email:</label>
+        <label htmlFor="email" className="mb-2">
+          Email:
+        </label>
         <input
-          className="contacto-input"
           type="email"
           id="email"
           name="email"
-          value={formData.email}
-          onChange={handleInputChange}
+          className="bg-dark text-white px-3 py-2 rounded-md mb-4"
           required
         />
 
-        <label className="contacto-label" htmlFor="telefono">Teléfono (opcional):</label>
+        <label htmlFor="telefono" className="mb-2">
+          Teléfono (opcional):
+        </label>
         <input
-          className="contacto-input"
           type="tel"
           id="telefono"
           name="telefono"
-          value={formData.telefono}
-          onChange={handleInputChange}
-          // No se establece como "required" para que sea opcional
+          className="bg-dark text-white px-3 py-2 rounded-md mb-4"
         />
 
-        <label className="contacto-label" htmlFor="mensaje">Mensaje:</label>
+        <label htmlFor="mensaje" className="mb-2">
+          Mensaje:
+        </label>
         <textarea
-          className="contacto-input contacto-textarea"
           id="mensaje"
           name="mensaje"
-          value={formData.mensaje}
-          onChange={handleInputChange}
+          className="bg-dark text-white px-3 py-2 rounded-md mb-4 resize-y"
           required
         ></textarea>
 
-        <input className="contacto-boton" type="submit" value="Enviar" />
+        <button className="bg-white text-black font-bold py-2 rounded-md hover:bg-gray-200 transition duration-300">
+          Enviar
+        </button>
       </form>
     </div>
   );
 }
 
-
-export default Contactos
+export default Contactos;

@@ -121,7 +121,7 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
           toggleFilters={toggleFilters}
           handleClose={handleClose}
         >
-          <div className="bg-dark text-white p-4 rounded max-w-lg">
+          <div className="bg-dark text-white p-4 rounded max-w-lg mt-10">
             <h2 className="text-center text-3xl font-bold pb-4">FILTROS</h2>
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold my-3">COLOR</h2>

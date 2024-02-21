@@ -74,7 +74,7 @@ const OffCanvasProducts = ({ isOpen, closeCanvas }) => {
               className="flex flex-row items-center gap-5 transition-transform duration-500 ease-in-out transform-gpu hover:scale-110"
             >
               <img
-                src="../img(remeras)/remera2.jpeg"
+                src="../img(joggins)/joggin6.jpeg"
                 alt="REMERA"
                 className="w-14 h-auto"
               />
@@ -92,7 +92,7 @@ const OffCanvasProducts = ({ isOpen, closeCanvas }) => {
               className="flex flex-row items-center gap-5 transition-transform duration-500 ease-in-out transform-gpu hover:scale-110"
             >
               <img
-                src="../img(remeras)/remera2.jpeg"
+                src="../bermudas/bermuda6.jpeg"
                 alt="REMERA"
                 className="w-14 h-auto"
               />
@@ -110,7 +110,7 @@ const OffCanvasProducts = ({ isOpen, closeCanvas }) => {
               className="flex flex-row items-center gap-5 transition-transform duration-500 ease-in-out transform-gpu hover:scale-110"
             >
               <img
-                src="../img(remeras)/remera2.jpeg"
+                src="../zapas/zapa1.jpeg"
                 alt="REMERA"
                 className="w-14 h-auto"
               />
@@ -128,7 +128,7 @@ const OffCanvasProducts = ({ isOpen, closeCanvas }) => {
               className="flex flex-row items-center gap-5 transition-transform duration-500 ease-in-out transform-gpu hover:scale-110"
             >
               <img
-                src="../img(remeras)/remera2.jpeg"
+                src="../cargos/cargo3.jpeg"
                 alt="REMERA"
                 className="w-14 h-auto"
               />

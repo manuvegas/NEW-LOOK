@@ -3,6 +3,7 @@ import ListCard from "./ListCard";
 import OffCanvasFiltros from "../UI/OffCanvasFiltros";
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 import BreadCumbs from "../UI/BreadCumbs";
+import Button from "../UI/Button";
 import "animate.css";
 
 const CardCompleta = ({ data, defaultSortBy, categoria }) => {
@@ -80,10 +81,10 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
   return (
     <div className="mx-auto px-4 animate__animated animate__fadeIn">
       <div className="max-w-[980px] mx-auto">
-        <div className="flex justify-center items-center mt-20 mx-auto sm:justify-between">
+        <div className="flex justify-center items-center pt-24 mx-auto sm:justify-between">
           <div className=" rounded-full bg-dark">
             <button onClick={toggleFilters} className="flex items-center">
-              <HiAdjustmentsHorizontal size={30}/>
+              <HiAdjustmentsHorizontal size={30} />
             </button>
           </div>
           <div>
@@ -127,24 +128,26 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
               <h2 className="text-2xl font-semibold my-3">COLOR</h2>
               <div className="flex flex-row gap-2 flex-wrap">
                 {colors.map((color, index) => (
-                  <button
-                    key={index}
-                    className={
-                      selectedColor === color
-                        ? "bg-black text-white rounded p-2 flex items-center space-x-2"
-                        : "bg-black text-white rounded p-2 flex items-center space-x-2"
-                    }
-                    onClick={() => setSelectedColor(color)}
-                  >
-                    <span
-                      className="w-4 h-4 rounded-full border"
-                      style={{ backgroundColor: color.toLowerCase() }}
-                    ></span>
-                    <span>
-                      {color === "TODO" ? "Todos" : color} (
-                      {getCountByCategory(color, "color")})
-                    </span>
-                  </button>
+                  <Button>
+                    <button
+                      key={index}
+                      className={
+                        selectedColor === color
+                          ? "bg-black text-white rounded flex items-center space-x-2"
+                          : "bg-black text-white rounded flex items-center space-x-2"
+                      }
+                      onClick={() => setSelectedColor(color)}
+                    >
+                      <span
+                        className="w-4 h-4 rounded-full border"
+                        style={{ backgroundColor: color.toLowerCase() }}
+                      ></span>
+                      <span>
+                        {color === "TODO" ? "Todos" : color} (
+                        {getCountByCategory(color, "color")})
+                      </span>
+                    </button>
+                  </Button>
                 ))}
               </div>
               <div className="flex flex-col">

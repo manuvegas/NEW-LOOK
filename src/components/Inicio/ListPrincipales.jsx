@@ -1,4 +1,4 @@
-import React,{ useEffect }  from "react";
+import React, { useEffect } from "react";
 import CardsImg from "./CardsImg";
 import { v4 as uuidv4 } from "uuid";
 import { useLocation } from "react-router-dom";

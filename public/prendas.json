@@ -1,6 +1,6 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "img": "/img(remeras)/remera1.jpeg",
     "titulo": "REMERA 1",
     "off": 30,
@@ -8,10 +8,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "2",
+    "id": 2,
     "img": "/img(remeras)/remera2.jpeg",
     "titulo": "REMERA 2",
     "off": 20,
@@ -19,10 +21,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "3",
+    "id": 3,
     "img": "/img(remeras)/remera3.jpeg",
     "titulo": "REMERA3",
     "off": 15,
@@ -30,10 +34,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "4",
+    "id": 4,
     "img": "/img(remeras)/remera4.jpeg",
     "titulo": "REMERA 4",
     "off": 15,
@@ -41,10 +47,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "5",
+    "id": 5,
     "img": "/img(remeras)/remera5.jpeg",
     "titulo": "REMERA 5",
     "off": 23,
@@ -52,10 +60,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "6",
+    "id": 6,
     "img": "/img(remeras)/remera6.jpeg",
     "titulo": "REMERA 6",
     "off": 15,
@@ -63,10 +73,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "7",
+    "id": 7,
     "img": "/img(remeras)/remera7.jpeg",
     "titulo": "REMERA 7",
     "off": 20,
@@ -74,10 +86,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "8",
+    "id": 8,
     "img": "/img(remeras)/remera8.jpeg",
     "titulo": "REMERA 8",
     "off": 15,
@@ -85,10 +99,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "9",
+    "id": 9,
     "img": "/img(remeras)/remera9.jpeg",
     "titulo": "REMERA 9",
     "off": 15,
@@ -96,10 +112,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "10",
+    "id": 10,
     "img": "/img(remeras)/remera10.jpeg",
     "titulo": "REMERA 10",
     "off": 15,
@@ -107,10 +125,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BEIGE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "11",
+    "id": 11,
     "img": "/img(remeras)/remera11.jpeg",
     "titulo": "REMERA 11",
     "off": 15,
@@ -118,10 +138,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BEIGE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "12",
+    "id": 12,
     "img": "/img(remeras)/remera12.jpeg",
     "titulo": "REMERA 12",
     "off": 15,
@@ -129,10 +151,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "13",
+    "id": 13,
     "img": "/img(remeras)/remera13.jpeg",
     "titulo": "REMERA 13",
     "off": 15,
@@ -140,10 +164,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "14",
+    "id": 14,
     "img": "/img(remeras)/remera14.jpeg",
     "titulo": "REMERA 14",
     "off": 15,
@@ -151,10 +177,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "15",
+    "id": 15,
     "img": "/img(remeras)/remera15.jpeg",
     "titulo": "REMERA 15",
     "off": 23,
@@ -162,10 +190,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "16",
+    "id": 16,
     "img": "/img(remeras)/remera16.jpeg",
     "titulo": "REMERA 16",
     "off": 15,
@@ -173,10 +203,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "17",
+    "id": 17,
     "img": "/img(remeras)/remera17.jpeg",
     "titulo": "REMERA 17",
     "off": 15,
@@ -184,10 +216,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "18",
+    "id": 18,
     "img": "/img(remeras)/remera18.jpeg",
     "titulo": "REMERA 18",
     "off": 15,
@@ -195,10 +229,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "19",
+    "id": 19,
     "img": "/img(remeras)/remera19.jpeg",
     "titulo": "REMERA 19",
     "off": 15,
@@ -206,10 +242,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "20",
+    "id": 20,
     "img": "/img(remeras)/remera20.jpeg",
     "titulo": "REMERA 20",
     "off": 15,
@@ -217,10 +255,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "21",
+    "id": 21,
     "img": "/img(remeras)/remera21.jpeg",
     "titulo": "REMERA 21",
     "off": 15,
@@ -228,10 +268,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "REMERAS"
+    "categoria": "REMERAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "22",
+    "id": 22,
     "img": "/img(buzos)/buzo1.jpeg",
     "titulo": "BUZO 1",
     "color": "BLACK",
@@ -241,10 +283,12 @@
     "cuotas": "",
     "ventas": 41,
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "23",
+    "id": 23,
     "img": "/img(buzos)/buzo2.jpeg",
     "titulo": "BUZO 2",
     "color": "WHITE",
@@ -254,10 +298,12 @@
     "ventas": 5,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "24",
+    "id": 24,
     "img": "/img(buzos)/buzo3.jpeg",
     "titulo": "BUZO 3",
     "color": "WHITE",
@@ -267,10 +313,12 @@
     "ventas": 40,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "25",
+    "id": 25,
     "img": "/img(buzos)/buzo4.jpeg",
     "titulo": "BUZO 4",
     "color": "BLACK",
@@ -280,10 +328,12 @@
     "ventas": 40,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "26",
+    "id": 26,
     "img": "/img(buzos)/buzo5.jpeg",
     "titulo": "BUZO 5",
     "color": "GREY",
@@ -293,10 +343,12 @@
     "ventas": 36,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "27",
+    "id": 27,
     "img": "/img(buzos)/buzo6.jpeg",
     "titulo": "BUZO 6",
     "color": "BLACK",
@@ -306,10 +358,12 @@
     "ventas": 38,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "28",
+    "id": 28,
     "img": "/img(buzos)/buzo7.jpeg",
     "titulo": "BUZO 7",
     "color": "GREY",
@@ -319,10 +373,12 @@
     "ventas": 10,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "29",
+    "id": 29,
     "img": "/img(buzos)/buzo8.jpeg",
     "titulo": "BUZO 8",
     "color": "WHITE",
@@ -332,10 +388,12 @@
     "ventas": 15,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "30",
+    "id": 30,
     "img": "/img(buzos)/buzo9.jpeg",
     "titulo": "BUZO 9",
     "color": "BLACK",
@@ -345,10 +403,12 @@
     "ventas": 12,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "31",
+    "id": 31,
     "img": "/img(buzos)/buzo10.jpeg",
     "titulo": "BUZO 10",
     "color": "BLACK",
@@ -358,10 +418,12 @@
     "ventas": 29,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "32",
+    "id": 32,
     "img": "/img(buzos)/buzo11.jpeg",
     "titulo": "BUZO 11",
     "color": "BLACK",
@@ -371,10 +433,12 @@
     "ventas": 35,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "33",
+    "id": 33,
     "img": "/img(buzos)/buzo12.jpeg",
     "titulo": "BUZO 12",
     "color": "WHITE",
@@ -384,10 +448,12 @@
     "ventas": 17,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "34",
+    "id": 34,
     "img": "/img(buzos)/buzo13.jpeg",
     "titulo": "BUZO 13",
     "color": "GREY",
@@ -397,10 +463,12 @@
     "ventas": 11,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "35",
+    "id": 35,
     "img": "/img(buzos)/buzo14.jpeg",
     "titulo": "BUZO 14",
     "color": "BLACK",
@@ -410,10 +478,12 @@
     "ventas": 39,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "36",
+    "id": 36,
     "img": "/img(buzos)/buzo15.jpeg",
     "titulo": "BUZO 15",
     "color": "BLACK",
@@ -423,10 +493,12 @@
     "ventas": 39,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "37",
+    "id": 37,
     "img": "/img(buzos)/buzo16.jpeg",
     "titulo": "BUZO 16",
     "color": "BLACK",
@@ -436,10 +508,12 @@
     "ventas": 39,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "38",
+    "id": 38,
     "img": "/img(buzos)/buzo17.jpeg",
     "titulo": "BUZO 17",
     "color": "BLACK",
@@ -449,10 +523,12 @@
     "ventas": 39,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "39",
+    "id": 39,
     "img": "/img(buzos)/buzo18.jpeg",
     "titulo": "BUZO 18",
     "color": "BLACK",
@@ -462,10 +538,12 @@
     "ventas": 39,
     "cuotas": "",
     "sizes": ["s", "m", "l", "xl", "xxl"],
-    "categoria": "BUZOS"
+    "categoria": "BUZOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "40",
+    "id": 40,
     "img": "/img(joggins)/joggin1.jpeg",
     "titulo": "JOGGIN 1",
     "off": 30,
@@ -473,10 +551,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "SKYBLUE",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "41",
+    "id": 41,
     "img": "/img(joggins)/joggin2.jpeg",
     "titulo": "JOGGIN 2",
     "off": 30,
@@ -484,10 +564,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "42",
+    "id": 42,
     "img": "/img(joggins)/joggin3.jpeg",
     "titulo": "JOGGIN 3",
     "off": 30,
@@ -495,10 +577,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "43",
+    "id": 43,
     "img": "/img(joggins)/joggin4.jpeg",
     "titulo": "JOGGIN 4",
     "off": 30,
@@ -506,10 +590,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "44",
+    "id": 44,
     "img": "/img(joggins)/joggin5.jpeg",
     "titulo": "JOGGIN 5",
     "off": 30,
@@ -517,10 +603,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BEIGE",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "45",
+    "id": 45,
     "img": "/img(joggins)/joggin6.jpeg",
     "titulo": "JOGGIN 6",
     "off": 30,
@@ -528,10 +616,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "46",
+    "id": 46,
     "img": "/img(joggins)/joggin7.jpeg",
     "titulo": "JOGGIN 7",
     "off": 30,
@@ -539,10 +629,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "47",
+    "id": 47,
     "img": "/img(joggins)/joggin8.jpeg",
     "titulo": "JOGGIN 8",
     "off": 30,
@@ -550,10 +642,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BEIGE",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "48",
+    "id": 48,
     "img": "/img(joggins)/joggin9.jpeg",
     "titulo": "JOGGIN 9",
     "off": 30,
@@ -561,10 +655,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "49",
+    "id": 49,
     "img": "/img(joggins)/joggin10.jpeg",
     "titulo": "JOGGIN 10",
     "off": 30,
@@ -572,10 +668,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "50",
+    "id": 50,
     "img": "/img(joggins)/joggin11.jpeg",
     "titulo": "JOGGIN 11",
     "off": 30,
@@ -583,10 +681,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "GREY",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "51",
+    "id": 51,
     "img": "/img(joggins)/joggin12.jpeg",
     "titulo": "JOGGIN 12",
     "off": 30,
@@ -594,10 +694,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "GREY",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "52",
+    "id": 52,
     "img": "/img(joggins)/joggin13.jpeg",
     "titulo": "JOGGIN 13",
     "off": 30,
@@ -605,10 +707,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "GREY",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "53",
+    "id": 53,
     "img": "/img(joggins)/joggin14.jpeg",
     "titulo": "JOGGIN 14",
     "off": 30,
@@ -616,10 +720,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "GREY",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "54",
+    "id": 54,
     "img": "/img(joggins)/joggin15.jpeg",
     "titulo": "JOGGIN 15",
     "off": 30,
@@ -627,10 +733,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "GREY",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "55",
+    "id": 55,
     "img": "/img(joggins)/joggin16.jpeg",
     "titulo": "JOGGIN 16",
     "off": 30,
@@ -638,10 +746,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "GREY",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "56",
+    "id": 56,
     "img": "/img(joggins)/joggin17.jpeg",
     "titulo": "JOGGIN 17",
     "off": 30,
@@ -649,10 +759,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "GREY",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "57",
+    "id": 57,
     "img": "/img(joggins)/joggin18.jpeg",
     "titulo": "JOGGIN 18",
     "off": 30,
@@ -660,10 +772,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "GREY",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "58",
+    "id": 58,
     "img": "/img(joggins)/joggin19.jpeg",
     "titulo": "JOGGIN 19",
     "off": 30,
@@ -671,10 +785,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "GREY",
-    "categoria": "JOGGINS"
+    "categoria": "JOGGINS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "59",
+    "id": 59,
     "img": "/bermudas/bermuda1.jpeg",
     "titulo": "BERMUDA 1",
     "off": 30,
@@ -682,10 +798,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "60",
+    "id": 60,
     "img": "/bermudas/bermuda2.jpeg",
     "titulo": "BERMUDA 2",
     "off": 30,
@@ -693,10 +811,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "61",
+    "id": 61,
     "img": "/bermudas/bermuda3.jpeg",
     "titulo": "BERMUDA 3",
     "off": 30,
@@ -704,10 +824,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "62",
+    "id": 62,
     "img": "/bermudas/bermuda4.jpeg",
     "titulo": "BERMUDA 4",
     "off": 30,
@@ -715,10 +837,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "63",
+    "id": 63,
     "img": "/bermudas/bermuda5.jpeg",
     "titulo": "BERMUDA 5",
     "off": 30,
@@ -726,10 +850,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "64",
+    "id": 64,
     "img": "/bermudas/bermuda6.jpeg",
     "titulo": "BERMUDA 6",
     "off": 30,
@@ -737,10 +863,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "65",
+    "id": 65,
     "img": "/bermudas/bermuda7.jpeg",
     "titulo": "BERMUDA 7",
     "off": 30,
@@ -748,10 +876,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "66",
+    "id": 66,
     "img": "/bermudas/bermuda8.jpeg",
     "titulo": "BERMUDA 8",
     "off": 30,
@@ -759,10 +889,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BEIGE",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "67",
+    "id": 67,
     "img": "/bermudas/bermuda9.jpeg",
     "titulo": "BERMUDA 9",
     "off": 30,
@@ -770,10 +902,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "68",
+    "id": 68,
     "img": "/bermudas/bermuda10.jpeg",
     "titulo": "BERMUDA 10",
     "off": 30,
@@ -781,10 +915,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "69",
+    "id": 69,
     "img": "/bermudas/bermuda11.jpeg",
     "titulo": "BERMUDA 11",
     "off": 30,
@@ -792,10 +928,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "70",
+    "id": 70,
     "img": "/bermudas/bermuda12.jpeg",
     "titulo": "BERMUDA 12",
     "off": 30,
@@ -803,10 +941,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "71",
+    "id": 71,
     "img": "/bermudas/bermuda13.jpeg",
     "titulo": "BERMUDA 13",
     "off": 30,
@@ -814,10 +954,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "72",
+    "id": 72,
     "img": "/bermudas/bermuda14.jpeg",
     "titulo": "BERMUDA 14",
     "off": 30,
@@ -825,10 +967,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "BERMUDAS"
+    "categoria": "BERMUDAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "73",
+    "id": 73,
     "img": "/zapas/zapa1.jpeg",
     "titulo": "ZAPA 1",
     "off": 30,
@@ -836,10 +980,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "74",
+    "id": 74,
     "img": "/zapas/zapa2.jpeg",
     "titulo": "ZAPA 2",
     "off": 30,
@@ -847,10 +993,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "75",
+    "id": 75,
     "img": "/zapas/zapa3.jpeg",
     "titulo": "ZAPA 3",
     "off": 30,
@@ -858,10 +1006,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "76",
+    "id": 76,
     "img": "/zapas/zapa4.jpeg",
     "titulo": "ZAPA 4",
     "off": 30,
@@ -869,10 +1019,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "77",
+    "id": 77,
     "img": "/zapas/zapa5.jpeg",
     "titulo": "ZAPA 5",
     "off": 30,
@@ -880,10 +1032,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "78",
+    "id": 78,
     "img": "/zapas/zapa6.jpeg",
     "titulo": "ZAPA 6",
     "off": 30,
@@ -891,10 +1045,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BEIGE",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "79",
+    "id": 79,
     "img": "/zapas/zapa7.jpeg",
     "titulo": "ZAPA 7",
     "off": 30,
@@ -902,10 +1058,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "80",
+    "id": 80,
     "img": "/zapas/zapa8.jpeg",
     "titulo": "ZAPA 8",
     "off": 30,
@@ -913,10 +1071,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "81",
+    "id": 81,
     "img": "/zapas/zapa9.jpeg",
     "titulo": "ZAPA 9",
     "off": 30,
@@ -924,10 +1084,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "82",
+    "id": 82,
     "img": "/zapas/zapa10.jpeg",
     "titulo": "ZAPA 10",
     "off": 30,
@@ -935,10 +1097,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "83",
+    "id": 83,
     "img": "/zapas/zapa11.jpeg",
     "titulo": "ZAPA 11",
     "off": 30,
@@ -946,10 +1110,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "84",
+    "id": 84,
     "img": "/zapas/zapa12.jpeg",
     "titulo": "ZAPA 12",
     "off": 30,
@@ -957,10 +1123,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "85",
+    "id": 85,
     "img": "/zapas/zapa13.jpeg",
     "titulo": "ZAPA 13",
     "off": 30,
@@ -968,10 +1136,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "86",
+    "id": 86,
     "img": "/zapas/zapa14.jpeg",
     "titulo": "ZAPA14 14",
     "off": 30,
@@ -979,10 +1149,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "WHITE",
-    "categoria": "ZAPAS"
+    "categoria": "ZAPAS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "87",
+    "id": 87,
     "img": "/cargos/cargo1.jpeg",
     "titulo": "CARGO 1",
     "off": 30,
@@ -990,10 +1162,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "GREEN",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "88",
+    "id": 88,
     "img": "/cargos/cargo2.jpeg",
     "titulo": "CARGO 2",
     "off": 30,
@@ -1001,10 +1175,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BEIGE",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "89",
+    "id": 89,
     "img": "/cargos/cargo3.jpeg",
     "titulo": "CARGO 3",
     "off": 30,
@@ -1012,10 +1188,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "90",
+    "id": 90,
     "img": "/cargos/cargo4.jpeg",
     "titulo": "CARGO 4",
     "off": 30,
@@ -1023,10 +1201,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "91",
+    "id": 91,
     "img": "/cargos/cargo5.jpeg",
     "titulo": "CARGO 5",
     "off": 30,
@@ -1034,10 +1214,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "92",
+    "id": 92,
     "img": "/cargos/cargo6.jpeg",
     "titulo": "CARGO 6",
     "off": 30,
@@ -1045,10 +1227,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "93",
+    "id": 93,
     "img": "/cargos/cargo7.jpeg",
     "titulo": "CARGO 7",
     "off": 30,
@@ -1056,10 +1240,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "94",
+    "id": 94,
     "img": "/cargos/cargo8.jpeg",
     "titulo": "CARGO 8",
     "off": 30,
@@ -1067,10 +1253,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "95",
+    "id": 95,
     "img": "/cargos/cargo9.jpeg",
     "titulo": "CARGO 9",
     "off": 30,
@@ -1078,10 +1266,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "96",
+    "id": 96,
     "img": "/cargos/cargo10.jpeg",
     "titulo": "CARGO 10",
     "off": 30,
@@ -1089,10 +1279,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "97",
+    "id": 97,
     "img": "/cargos/cargo11.jpeg",
     "titulo": "CARGO 11",
     "off": 30,
@@ -1100,10 +1292,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "98",
+    "id": 98,
     "img": "/cargos/cargo12.jpeg",
     "titulo": "CARGO 12",
     "off": 30,
@@ -1111,10 +1305,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "99",
+    "id": 99,
     "img": "/cargos/cargo13.jpeg",
     "titulo": "CARGO 13",
     "off": 30,
@@ -1122,10 +1318,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "100",
+    "id": 100,
     "img": "/cargos/cargo14.jpeg",
     "titulo": "CARGO 14",
     "off": 30,
@@ -1133,10 +1331,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "101",
+    "id": 101,
     "img": "/cargos/cargo15.jpeg",
     "titulo": "CARGO 15",
     "off": 30,
@@ -1144,10 +1344,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "102",
+    "id": 102,
     "img": "/cargos/cargo16.jpeg",
     "titulo": "CARGO 16",
     "off": 30,
@@ -1155,10 +1357,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "103",
+    "id": 103,
     "img": "/cargos/cargo17.jpeg",
     "titulo": "CARGO 17",
     "off": 30,
@@ -1166,10 +1370,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "104",
+    "id": 104,
     "img": "/cargos/cargo18.jpeg",
     "titulo": "CARGO 18",
     "off": 30,
@@ -1177,10 +1383,12 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": "105",
+    "id": 105,
     "img": "/cargos/cargo19.jpeg",
     "titulo": "CARGO 19",
     "off": 30,
@@ -1188,6 +1396,8 @@
     "precio": 20000,
     "cuotas": "",
     "color": "BLACK",
-    "categoria": "CARGOS"
+    "categoria": "CARGOS",
+    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
+    "talles" :["S","M","L","XL","XXL"]
   }
 ]

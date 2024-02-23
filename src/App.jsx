@@ -11,10 +11,13 @@ import {
   Register,
   Whatsapp
 } from "./components";
+import '@fontsource-variable/teko';
+import InspectMap from "./components/ListCards/InspectMap";
 
 function App() {
   return (
     <>
+    <main className="bg-dark">
       <Router>
         <div>
           <header>
@@ -26,6 +29,8 @@ function App() {
             <Route path="/Register" element={<Register />} />
             <Route path="/Login" element={<Login/>} />
             <Route path="/CardMap/:titulo" element={<CardMap />} />
+            <Route path="/InspectMap/:id" element={<InspectMap />} />
+
           </Routes>
         </div>
         <div>
@@ -34,7 +39,7 @@ function App() {
         <footer>
           <Footer />
         </footer>
-      </Router>
+      </Router></main>
     </>
   );
 }

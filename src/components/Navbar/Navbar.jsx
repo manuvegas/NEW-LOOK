@@ -42,87 +42,99 @@ const AppNavbar = () => {
   };
 
   return (
-    <nav className="bg-dark text-white fixed top-0 w-full z-50">
-      <div className="max-w-[1020px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex items-center">
-            <Link to="/" className="hiden">
-              <img className="h-8 w-auto" src="../UI/Logo.png" alt="NewLook" />
-            </Link>
-          </div>
-          <div className="flex items-center space-x-4">
-            <Link to="/Login" className="text-white">
-              <FaUser className="h-5 w-5" />
-            </Link>
-            <button
-              onClick={openSearchCanvas}
-              className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
-            >
-              <RiSearchLine className="h-6 w-6" />
-            </button>
-            <button
-              onClick={openCarritoCanvas}
-              className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
-            >
-              <IoCartSharp className="h-6 w-6" />
-            </button>
-            <div className="-ml-2 mr-2 flex items-center">
+    <section className="flex justify-center">
+      <nav className="bg-black text-white fixed top-0 w-full z-50 max-w-[1020px]">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between h-16">
+            <div className="flex items-center">
+              <Link to="/" className="hiden">
+                <img
+                  className="h-8 w-auto"
+                  src="../UI/Logo.png"
+                  alt="NewLook"
+                />
+              </Link>
+            </div>
+            <div className="flex items-center space-x-4">
+              <Link to="/Login" className="text-white">
+                <FaUser className="h-5 w-5" />
+              </Link>
               <button
-                onClick={toggleMenu}
-                type="button"
-                className="text-white hover:text-white focus:outline-none focus:text-white transition duration-300 lg"
-                aria-controls="mobile-menu"
-                aria-expanded={isOpen ? "true" : "false"}
+                onClick={openSearchCanvas}
+                className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
               >
-                <FiAlignJustify className="h-6 w-6" aria-hidden="true" />
+                <RiSearchLine className="h-6 w-6" />
               </button>
+              <button
+                onClick={openCarritoCanvas}
+                className="text-white hover:text-gray-300 focus:outline-none focus:text-gray-300"
+              >
+                <IoCartSharp className="h-6 w-6" />
+              </button>
+              <div className="-ml-2 mr-2 flex items-center">
+                <button
+                  onClick={toggleMenu}
+                  type="button"
+                  className="text-white hover:text-white focus:outline-none focus:text-white transition duration-300 lg"
+                  aria-controls="mobile-menu"
+                  aria-expanded={isOpen ? "true" : "false"}
+                >
+                  <FiAlignJustify className="h-6 w-6" aria-hidden="true" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {isOpen && (
-        <div className="">
-          <div className="flex flex-col items-end px-2 pb-2  space-y-1 sm:px-3 max-w-[1450px]">
-            <Link
-              to="/"
-              className="text-gray-300 hover:bg-black hover:text-white  px-3 py-2 rounded-md text-base font-medium inline-block"
-              onClick={closeCanvas}
-            >
-              HOME
-            </Link>
-            <button
-              onClick={openProductsCanvas}
-              className="text-gray-300 hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium focus:outline-none focus:text-white"
-            >
-              PRODUCTOS
-            </button>
-            <Link
-              to="/Contactos"
-              className="text-gray-300 hover:bg-black hover:text-white inline-block px-3 py-2 rounded-md text-base font-medium"
-              onClick={closeCanvas}
-            >
-              CONTACTOS
-            </Link>
+        {isOpen && (
+          <div className="">
+            <div className="flex flex-col items-end px-2 pb-2  space-y-1 sm:px-3 max-w-[1450px]">
+              <Link
+                to="/"
+                className="text-white hover:bg-black hover:text-white  px-3 py-2 rounded-md text-base font-medium inline-block"
+                onClick={closeCanvas}
+              >
+                HOME
+              </Link>
+              <button
+                onClick={openProductsCanvas}
+                className="text-white hover:bg-black hover:text-white block px-3 py-2 rounded-md text-base font-medium focus:outline-none focus:text-white"
+              >
+                PRODUCTOS
+              </button>
+              <Link
+                to="/Contactos"
+                className="text-white hover:bg-black hover:text-white inline-block px-3 py-2 rounded-md text-base font-medium"
+                onClick={closeCanvas}
+              >
+                CONTACTOS
+              </Link>
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      {showSearchCanvas && (
-        <OffCanvasSearch isOpen={showSearchCanvas} closeCanvas={closeCanvas} />
-      )}
-      {showCarritoCanvas && (
-        <OffCanvasCarrito isOpen={showCarritoCanvas} closeCanvas={closeCanvas}>
-          <p className="text-xs md:text-1xl text-center ">CARRITO VACÍO</p>
-        </OffCanvasCarrito>
-      )}
-      {showProductsCanvas && (
-        <OffCanvasProducts
-          isOpen={showProductsCanvas}
-          closeCanvas={closeCanvas}
-        />
-      )}
-    </nav>
+        {showSearchCanvas && (
+          <OffCanvasSearch
+            isOpen={showSearchCanvas}
+            closeCanvas={closeCanvas}
+          />
+        )}
+        {showCarritoCanvas && (
+          <OffCanvasCarrito
+            isOpen={showCarritoCanvas}
+            closeCanvas={closeCanvas}
+          >
+            <p className="text-xs md:text-1xl text-center ">CARRITO VACÍO</p>
+          </OffCanvasCarrito>
+        )}
+        {showProductsCanvas && (
+          <OffCanvasProducts
+            isOpen={showProductsCanvas}
+            closeCanvas={closeCanvas}
+          />
+        )}
+      </nav>
+    </section>
   );
 };
 

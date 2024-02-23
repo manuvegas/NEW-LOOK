@@ -10,7 +10,8 @@ function Register() {
   }, [location.pathname]); // La dependencia es la ruta actual
 
   return (
-    <div className="bg-black text-white p-8 rounded-lg max-w-sm lg:max-w-xl mx-auto mt-32 shadow-lg mb-10">
+    <section className="py-24">
+    <div className="bg-black text-white p-8 rounded-lg max-w-sm lg:max-w-xl mx-auto shadow-lg">
       <h2 className="text-2xl font-bold text-center mb-4">
         Formulario de Contacto
       </h2>
@@ -60,7 +61,7 @@ function Register() {
           Enviar
         </button>
       </form>
-    </div>
+    </div></section>
   );
 }
 

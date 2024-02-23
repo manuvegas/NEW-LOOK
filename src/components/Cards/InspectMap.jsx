@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CardInspect from "../ListCards/CardInspect";
+import CardInspect from "../Pages/CardInspect";
 import { useLocation, useParams } from "react-router-dom";
 
 const InspectMap = () => {

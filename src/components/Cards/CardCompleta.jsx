@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ListCard from "./ListCard";
+import Card from "./Card";
 import OffCanvasFiltros from "../UI/OffCanvasFiltros";
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 import BreadCumbs from "../UI/BreadCumbs";
@@ -103,7 +103,7 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
             </p>
           ) : (
             sortedItems.map((item, index) => (
-              <ListCard
+              <Card
                 id={item.id}
                 titulo={item.titulo}
                 img={item.img}

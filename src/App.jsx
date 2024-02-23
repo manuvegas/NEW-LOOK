@@ -9,10 +9,10 @@ import {
   Inicio,
   CardMap,
   Register,
-  Whatsapp
+  Whatsapp,
+  InspectMap
 } from "./components";
-import '@fontsource-variable/teko';
-import InspectMap from "./components/ListCards/InspectMap";
+
 
 function App() {
   return (

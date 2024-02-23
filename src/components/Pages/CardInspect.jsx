@@ -2,7 +2,7 @@ import React from "react";
 import Accordion from "../UI/Accordion";
 import Button from "../UI/Button";
 import Select from "../UI/SelectUI";
-import DescriptionCard from "../ListCards/DescriptionCard"
+import DescriptionCard from "../Cards/DescriptionCard"
 
 
 const CardInspect = ({ titulo, img, precio, colores }) => {

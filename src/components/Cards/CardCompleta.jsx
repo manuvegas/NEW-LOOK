@@ -5,6 +5,7 @@ import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 import BreadCumbs from "../UI/BreadCumbs";
 import Button from "../UI/Button";
 import "animate.css";
+import InputUI from "../UI/InputUI";
 
 const CardCompleta = ({ data, defaultSortBy, categoria }) => {
   const [selectedCategory, setSelectedCategory] = useState("TODO");
@@ -81,10 +82,10 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
   return (
     <div className="mx-auto px-4 animate__animated animate__fadeIn">
       <div className="max-w-[980px] mx-auto">
-        <div className="flex justify-center items-center pt-24 mx-auto sm:justify-between">
-          <div className=" rounded-full bg-dark">
+        <div className="flex justify-around items-center pt-24 mx-auto sm:justify-between">
+          <div className="rounded-full">
             <button onClick={toggleFilters} className="flex items-center">
-              <HiAdjustmentsHorizontal size={30} />
+              <HiAdjustmentsHorizontal size={40} />
             </button>
           </div>
           <div>
@@ -122,19 +123,19 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
           toggleFilters={toggleFilters}
           handleClose={handleClose}
         >
-          <div className="bg-dark text-white p-4 rounded max-w-lg mt-10">
-            <h2 className="text-center text-3xl font-bold pb-4">FILTROS</h2>
+          <div className="bg-black text-white p-4 rounded max-w-lg mt-10">
+            <h2 className="text-center text-3xl font-extrabold pb-4">FILTROS</h2>
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold my-3">COLOR</h2>
               <div className="flex flex-row gap-2 flex-wrap">
                 {colors.map((color, index) => (
-                  <Button>
+                  <Button className={"rounded border p-1"}>
                     <button
                       key={index}
                       className={
                         selectedColor === color
-                          ? "bg-black text-white rounded flex items-center space-x-2"
-                          : "bg-black text-white rounded flex items-center space-x-2"
+                          ? "bg-dark text-white rounded flex items-center space-x-2"
+                          : "bg-dark text-white rounded flex items-center space-x-2"
                       }
                       onClick={() => setSelectedColor(color)}
                     >
@@ -152,21 +153,23 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
               </div>
               <div className="flex flex-col">
                 <h2 className="text-2xl font-semibold my-3">PRECIO</h2>
-                <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 ">
-                  <label htmlFor="precioDesde">DESDE:</label>
-                  <input
-                    className="w-24 h-8 bg-black text-white rounded px-2"
-                    type="number"
-                    id="precioDesde"
+                <div className="flex gap-5 sm:items-center sm:space-x-4 ">
+                  <InputUI
+                    className={"w-28 h-8 text-white"}
+                    type={"number"}
+                    variant={"underlined"}
+                    id={"precioDesde"}
                     value={precioDesde}
+                    label={"Desde:"}
                     onChange={(e) => setPrecioDesde(e.target.value)}
-                  />
-                  <label htmlFor="precioHasta">HASTA:</label>
-                  <input
-                    className="w-24 h-8 bg-black text-white rounded px-2"
-                    type="number"
-                    id="precioHasta"
+                  />                  
+                 <InputUI
+                    className={"w-28 h-8 text-white"}
+                    type={"number"}
+                    variant={"underlined"}
+                    id={"precioHasta"}
                     value={precioHasta}
+                    label={"Hasta:"}
                     onChange={(e) => setPrecioHasta(e.target.value)}
                   />
                 </div>
@@ -174,7 +177,7 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
               <div className="flex flex-col">
                 <h3 className="text-lg font-semibold">ORDENAR POR:</h3>
                 <select
-                  className="w-full p-2 bg-black text-white rounded"
+                  className="w-full  bg-dark border p-2 text-white rounded"
                   onChange={(e) => setSortBy(e.target.value)}
                 >
                   <option value="default">Predeterminado</option>

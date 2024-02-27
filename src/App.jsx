@@ -17,7 +17,7 @@ import {
 function App() {
   return (
     <>
-    <main className="bg-dark">
+    <main className="">
       <Router>
         <div>
           <header>

@@ -8,7 +8,7 @@ const AccordionUI = ({ children, title, color }) => {
 
   return (
     <div>
-      <Accordion className="w-[300px]" style={{ background: "rgb(1,1,1)"}}>
+      <Accordion className="w-[300px] border text-white">
         <AccordionItem key="1" title={<span style={titleStyle}>{title}</span>}>
           {children}
         </AccordionItem>

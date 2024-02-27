@@ -1,8 +1,7 @@
 
 import ListPrincipales from "./Inicio/ListPrincipales";
 import AppNavbar from "./Pages/Navbar";
-
-import Inicio from "./Inicio/Home";
+import Inicio from "./Pages/Home";
 import Contactos from "./Pages/Navegacion/Contactos";
 import Footer from "./Pages/Footer";
 import Whatsapp from "./Icons/Whatsapp";

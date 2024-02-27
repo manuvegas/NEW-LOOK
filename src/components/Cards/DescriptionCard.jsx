@@ -7,7 +7,7 @@ import { GiWashingMachine } from "react-icons/gi";
 
 const DescriptionCard = () => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 ">
       <h3 className="font-semibold underline">Composicion</h3>
       <span className="text-sm lg:text-md">Externo 100% algodón,al menos el 50% de algodón reciclado</span>
       <h3 className="font-semibold underline">Cuidados</h3>

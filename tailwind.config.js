@@ -9,14 +9,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        black: 'rgb(1,1,1)',
-        dark: `rgb(2,2,2)`,
-        primary: 'rgb(1,1,1)',
-        secondary: `rgb(2,2,2)`
+        black: 'rgb(3,3,3)',
+        dark: `rgb(5,5,5)`,
+        primary: 'rgb(3,3,3)',
+        secondary: `rgb(5,5,5)`
       }
     },
   },
-  plugins: [nextui()],
+  plugins: [nextui({
+    defaultTheme: "dark",
+    addCommonColors: true,
+    defaultExtendTheme: "dark",
+  })],
 }
 
 

@@ -1,39 +1,51 @@
 import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
+import InputUI from "./InputUI"
+import Button from "./Button"
 
 const OffCanvasSearch = ({ isOpen, closeCanvas }) => {
+  const handleInnerClick = (e) => {
+    e.stopPropagation(); // Evita que el clic se propague al contenedor principal (el off-canvas)
+  };
+
   return (
-    <div
-      className={`fixed sm:w-96 top-0 right-0 h-full lg:w-2/6 bg-dark z-50   ${
-        isOpen ? "" : ""
-      }`}
-      onClick={closeCanvas}
-    >
-      <div className="p-4 flex flex-col items-center  h-full">
-        <button
-          className="absolute top-0 left-0 m-4 bg-transparent border-none"
+    <>
+      {isOpen && (
+        <div
+          className="fixed sm:w-96 top-0 right-0 h-full lg:w-2/6 bg-black z-50"
           onClick={closeCanvas}
         >
-          <IoCloseOutline className="text-white m-2" size={45} />
-        </button>
-        <div className="search-box mt-16">
-          <form className="flex">
-            <input
-              type="text"
-              placeholder="Buscar..."
-              className="w-60 px-4 py-2 mb-2 border rounded-lg me-2 bg-white"
-            />
+          <div
+            className="p-4 flex flex-col items-center h-full"
+            onClick={handleInnerClick}
+          >
             <button
-              type="submit"
-              className=" flex justify-center items-center w-14 h-10 px-4 py-2 rounded-lg bg-white text-black"
+              className="absolute top-0 left-0 m-4 bg-transparent border-none"
+              onClick={closeCanvas}
             >
-              <FaSearch size={20} />
+              <IoCloseOutline className="text-white m-2" size={45} />
             </button>
-          </form>
+            <div className="search-box mt-16">
+              <form className="flex items-center">
+                <InputUI
+                  type="text"
+                  placeholder="Buscar..."
+                  variant="underlined"
+                  className="w-60 px-4 h-8"
+                />
+                <Button
+                  type="submit"
+                  className="flex justify-center items-center w-14 px-4 py-2 rounded-lg bg-dark text-white"
+                >
+                  <FaSearch size={20} />
+                </Button>
+              </form>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 

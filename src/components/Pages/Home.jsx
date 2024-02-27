@@ -1,5 +1,5 @@
 import React from "react";
-import ListPrincipales from "./ListPrincipales";
+import ListPrincipales from "../Inicio/ListPrincipales";
 
 const Home = () => {
   return (

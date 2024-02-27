@@ -5,7 +5,7 @@ const OffCanvasFiltros = ({ isOpen, toggleFilters, children, handleClose }) => {
   return (
     <>
       <div
-        className={`fixed top-0 right-0 w-full sm:w-[450px] md:w-[550px] lg:w-[650px] h-screen bg-dark z-50 transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 w-full sm:w-[450px] md:w-[550px] lg:w-[650px] h-screen bg-black z-50 transform transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

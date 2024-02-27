@@ -20,14 +20,23 @@ const AppNavbar = () => {
 
   const openSearchCanvas = () => {
     setShowSearchCanvas(true);
+    setShowCarritoCanvas(false);
+    setShowProductsCanvas(false);
+    setIsOpen(false); // Cerrar el menú al abrir otros elementos
   };
 
   const openCarritoCanvas = () => {
     setShowCarritoCanvas(true);
+    setShowSearchCanvas(false);
+    setShowProductsCanvas(false);
+    setIsOpen(false); // Cerrar el menú al abrir otros elementos
   };
 
   const openProductsCanvas = () => {
     setShowProductsCanvas(true);
+    setShowSearchCanvas(false);
+    setShowCarritoCanvas(false);
+    setIsOpen(false); // Cerrar el menú al abrir otros elementos
   };
 
   const closeCanvas = () => {

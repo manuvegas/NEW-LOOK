@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CardInspect from "../Pages/CardInspect";
+import CardInspect from "../Cards/CardInspect";
 import { useLocation, useParams } from "react-router-dom";
 
 const InspectMap = () => {
@@ -19,7 +19,7 @@ const InspectMap = () => {
   const productSelect = prendas.find((item) => item.id === parseInt(id));
 
   return (
-    <div className="flex justify-center items-center pt-20">
+    <div className="flex justify-center items-center pt-20 pb-48">
       {productSelect ? (
         <CardInspect
           img={productSelect.img}

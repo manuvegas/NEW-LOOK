@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import InputUI from "../../UI/InputUI"
+import  Button  from "../../UI/Button";
 
 const Login = () => {
   const location = useLocation();
@@ -12,35 +14,32 @@ const Login = () => {
       <section className="pt-40 pb-44">
         <div className="bg-black text-white p-8 rounded-lg max-w-sm lg:max-w-xl mx-auto shadow-lg  animate__animated animate__fadeIn">
           <h2 className="text-2xl font-bold text-center mb-4">LOGIN</h2>
-          <form className="flex flex-col" onSubmit={(e) => e.preventDefault()}>
-            <label htmlFor="nombre" className="mb-2">
-              Email
-            </label>
-            <input
+          <form className="flex flex-col">
+            <InputUI
               type="text"
               id="nombre"
+              label="Email"
               name="nombre"
-              className="bg-dark text-white px-3 py-2 rounded-md mb-4"
+              variant="underlined"
+              className="text-white px-3 py-2 rounded-md mb-4"
               required
             />
-
-            <label htmlFor="email" className="mb-2">
-              Password
-            </label>
-            <input
+            <InputUI
               type="password"
               id="password"
+              label="Password"
               name="password"
-              className="bg-dark text-white px-3 py-2 rounded-md mb-4"
+              variant="underlined"
+              className="text-white px-3 py-2 rounded-md mb-4"
               required
             />
 
-            <button className="bg-white text-black font-bold py-2 rounded-md hover:bg-gray-200 transition duration-300">
+            <Button className="bg-white flex mx-auto  text-black font-bold py-2 rounded-md hover:bg-gray-300 transition duration-300">
               Enviar
-            </button>
+            </Button>
             <span className="mt-2 text-center text-lg">
-              ¿No tienes una cuenta?pulsa aqui
-              <Link to="/Register" className="underline">
+              ¿No tienes una cuenta?
+              <Link to="/Register" className="underline ml-2">
                 Registrate
               </Link>
             </span>

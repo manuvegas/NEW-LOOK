@@ -129,13 +129,13 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
               <h2 className="text-2xl font-semibold my-3">COLOR</h2>
               <div className="flex flex-row gap-2 flex-wrap">
                 {colors.map((color, index) => (
-                  <Button className={"rounded border p-1"}>
-                    <button
+                  
+                    <Button
                       key={index}
                       className={
                         selectedColor === color
-                          ? "bg-dark text-white rounded flex items-center space-x-2"
-                          : "bg-dark text-white rounded flex items-center space-x-2"
+                          ? "bg-dark text-white rounded border flex items-center space-x-2"
+                          : "bg-dark text-white rounded border flex items-center space-x-2"
                       }
                       onClick={() => setSelectedColor(color)}
                     >
@@ -147,7 +147,7 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
                         {color === "TODO" ? "Todos" : color} (
                         {getCountByCategory(color, "color")})
                       </span>
-                    </button>
+                    
                   </Button>
                 ))}
               </div>

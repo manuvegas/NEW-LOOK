@@ -1,7 +1,7 @@
 import React from "react";
 import { IoCloseOutline } from "react-icons/io5";
 
-const OffCanvasCarrito = ({ closeCanvas, isOpen, children }) => {
+const OffCanvasCarrito = ({ closeCanvas, isOpen }) => {
   return (
     <>
       <div
@@ -18,7 +18,7 @@ const OffCanvasCarrito = ({ closeCanvas, isOpen, children }) => {
         <div className="flex items-center justify-center">
           <div className="p-5 rounded-lg text-white bg-neutral-950">
             <div className="flex justify-between items-center "></div>
-            {children}
+            <p className="text-xs md:text-1xl text-center ">CARRITO VACÍO</p>
           </div>
         </div>
       </div>

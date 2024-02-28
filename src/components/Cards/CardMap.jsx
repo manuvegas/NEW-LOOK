@@ -19,10 +19,6 @@ const CardMap = () => {
       .catch((error) => console.error("error al cargar los datos:", error));
   }, [titulo]);
 
-  prendas.forEach((prenda) => {
-    prenda.precio = prenda.antiguo - (prenda.antiguo * prenda.off) / 100;
-  });
-
   return <CardCompleta data={prendas} defaultSortBy="default" categoria={titulo} />;
 };
 

@@ -4,7 +4,14 @@ import Select from "../UI/SelectUI";
 import InputUI from "../UI/InputUI";
 import OffCanvasDetails from "../UI/OffCanvasDetails";
 
-const CardInspect = ({ titulo, img, precio, colores }) => {
+const CardInspect = ({
+  titulo,
+  img,
+  precio,
+  colores,
+  cuotas,
+  precioPorCuota,
+}) => {
   const [isDetailsOpen, setIsDetailsOpen] = useState(false); // Estado para controlar si el off-canvas está abierto
 
   const openDetails = () => {
@@ -31,6 +38,11 @@ const CardInspect = ({ titulo, img, precio, colores }) => {
               <h1 className="text-3xl font-extrabold">{titulo}</h1>
               <div className="flex flex-col gap-4">
                 <p className="font-semibold text-xl">${precio}</p>
+                {cuotas ? (
+                  <span className="font-semibold">{cuotas} cuotas de ${(precio / cuotas).toFixed(2)} </span>
+                ) : (
+                  null
+                )}
                 {/* Agregamos el mapeo de colores aquí */}
                 <div className="flex flex-row gap-2">
                   {colores.map((color, index) => (
@@ -44,12 +56,6 @@ const CardInspect = ({ titulo, img, precio, colores }) => {
                 <span className="text-xs">
                   Modelo:183 cm de altura y talla XL
                 </span>
-                <Button
-                  className={"text-left inline-block w-1/2"}
-                  onClick={openDetails} // Abre el off-canvas al hacer clic
-                >
-                  Ver mas detalles
-                </Button>
               </div>
               <div>
                 <Select />
@@ -61,7 +67,13 @@ const CardInspect = ({ titulo, img, precio, colores }) => {
                   label="CANTIDAD"
                 />
               </div>
-              <div className="flex justify-center mt-8">
+              <Button
+                className={"text-left inline-block w-1/2 mt-2"}
+                onClick={openDetails} // Abre el off-canvas al hacer clic
+              >
+                Ver mas detalles
+              </Button>
+              <div className="flex justify-center mt-3">
                 <Button className="mx-auto">AÑADIR AL CARRITO</Button>
               </div>
             </div>

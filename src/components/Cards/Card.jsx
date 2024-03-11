@@ -3,7 +3,7 @@ import { FaTruck } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Button from "../UI/Button";
 
-const ListCard = ({ precio, titulo, img, off, antiguo, id, cuotas }) => {
+const Card = ({ precio, titulo, img, off, antiguo, id, cuotas,agregar}) => {
   let precioFinal = precio;
 
   if (off && antiguo) {
@@ -14,6 +14,7 @@ const ListCard = ({ precio, titulo, img, off, antiguo, id, cuotas }) => {
   if (cuotas && cuotas !== "no") {
     precioPorCuota = (precio / cuotas).toFixed();
   }
+
 
   return (
     <div className="bg-black text-white w-80 p-2 border border-transparent transition-transform duration-500 ease-in-out transform-gpu hover:scale-110  rounded-lg overflow-hidden text-center mx-2 my-5 relative h-full">
@@ -48,7 +49,7 @@ const ListCard = ({ precio, titulo, img, off, antiguo, id, cuotas }) => {
             {cuotas} cuotas sin interés de ${precioPorCuota}
           </span>
         )}
-        <Button className=" text-white py-2 px-4 mt-2 rounded hover:bg-dark hover:text-white">
+        <Button className=" text-white py-2 px-4 mt-2 rounded hover:bg-dark hover:text-white" onClick={()=>agregar({id, titulo, img, off, antiguo, precio, cuotas})}>
           Agregar al carrito
         </Button>
       </div>
@@ -56,4 +57,4 @@ const ListCard = ({ precio, titulo, img, off, antiguo, id, cuotas }) => {
   );
 };
 
-export default ListCard;
+export default Card;

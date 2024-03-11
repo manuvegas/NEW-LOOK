@@ -38,7 +38,7 @@ const principales = [
 
 const ListPrincipales = () => {
   return (
-    <nav className="rounded-xl py-5 flex justify-center flex-wrap gap-3 max-w-[1020px] my-8 mx-auto animate__animated animate__fadeIn">
+    <nav className="rounded-xl py-5 flex justify-center flex-wrap gap-3 sm:max-w-[1020px] my-8 mx-auto animate__animated animate__fadeIn">
       {principales.map((item, index) => (
         <CardsImg
           id={item.id}

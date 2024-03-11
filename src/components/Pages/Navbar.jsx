@@ -80,16 +80,7 @@ const AppNavbar = () => {
               >
                 <IoCartSharp className="h-6 w-6" />
               </button>
-              <div className="-ml-2 mr-2 flex items-center">
-                <button
-                  onClick={toggleMenu}
-                  type="button"
-                  className="text-white hover:text-white focus:outline-none focus:text-white transition duration-300 lg"
-                  aria-controls="mobile-menu"
-                  aria-expanded={isOpen ? "true" : "false"}
-                >
-                  <FiAlignJustify className="h-6 w-6" aria-hidden="true" />
-                </button>
+              <div className="-ml-2 mr-2 flex items-center">         
               </div>
             </div>
           </div>

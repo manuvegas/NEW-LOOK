@@ -7,7 +7,7 @@ import Button from "../UI/Button";
 import "animate.css";
 import InputUI from "../UI/InputUI";
 
-const CardCompleta = ({ data, defaultSortBy, categoria }) => {
+const CardCompleta = ({ data, defaultSortBy, categoria,agregar}) => {
   const [selectedCategory, setSelectedCategory] = useState("TODO");
   const [selectedColor, setSelectedColor] = useState("TODO");
   const [precioDesde, setPrecioDesde] = useState("");
@@ -113,6 +113,7 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
                 off={item.off}
                 precio={item.precio}
                 key={index}
+                agregar={agregar} 
               />
             ))
           )}

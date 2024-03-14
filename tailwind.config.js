@@ -13,6 +13,10 @@ export default {
         dark: `rgb(5,5,5)`,
         primary: 'rgb(3,3,3)',
         secondary: `rgb(5,5,5)`
+      },
+      screens:{
+        xs: '320px',
+        cardPhone: '425px'
       }
     },
   },

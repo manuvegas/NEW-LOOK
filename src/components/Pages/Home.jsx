@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <main>
         <div>
-          <h1 className="text-4xl font-bold text-center pt-24">CATEGORIAS</h1>
+          <h1 className="text-4xl font-extrabold text-center pt-24">CATEGORIAS</h1>
           <ListPrincipales />
         </div>
         <div className="flex justify-center mb-16">

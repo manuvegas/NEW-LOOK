@@ -6,9 +6,6 @@ const Sizes = ({title}) => {
     medidas:[{s:"",m:"",l:"",xl:"",xxl:""}]
   }]
 
-
-
-
   return (
     <>
       <div className="p-4 rounded-lg shadow-md border border-gray-300">

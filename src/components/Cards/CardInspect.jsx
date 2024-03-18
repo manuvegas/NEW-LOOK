@@ -23,8 +23,8 @@ const CardInspect = ({
   };
 
   return (
-    <section className="  animate__animated animate__fadeIn">
-      <div className="bg-black p-5">
+    <section className="  animate__animated animate__fadeIn text-white">
+      <div className="bg-black rounded-md p-5">
         <div className="flex flex-col md:flex-row gap-5 items-center max-w-[380px] md:max-w-[1020px]">
           <div className="text center">
             <img

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import InputUI from "../../UI/InputUI";
-import TextAreaUI from "../../UI/TextAreaUI";
+import { Input } from "../../UI/Input";
+import { Textarea } from "../../UI/TextArea";
 
 function Contactos() {
   const location = useLocation();
@@ -18,7 +18,7 @@ function Contactos() {
           Formulario de Contacto
         </h2>
         <form className="flex flex-col">
-          <InputUI
+          <Input
             type="text"
             id="nombre"
             label="Nombre:"
@@ -27,7 +27,7 @@ function Contactos() {
             className="text-white px-3 py-2 rounded-md mb-4"
             required
           />
-          <InputUI
+          <Input
             type="email"
             id="email"
             label="Email:"
@@ -36,7 +36,7 @@ function Contactos() {
             className="text-white px-3 py-2 rounded-md mb-4"
             required
           />
-          <InputUI
+          <Input
             type="tel"
             id="telefono"
             label="Telefono:"
@@ -45,7 +45,7 @@ function Contactos() {
             className="text-white px-3 py-2 rounded-md mb-4"
             required
           />
-          <TextAreaUI
+          <Textarea
             id="mensaje"
             name="mensaje"
             className="text-white px-3 py-2 rounded-md mb-4 resize-y"

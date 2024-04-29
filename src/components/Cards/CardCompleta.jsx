@@ -3,11 +3,11 @@ import Card from "./Card";
 import OffCanvasFiltros from "../UI/OffCanvasFiltros";
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 import BreadCumbs from "../UI/BreadCumbs";
-import Button from "../UI/Button";
+import  {Button}  from "../UI/Button";
 import "animate.css";
-import InputUI from "../UI/InputUI";
+import { Input } from "../UI/Input";
 
-const CardCompleta = ({ data, defaultSortBy, categoria,agregar}) => {
+const CardCompleta = ({ data, defaultSortBy, categoria}) => {
   const [selectedCategory, setSelectedCategory] = useState("TODO");
   const [selectedColor, setSelectedColor] = useState("TODO");
   const [precioDesde, setPrecioDesde] = useState("");
@@ -81,7 +81,7 @@ const CardCompleta = ({ data, defaultSortBy, categoria,agregar}) => {
 
   return (
     <div className="mx-auto px-4 animate__animated animate__fadeIn">
-      <div className="max-w-[980px] mx-auto">
+      <div className="max-w-[980px] mx-auto text-black">
         <div className="flex justify-around items-center pt-24 mx-auto sm:justify-between">
           <div className="rounded-full">
             <button onClick={toggleFilters} className="flex items-center">
@@ -113,7 +113,7 @@ const CardCompleta = ({ data, defaultSortBy, categoria,agregar}) => {
                 off={item.off}
                 precio={item.precio}
                 key={index}
-                agregar={agregar} 
+                
               />
             ))
           )}
@@ -125,37 +125,37 @@ const CardCompleta = ({ data, defaultSortBy, categoria,agregar}) => {
           handleClose={handleClose}
         >
           <div className="bg-black text-white p-4 rounded max-w-lg mt-10">
-            <h2 className="text-center text-3xl font-extrabold pb-4">FILTROS</h2>
+            <h2 className="text-center text-3xl font-extrabold pb-4">
+              FILTROS
+            </h2>
             <div className="space-y-4">
               <h2 className="text-2xl font-semibold my-3">COLOR</h2>
               <div className="flex flex-row gap-2 flex-wrap">
                 {colors.map((color, index) => (
-                  
-                    <Button
-                      key={index}
-                      className={
-                        selectedColor === color
-                          ? "bg-dark text-white rounded border flex items-center space-x-2"
-                          : "bg-dark text-white rounded border flex items-center space-x-2"
-                      }
-                      onClick={() => setSelectedColor(color)}
-                    >
-                      <span
-                        className="w-4 h-4 rounded-full border"
-                        style={{ backgroundColor: color.toLowerCase() }}
-                      ></span>
-                      <span>
-                        {color === "TODO" ? "Todos" : color} (
-                        {getCountByCategory(color, "color")})
-                      </span>
-                    
+                  <Button
+                    key={index}
+                    className={
+                      selectedColor === color
+                        ? "bg-dark text-white rounded border flex items-center space-x-2"
+                        : "bg-dark text-white rounded border flex items-center space-x-2"
+                    }
+                    onClick={() => setSelectedColor(color)}
+                  >
+                    <span
+                      className="w-4 h-4 rounded-full border"
+                      style={{ backgroundColor: color.toLowerCase() }}
+                    ></span>
+                    <span>
+                      {color === "TODO" ? "Todos" : color} (
+                      {getCountByCategory(color, "color")})
+                    </span>
                   </Button>
                 ))}
               </div>
               <div className="flex flex-col">
                 <h2 className="text-2xl font-semibold my-3">PRECIO</h2>
                 <div className="flex gap-5 sm:items-center sm:space-x-4 ">
-                  <InputUI
+                  <Input
                     className={"w-28 h-8 text-white"}
                     type={"number"}
                     variant={"underlined"}
@@ -163,8 +163,8 @@ const CardCompleta = ({ data, defaultSortBy, categoria,agregar}) => {
                     value={precioDesde}
                     label={"Desde:"}
                     onChange={(e) => setPrecioDesde(e.target.value)}
-                  />                  
-                 <InputUI
+                  />
+                  <Input
                     className={"w-28 h-8 text-white"}
                     type={"number"}
                     variant={"underlined"}

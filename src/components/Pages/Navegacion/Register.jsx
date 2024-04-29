@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import InputUI from "../../UI/InputUI";
-import Button from "../../UI/Button";
+import  {Button} from "../../UI/Button";
+import { Input} from "../../UI/input";
 
 function Register() {
   const location = useLocation();
@@ -18,8 +18,9 @@ function Register() {
           Formulario de Contacto
         </h2>
         <form className="flex flex-col" onSubmit={(e) => e.preventDefault()}>
-          <InputUI
+          <Input
             type="text"
+            placeholder="Nombre"
             id="nombre"
             name="nombre"
             label="Nombre"
@@ -27,28 +28,30 @@ function Register() {
             className="text-white px-3 py-2 rounded-md mb-4"
             required
           />
-          <InputUI
+          <Input
             type="email"
-            id="email"
-            label="Email"
+            id="email"            label="Email"
+            placeholder="email"
             name="email"
             variant="underlined"
             className="text-white px-3 py-2 rounded-md mb-4"
             required
           />
-          <InputUI
+          <Input
             type="password"
             id="password"
             name="password"
+            placeholder="Password"
             label="Password"
             variant="underlined"
             className="text-white px-3 py-2 rounded-md mb-4"
             required
           />
-          <InputUI
+          <Input
             type="password"
             label="Confirm password"
             variant="underlined"
+            placeholder="Confirm Password"
             id="password"
             name="password"
             className="text-white px-3 py-2 rounded-md mb-4"

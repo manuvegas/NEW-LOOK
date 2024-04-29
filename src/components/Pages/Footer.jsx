@@ -7,19 +7,19 @@ import Shipping from "../UI/Shipping"
 
 const Footer = () => {
   return (
-    <footer className="bg-black max-w-[720px] mx-auto text-sm aling-it flex flex-col items-center text-center sm:max-w-[640px] lg:max-w-[1020px] lg:flex-row lg:justify-around lg:items-baseline lg:text-left">
+    <footer className="bg-black  mx-auto text-sm aling-it flex flex-col items-center text-center sm:flex-row sm:justify-around sm:items-baseline sm:text-left">
       <div className="mt-5 flex flex-col gap-1 mb-5">
-        <h3 className="text-white text-lg font-semibold">MEDIOS DE PAGO</h3>
+        <h3 className=" text-lg font-semibold">MEDIOS DE PAGO</h3>
         <CreditCards/>
-        <h3 className="text-white text-lg font-semibold">FORMAS DE ENVIO</h3>
+        <h3 className=" text-lg font-semibold">FORMAS DE ENVIO</h3>
         <Shipping/>
       </div>
       <div className="mt-5 flex flex-col gap-1">
-        <h3 className="text-white text-lg font-semibold text-center lg:text-left">
+        <h3 className=" text-lg font-semibold text-center lg:text-left">
           CONTACTANOS
         </h3>
         <div className="flex flex-col max-w-[220px] gap-1 pb-8">
-          <p className="text-white flex mt-1 items-center gap-2">
+          <p className=" flex mt-1 items-center gap-2">
             <FaPhoneAlt size={20}/>
             +54 11-4543-2960
           </p>

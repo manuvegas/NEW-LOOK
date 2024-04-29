@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import InputUI from "../../UI/InputUI"
-import  Button  from "../../UI/Button";
+import {Input} from "../../UI/Input"
+import   {Button }  from "../../UI/Button";
 
 const Login = () => {
   const location = useLocation();
@@ -15,19 +15,21 @@ const Login = () => {
         <div className="bg-black text-white p-8 rounded-lg max-w-sm lg:max-w-xl mx-auto shadow-lg  animate__animated animate__fadeIn">
           <h2 className="text-2xl font-bold text-center mb-4">LOGIN</h2>
           <form className="flex flex-col">
-            <InputUI
+            <Input
               type="text"
               id="nombre"
               label="Email"
+              placeholder="Email"
               name="nombre"
               variant="underlined"
               className="text-white px-3 py-2 rounded-md mb-4"
               required
             />
-            <InputUI
+            <Input
               type="password"
               id="password"
               label="Password"
+              placeholder="Password"
               name="password"
               variant="underlined"
               className="text-white px-3 py-2 rounded-md mb-4"

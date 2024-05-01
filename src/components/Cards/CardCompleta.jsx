@@ -5,7 +5,7 @@ import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 import BreadCumbs from "../UI/BreadCumbs";
 import  {Button}  from "../UI/Button";
 import "animate.css";
-import { Input } from "../UI/Input";
+import  Input  from "../UI/Input";
 
 const CardCompleta = ({ data, defaultSortBy, categoria}) => {
   const [selectedCategory, setSelectedCategory] = useState("TODO");

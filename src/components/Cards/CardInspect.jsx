@@ -1,6 +1,6 @@
 import { React } from "react";
 import  {Button } from "../UI/Button";
-import { Input } from "../UI/Input";
+import  Input  from "../UI/Input";
 
 
 const CardInspect = ({ titulo, img, precio, colores, cuotas }) => {

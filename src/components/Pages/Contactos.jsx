@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import  Input  from "../UI/input";
+import { Input } from "../UI/Input"
 import { Textarea } from "../UI/textarea";
 
 function Contactos() {

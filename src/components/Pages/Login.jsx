@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Input from "../../UI/Input"
-import   {Button }  from "../../UI/Button";
+import Input from "../UI/Input"
+import   {Button }  from "../UI/Button";
 
 const Login = () => {
   const location = useLocation();

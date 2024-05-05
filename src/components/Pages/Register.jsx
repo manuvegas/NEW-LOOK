@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import  {Button} from "../../UI/Button";
-import Input from "../../UI/Input";
+import  {Button} from "../UI/Button";
+import Input from "../UI/Input";
 
 function Register() {
   const location = useLocation();

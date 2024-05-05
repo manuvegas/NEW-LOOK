@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import  Input  from "../../UI/input";
-import { Textarea } from "../../UI/TextArea";
+import  Input  from "../UI/input";
+import { Textarea } from "../UI/TextArea";
 
 function Contactos() {
   const location = useLocation();

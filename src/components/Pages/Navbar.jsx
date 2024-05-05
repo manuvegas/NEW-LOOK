@@ -1,6 +1,8 @@
 import React from "react";
 import { RiSearchLine } from "react-icons/ri";
 import { IoCartSharp } from "react-icons/io5";
+import { IoLogIn } from "react-icons/io5";
+
 import { FaUser } from "react-icons/fa6";
 import { CiBoxList } from "react-icons/ci";
 import { Link } from "react-router-dom";
@@ -22,13 +24,17 @@ const AppNavbar = () => {
             </div>
             <div className="flex items-center space-x-4">
               <Link to="/Login" className="">
-                <FaUser className="h-5 w-5" />
+                <IoLogIn className="h-6 w-6"/>
+              </Link>
+              <Link to="/Contactos" className="">
+                <FaUser className="h-5 w-5"/>
               </Link>
               <button
                 className="  focus:outline-none focus:text-gray-300"
               >
                 <RiSearchLine className="h-6 w-6" />
               </button>
+              
               <button
                 className=" focus:outline-none focus:text-gray-300"
               >

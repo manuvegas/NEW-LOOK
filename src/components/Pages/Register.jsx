@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import  {Button} from "../UI/Button";
-import {Input} from "../UI/input";
+import {Input} from "../UI/Input";
 
 function Register() {
   const location = useLocation();
@@ -12,7 +12,7 @@ function Register() {
   }, [location.pathname]); // La dependencia es la ruta actual
 
   return (
-    <section className="py-24">
+    <section className="py-40">
       <div className="bg-black text-white p-8 rounded-lg max-w-sm lg:max-w-xl mx-auto shadow-lg">
         <h2 className="text-2xl font-bold text-center mb-4">
           Formulario de Contacto

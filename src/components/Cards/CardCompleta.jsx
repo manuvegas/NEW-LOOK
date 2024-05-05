@@ -3,11 +3,11 @@ import Card from "./Card";
 import OffCanvasFiltros from "../UI/OffCanvasFiltros";
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 import BreadCumbs from "../UI/BreadCumbs";
-import  {Button}  from "../UI/Button";
+import { Button } from "../UI/Button";
 import "animate.css";
-import  Input  from "../UI/input";
+import { Input } from "../UI/Input";
 
-const CardCompleta = ({ data, defaultSortBy, categoria}) => {
+const CardCompleta = ({ data, defaultSortBy, categoria }) => {
   const [selectedCategory, setSelectedCategory] = useState("TODO");
   const [selectedColor, setSelectedColor] = useState("TODO");
   const [precioDesde, setPrecioDesde] = useState("");
@@ -113,7 +113,6 @@ const CardCompleta = ({ data, defaultSortBy, categoria}) => {
                 off={item.off}
                 precio={item.precio}
                 key={index}
-                
               />
             ))
           )}

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { Input } from "../UI/input"
+import { Input } from "../UI/Input"
 import { Textarea } from "../UI/textarea";
 
 function Contactos() {
@@ -12,9 +12,9 @@ function Contactos() {
   }, [location.pathname]); // La dependencia es la ruta actual
 
   return (
-    <section className="pt-32">
+    <section className="py-32">
       <div className="bg-black text-white p-8 rounded-lg max-w-sm lg:max-w-xl mx-auto  shadow-lg mb-10 animate__animated animate__fadeIn">
-        <h2 className="text-2xl font-bold text-center">
+        <h2 className="text-2xl font-bold text-center mb-5">
           Formulario de Contacto
         </h2>
         <form className="flex flex-col">
@@ -49,7 +49,7 @@ function Contactos() {
             id="mensaje"
             name="mensaje"
             className="text-white px-3 py-2 rounded-md mb-4 resize-y"
-            label="Mensaje"
+            label="Mensaje:"
             variant="underlined"
             required
           />

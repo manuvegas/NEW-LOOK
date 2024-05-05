@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import  {Button} from "../UI/Button";
-import {Input} from "../UI/Input";
+import { Button } from "../UI/Button";
+import { Input } from "../UI/input";
 
 function Register() {
   const location = useLocation();
@@ -30,7 +30,8 @@ function Register() {
           />
           <Input
             type="email"
-            id="email"            label="Email"
+            id="email"
+            label="Email"
             placeholder="email"
             name="email"
             variant="underlined"

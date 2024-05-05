@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Input } from "../UI/Input"
+import { Input } from "../UI/input"
 import { Button }  from "../UI/Button";
 
 const Login = () => {

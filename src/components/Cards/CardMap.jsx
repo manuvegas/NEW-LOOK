@@ -21,18 +21,9 @@ const CardMap = () => {
       .catch((error) => console.error("error al cargar los datos:", error));
   }, [titulo]);
 
-  // Función para agregar un producto al carrito
-
-
-
-
   return (
     <>
-      <CardCompleta
-        data={prendas}
-        defaultSortBy="default"
-        categoria={titulo}
-      />
+      <CardCompleta data={prendas} defaultSortBy="default" categoria={titulo} />
     </>
   );
 };

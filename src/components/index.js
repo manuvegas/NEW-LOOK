@@ -9,5 +9,6 @@ import CardMap from "./Cards/CardMap";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import InspectMap from "./Cards/InspectMap";
+import Instagram from "./Icons/Instagram";
 
-export { AppNavbar,InspectMap, Whatsapp, CardMap,Login,Register, Footer, ListPrincipales, Inicio, Contactos }
+export { AppNavbar,InspectMap, Instagram, Whatsapp, CardMap,Login,Register, Footer, ListPrincipales, Inicio, Contactos }

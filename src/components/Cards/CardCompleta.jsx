@@ -81,7 +81,7 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
 
   return (
     <div className="mx-auto px-4 animate__animated animate__fadeIn">
-      <div className="max-w-[980px] mx-auto text-black">
+      <div className="max-w-[980px] mx-auto text-white">
         <div className="flex justify-around items-center pt-24 mx-auto sm:justify-between">
           <div className="rounded-full">
             <button onClick={toggleFilters} className="flex items-center">
@@ -89,7 +89,7 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
             </button>
           </div>
           <div>
-            <h1 className="text-2xl font-semibold">{categoria}</h1>
+            <h1 className="text-3xl font-extrabold">{categoria}</h1>
           </div>
         </div>
         <div className="mt-3 flex justify-center">

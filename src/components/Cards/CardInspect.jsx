@@ -6,42 +6,45 @@ const CardInspect = ({ titulo, img, precio, colores, cuotas }) => {
   return (
     <section className="  animate__animated animate__fadeIn text-white">
       <div className="bg-black rounded-md p-5">
-        <div className="flex flex-col md:flex-row gap-5 items-center max-w-[380px] md:max-w-[1020px]">
-          <div className="text center">
+        <div className="flex flex-col lg:flex-row gap-5 items-center">
+          <div className="text center ">
             <img
               src={img}
               alt={titulo}
               loading="lazy"
-              className="w-[420px] h-[490px] md:w-[500px] md:h-[700px] object-cover"
+              className="w-[420px] h-[490px] md:w-[600px] md:h-[800px] object-cover"
             />
           </div>
-          <div className="w-[320px] text-left">
-            <div className="flex flex-col gap-2 h-[490px] md:h-[700px]">
+          <div className="text-left">
+            <div className="flex flex-col gap-2 h-[490px] md:h-[800px] lg:w-[500px]">
               <h1 className="text-3xl text-center font-extrabold">{titulo}</h1>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-5 justify-center">
-                  <p className="font-semibold text-2xl">${precio}</p>
+                  <p className="font-bold text-2xl">${precio}</p>
                   {cuotas ? (
-                    <span className="font-semibold">
-                      {cuotas} cuotas de ${(precio / cuotas).toFixed(2)}
+                    <span className="font-bold">
+                      {cuotas} Cuotas de ${(precio / cuotas).toFixed(2)}
                     </span>
                   ) : null}
                 </div>
                 {/* Agregamos el mapeo de colores aquí */}
-                <div className="flex flex-row gap-2">
-                  {colores.map((color, index) => (
-                    <button
-                      key={index}
-                      className="w-8 h-8 rounded-full"
-                      style={{ backgroundColor: color }}
-                    ></button>
-                  ))}
+                <div className="text-center">
+                  <div className="flex justify-center flex-row gap-3 mb-5">
+                    {colores.map((color, index) => (
+                      <button
+                        key={index}
+                        className="w-8 h-8 rounded-full"
+                        style={{ backgroundColor: color }}
+                      ></button>
+                    ))}
+                  </div>
+                  <span className="text-md font-bold">
+                    Modelo : 1,75 cm de altura y talle XL
+                  </span>
                 </div>
-                <span className="text-xs">
-                  Modelo:183 cm de altura y talla XL
-                </span>
               </div>
-              <div>
+              <div className="flex items-center gap-5 justify-center">
+                <span className="text-md font-bold">CANTIDAD</span>
                 <Input
                   className="w-2/4"
                   variant="underlined"
@@ -49,7 +52,9 @@ const CardInspect = ({ titulo, img, precio, colores, cuotas }) => {
                 />
               </div>
               <div className="flex justify-center mt-3">
-                <Button className="mx-auto">AÑADIR AL CARRITO</Button>
+                <Button className="mx-auto p-5 border">
+                  AÑADIR AL CARRITO
+                </Button>
               </div>
             </div>
           </div>

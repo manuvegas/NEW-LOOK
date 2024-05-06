@@ -11,7 +11,9 @@ import {
   Register,
   Whatsapp,
   InspectMap,
+  Instagram
 } from "./components";
+
 
 function App() {
   return (
@@ -33,6 +35,9 @@ function App() {
           </div>
           <div>
             <Whatsapp />
+          </div>
+          <div>
+            <Instagram/>
           </div>
           <footer>
             <Footer />

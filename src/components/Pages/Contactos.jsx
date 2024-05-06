@@ -15,7 +15,7 @@ function Contactos() {
     <section className="py-32">
       <div className="bg-black text-white p-8 rounded-lg max-w-sm lg:max-w-xl mx-auto  shadow-lg mb-10 animate__animated animate__fadeIn">
         <h2 className="text-2xl font-bold text-center mb-5">
-          Formulario de Contacto
+          CONTACTATE 
         </h2>
         <form className="flex flex-col">
           <Input
@@ -23,6 +23,7 @@ function Contactos() {
             id="nombre"
             label="Nombre:"
             name="nombre"
+            placeholder="Nombre:"
             variant="underlined"
             className="text-white px-3 py-2 rounded-md mb-4"
             required
@@ -32,6 +33,7 @@ function Contactos() {
             id="email"
             label="Email:"
             variant="underlined"
+            placeholder="Email:"
             name="email"
             className="text-white px-3 py-2 rounded-md mb-4"
             required
@@ -41,6 +43,7 @@ function Contactos() {
             id="telefono"
             label="Telefono:"
             name="telefono"
+            placeholder="Telefono:"
             variant="underlined"
             className="text-white px-3 py-2 rounded-md mb-4"
             required
@@ -48,6 +51,7 @@ function Contactos() {
           <Textarea
             id="mensaje"
             name="mensaje"
+            placeholder="Mensaje:"
             className="text-white px-3 py-2 rounded-md mb-4 resize-y"
             label="Mensaje:"
             variant="underlined"

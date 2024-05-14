@@ -177,7 +177,7 @@ const CardCompleta = ({ data, defaultSortBy, categoria }) => {
               <div className="flex flex-col">
                 <h3 className="text-lg font-semibold">ORDENAR POR:</h3>
                 <select
-                  className="w-full  bg-dark border p-2 text-white rounded"
+                  className="w-full bg-black border p-2 text-white rounded"
                   onChange={(e) => setSortBy(e.target.value)}
                 >
                   <option value="default">Predeterminado</option>

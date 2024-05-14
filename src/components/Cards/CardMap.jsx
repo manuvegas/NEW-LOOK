@@ -5,8 +5,6 @@ import CardCompleta from "./CardCompleta";
 const CardMap = () => {
   const [prendas, setPrendas] = useState([]);
   const location = useLocation();
-  const [showCarritoCanvas, setShowCarritoCanvas] = useState(false);
-  const [carrito, setCarrito] = useState([]); // Definir el estado del carrito
   const { titulo } = useParams();
 
   useEffect(() => {

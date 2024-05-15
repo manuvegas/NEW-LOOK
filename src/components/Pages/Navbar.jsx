@@ -1,10 +1,10 @@
 import React from "react";
-import { RiSearchLine } from "react-icons/ri";
-import { IoCartSharp,IoLogIn  } from "react-icons/io5";
-
+import { IoLogIn } from "react-icons/io5";
 import { FaUser } from "react-icons/fa6";
-import { CiBoxList } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import Search from "../UI/Search";
+import Products from "../UI/Products";
+import ShoppingCart from "../UI/ShoppingCart";
 
 const AppNavbar = () => {
   return (
@@ -28,16 +28,9 @@ const AppNavbar = () => {
               <Link to="/Contactos" className="">
                 <FaUser className="h-5 w-5" />
               </Link>
-              <button className="  focus:outline-none focus:text-gray-300">
-                <RiSearchLine className="h-6 w-6" />
-              </button>
-
-              <button className=" focus:outline-none focus:text-gray-300">
-                <IoCartSharp className="h-6 w-6" />
-              </button>
-              <button className=" focus:outline-none focus:text-gray-300">
-                <CiBoxList className="h-6 w-6" />
-              </button>
+              <Search />
+              <ShoppingCart />
+              <Products />
             </div>
           </div>
         </div>

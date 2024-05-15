@@ -2,29 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IoCloseOutline } from "react-icons/io5";
 
-const OffCanvasProducts = ({ isOpen, closeCanvas }) => {
-  // Función para manejar el cierre del offcanvas
-  const handleClose = () => {
-    closeCanvas();
-  };
-
-  // Función para manejar la selección de un producto
-  const handleProductClick = () => {
-    // Aquí puedes implementar la lógica para redirigir a la página de productos
-    // Por ahora, solo cerraremos el offcanvas
-    closeCanvas();
-  };
-
+const OffCanvasProducts = () => {
   return (
     <div
-      className={`fixed sm:w-2/4 md:w-2/4 top-0 right-0 h-full lg:w-1/4 bg-dark z-50   ${
-        isOpen ? "" : ""
-      }`}
+      className="fixed sm:w-2/4 md:w-2/4 top-0 right-0 h-full lg:w-1/4 bg-dark z-50"
     >
       <div className="p-5 flex flex-col h-full">
         <button
           className="absolute top-0 left-0 m-4 bg-transparent border-none"
-          onClick={handleClose}
         >
           <IoCloseOutline className="text-white m-2" size={45} />
         </button>
@@ -44,7 +29,6 @@ const OffCanvasProducts = ({ isOpen, closeCanvas }) => {
               />
               <li
                 className="text-white cursor-pointer flex flex-col"
-                onClick={handleProductClick}
               >
                 <h1 className="text-lg font-bold">REMERAS</h1>
               </li>

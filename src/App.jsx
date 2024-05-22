@@ -11,7 +11,6 @@ import {
   Register,
   Whatsapp,
   InspectMap,
-  Instagram,
 } from "./components";
 
 function App() {
@@ -19,10 +18,8 @@ function App() {
     <>
       <main>
         <Router>
-          <div>
-            <header>
-              <AppNavbar />
-            </header>
+          <AppNavbar />
+          <>
             <Routes>
               <Route path="/" element={<Inicio />} />
               <Route path="/Contactos" element={<Contactos />} />
@@ -31,13 +28,10 @@ function App() {
               <Route path="/CardMap/:titulo" element={<CardMap />} />
               <Route path="/InspectMap/:id" element={<InspectMap />} />
             </Routes>
-          </div>
-          <div>
+          </>
+          <>
             <Whatsapp />
-          </div>
-          <div>
-            <Instagram />
-          </div>
+          </>
           <footer>
             <Footer />
           </footer>

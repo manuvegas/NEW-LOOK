@@ -14,14 +14,19 @@ const ShoppingCart = () => {
     <>
       <Sheet>
         <SheetTrigger>
-          <IoCartSharp className="h-6 w-6" />
+          <IoCartSharp className="w-5 h-5 sm:h-6 sm:w-6"/>
         </SheetTrigger>
-        <SheetContent>
+        <SheetContent className="bg-[#060606] border-none">
           <SheetHeader>
-            <SheetTitle>Are you absolutely sure?</SheetTitle>
+            <SheetTitle>
+              <div className="flex justify-center mt-8">
+                <h1 className="text-white text-lg font-bold">
+                  CARRITO DE COMPRAS
+                </h1>
+              </div>
+            </SheetTitle>
             <SheetDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
+              <p className="text-center mt-5 text-sm">EL CARRITO ESTA VACIO.</p>
             </SheetDescription>
           </SheetHeader>
         </SheetContent>

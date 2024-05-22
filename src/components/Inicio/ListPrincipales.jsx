@@ -1,6 +1,6 @@
 import React from "react";
-import CardsImg from "./CardsImg";
 import { v4 as uuidv4 } from "uuid";
+import CardsHome from "./CardsHome";
 
 const principales = [
   {
@@ -23,23 +23,13 @@ const principales = [
     titulo: "BERMUDAS",
     img: "./bermudas/bermuda2.jpeg",
   },
-  {
-    id: uuidv4(),
-    titulo: "ZAPAS",
-    img: "./zapas/zapa13.jpeg",
-  },
-  {
-    id: uuidv4(),
-    titulo: "CARGOS",
-    img: "./cargos/cargo5.jpeg",
-  },
 ];
 
 const ListPrincipales = () => {
   return (
-    <nav className="rounded-xl py-5 flex justify-center flex-wrap gap-3  sm:max-w-[1020px] my-8 mx-auto animate__animated animate__fadeIn">
+    <nav className="flex justify-center flex-wrap gap-3 mt-20 animate__animated animate__fadeIn">
       {principales.map((item, index) => (
-        <CardsImg
+        <CardsHome
           id={item.id}
           titulo={item.titulo}
           img={item.img}

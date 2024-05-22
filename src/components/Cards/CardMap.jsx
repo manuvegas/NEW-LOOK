@@ -21,7 +21,7 @@ const CardMap = () => {
 
   return (
     <>
-      <CardCompleta data={prendas} defaultSortBy="default" categoria={titulo} />
+      <CardCompleta data={prendas} categoria={titulo} />
     </>
   );
 };

@@ -1,60 +1,68 @@
 import { React } from "react";
 import { Button } from "../UI/Button";
-import { Input } from "../UI/input";
+import ButtonSize from "../ComponentsUI/ButtonSize";
+import AccordionCard from "../ComponentsUI/AccordionCard";
 
-const CardInspect = ({ titulo, img, precio, colores, cuotas }) => {
+const CardInspect = ({ titulo, img, precio, cuotas }) => {
   return (
     <section className="  animate__animated animate__fadeIn text-white">
-      <div className="bg-black rounded-md p-5">
-        <div className="flex flex-col lg:flex-row gap-5 items-center">
-          <div className="text center ">
+      <div className="bg-[#060606] rounded-md p-1">
+        <div className="flex flex-col lg:flex-row gap-5">
+          <div className="">
             <img
               src={img}
               alt={titulo}
               loading="lazy"
-              className="w-[420px] h-[490px] md:w-[600px] md:h-[800px] object-cover"
+              className="w-[420px] h-[490px] md:w-[100%] md:h-[100%] object-cover"
             />
           </div>
           <div className="text-left">
-            <div className="flex flex-col gap-2 h-[490px] md:h-[800px] lg:w-[500px]">
-              <h1 className="text-3xl text-center font-extrabold">{titulo}</h1>
+            <div className="flex flex-col gap-2 h-[490px] md:h-[800px] lg:w-[600px]">
+              <h1 className="text-3xl font-extrabold pt-3">{titulo}</h1>
               <div className="flex flex-col gap-4">
-                <div className="flex items-center gap-5 justify-center">
+                <div className="flex items-center gap-10 justify-between">
                   <p className="font-bold text-2xl">${precio}</p>
                   {cuotas ? (
-                    <span className="font-bold">
+                    <span className="font-bold text-sm">
                       {cuotas} Cuotas de ${(precio / cuotas).toFixed(2)}
                     </span>
                   ) : null}
                 </div>
-                {/* Agregamos el mapeo de colores aquí */}
-                <div className="text-center">
-                  <div className="flex justify-center flex-row gap-3 mb-5">
-                    {colores.map((color, index) => (
-                      <button
-                        key={index}
-                        className="w-8 h-8 rounded-full"
-                        style={{ backgroundColor: color }}
-                      ></button>
-                    ))}
-                  </div>
-                  <span className="text-md font-bold">
-                    Modelo : 1,75 cm de altura y talle XL
+                <div className="flex gap-4 items-center">
+                  <p>TALLE:</p>
+                  <ButtonSize className={"py-0 px-5 flex flex-wrap"} />
+                </div>
+                <div className="flex justify-center mt-3">
+                  <Button className="mx-auto py-2 px-40 bg-lime-500 text-black font-bold hover:bg-lime-600">
+                    AÑADIR AL CARRITO
+                  </Button>
+                </div>
+              </div>
+              <AccordionCard />
+              <div className="mt-4">
+                <h2 className="text-sm font-bold">
+                  MEDIDAS EN CENTIMETROS(cm)(APROXIMADAS DE REFERENCIA)
+                </h2>
+                <div className="text-sm mt-2 flex flex-col gap-1">
+                  <p>Talle 38: cintura: 39cm - largo:100cm - botamanga: 21cm</p>
+                  <p>Talle 40: cintura: 41cm - largo:101cm - botamanga: 22cm</p>
+                  <p>Talle 42: cintura: 43cm - largo:102cm - botamanga: 23cm</p>
+                  <p>Talle 44: cintura: 46cm - largo:103cm - botamanga: 24cm</p>
+                  <p>Talle 46: cintura: 47cm - largo:104cm - botamanga: 25cm</p>
+                </div>
+                <div className="flex flex-col gap-1">
+                  <span className="text-sm text-blue-500 font-extrabold mt-2">
+                    El modelo mide 1,75 cm de altura y es talle XL
+                  </span>
+                  <span className="text-sm font-extrabold">
+                    (Las medidas son tomadas de punta a punta)
                   </span>
                 </div>
               </div>
-              <div className="flex items-center gap-5 justify-center">
-                <span className="text-md font-bold">CANTIDAD</span>
-                <Input
-                  className="w-2/4"
-                  variant="underlined"
-                  label="CANTIDAD"
-                />
-              </div>
-              <div className="flex justify-center mt-3">
-                <Button className="mx-auto p-5 border">
-                  AÑADIR AL CARRITO
-                </Button>
+              <div className="mt-3">
+                <span className="font-bold text-sm">
+                  ESTE PRODUCTO TIENE UNICAMENTE CAMBIO POR TALLE
+                </span>
               </div>
             </div>
           </div>

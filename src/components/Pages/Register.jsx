@@ -13,7 +13,7 @@ function Register() {
 
   return (
     <section className="py-40">
-      <div className="bg-black text-white p-8 rounded-lg max-w-sm lg:max-w-xl mx-auto shadow-lg">
+      <div className="bg-[#060606] text-white p-8 rounded-lg max-w-sm lg:max-w-xl mx-auto shadow-lg">
         <h2 className="text-2xl font-bold text-center mb-4">
           Formulario de Contacto
         </h2>

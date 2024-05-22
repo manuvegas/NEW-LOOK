@@ -16,7 +16,7 @@ const Card = ({ precio, titulo, img, off, antiguo, id, cuotas }) => {
   }
 
   return (
-    <div className="bg-black w-80 p-2 border border-transparent overflow-hidden text-center mx-2 my-5 relative h-full rounded-none bg-gradient-to-br shadow-2xl">
+    <div className="bg-[#060606] w-80 p-1 border border-transparent overflow-hidden text-center mx-1 my-5 relative h-full rounded-none bg-gradient-to-br shadow-2xl">
       <Link to={`/InspectMap/${id}`} className="block relative">
         <div className="relative">
           <img src={img} alt={titulo} className="w-80 h-96 object-cover" />

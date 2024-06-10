@@ -88,36 +88,6 @@ const Products = () => {
                         </li>
                       </Link>
                     </div>
-                    <div>
-                      <Link
-                        to=""
-                        className="flex flex-row items-center gap-5 transition-transform duration-500 ease-in-out transform-gpu hover:scale-110"
-                      >
-                        <img
-                          src="../zapas/zapa1.jpeg"
-                          alt="REMERA"
-                          className="w-14 h-auto"
-                        />
-                        <li className="text-white cursor-pointer flex flex-col hover:text-gray-300">
-                          <h1 className="text-lg font-bold"> ZAPAS</h1>
-                        </li>
-                      </Link>
-                    </div>
-                    <div>
-                      <Link
-                        to=""
-                        className="flex flex-row items-center gap-5 transition-transform duration-500 ease-in-out transform-gpu hover:scale-110"
-                      >
-                        <img
-                          src="../cargos/cargo3.jpeg"
-                          alt="REMERA"
-                          className="w-14 h-auto"
-                        />
-                        <li className="text-white cursor-pointer flex flex-col hover:text-gray-300">
-                          <h1 className="text-lg font-bold">CARGOS</h1>
-                        </li>
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../UI/Button";
+import Button from "../ComponentsUI/Button";
 import { Input } from "../UI/input";
 import {
   Sheet,
@@ -17,7 +17,7 @@ const Filtros = () => {
     <>
       <Sheet>
         <SheetTrigger>
-        <HiAdjustmentsHorizontal size={40} />
+          <HiAdjustmentsHorizontal size={40} />
         </SheetTrigger>
         <SheetContent className=" text-white p-4 rounded max-w-lg bg-[#060606] border-none">
           <SheetHeader>
@@ -31,9 +31,7 @@ const Filtros = () => {
                 <h2 className="text-2xl font-semibold my-3">COLOR</h2>
                 <div className="flex flex-row gap-2 flex-wrap">
                   <Button
-                    className={
-                      "bg-dark text-white rounded border flex items-center space-x-2"
-                    }
+                   className={"px-6 py-1"}
                   />
                 </div>
                 <div className="flex flex-col">
@@ -59,7 +57,7 @@ const Filtros = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold my-3">TALLES</h3>
-                  <ButtonSize/>
+                  <ButtonSize />
                 </div>
                 <div className="flex flex-col">
                   <h3 className="text-lg font-semibold">ORDENAR POR:</h3>

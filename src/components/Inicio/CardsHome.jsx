@@ -4,13 +4,9 @@ import { Link } from "react-router-dom";
 const CardsHome = ({ titulo, img }) => {
   return (
     <>
-      <div className="relative w-[360px] h-[620px] ">
-        <Link to={`/CardMap/${titulo}`} className="">
-          <img
-            src={img}
-            alt={titulo}
-            className="w-ful max-w-full h-full object-cover brightness-95 hover:brightness-50"
-          />
+      <div className="relative xs:w-full sm:w-[320px] md:w-[340px] lg:w-[465px]">
+        <Link to={`/CardMap/${titulo}`}>
+          <img src={img} alt={titulo} className="h-full object-cover" />
           <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
             <h2 className="text-2xl font-bold tracking-wider hover:font-bold">
               {titulo}

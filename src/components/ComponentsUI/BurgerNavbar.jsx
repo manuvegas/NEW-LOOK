@@ -20,7 +20,7 @@ const BurgerNavbar = () => {
         <SheetContent className="bg-[#060606] border-none">
           <SheetHeader>
             <SheetDescription>
-              <div className='flex flex-col gap-2 font-bold mt-10'>
+              <div className='flex flex-col gap-2 font-bold mt-10 text-lg '>
                 <Link to="/" >INICIO</Link>
                 <Products/>
                 <Link to="/Contactos">CONTACTO</Link>

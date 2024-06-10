@@ -1,14 +1,14 @@
 import { React } from "react";
-import { Button } from "../UI/Button";
+import  Button  from "../ComponentsUI/Button";
 import ButtonSize from "../ComponentsUI/ButtonSize";
 import AccordionCard from "../ComponentsUI/AccordionCard";
 
 const CardInspect = ({ titulo, img, precio, cuotas }) => {
   return (
-    <section className="  animate__animated animate__fadeIn text-white">
+    <section className="animate__animated animate__fadeIn text-white">
       <div className="bg-[#060606] rounded-md p-1">
         <div className="flex flex-col lg:flex-row gap-5">
-          <div className="">
+          <div>
             <img
               src={img}
               alt={titulo}
@@ -17,7 +17,7 @@ const CardInspect = ({ titulo, img, precio, cuotas }) => {
             />
           </div>
           <div className="text-left">
-            <div className="flex flex-col gap-2 h-[490px] md:h-[800px] lg:w-[600px]">
+            <div className="flex flex-col gap-2 h-[760px] md:h-[800px] lg:w-[600px]">
               <h1 className="text-3xl font-extrabold pt-3">{titulo}</h1>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-10 justify-between">

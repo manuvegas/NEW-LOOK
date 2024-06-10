@@ -27,7 +27,7 @@ const principales = [
 
 const ListPrincipales = () => {
   return (
-    <nav className="flex justify-center flex-wrap gap-3 mt-20 animate__animated animate__fadeIn">
+    <div className="flex justify-center flex-wrap xs:max-w-full gap-2 animate__animated animate__fadeIn">
       {principales.map((item, index) => (
         <CardsHome
           id={item.id}
@@ -36,7 +36,7 @@ const ListPrincipales = () => {
           key={index}
         />
       ))}
-    </nav>
+    </div>
   );
 };
 

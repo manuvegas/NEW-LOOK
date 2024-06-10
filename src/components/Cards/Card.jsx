@@ -1,9 +1,9 @@
 import React from "react";
 import { FaTruck } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import  {Button } from "../UI/Button";
+import  Button  from "../ComponentsUI/Button";
 
-const Card = ({ precio, titulo, img, off, antiguo, id, cuotas }) => {
+const Card = ({ precio, titulo, img, off, antiguo, id, cuotas,className }) => {
   let precioFinal = precio;
 
   if (off && antiguo) {
@@ -16,7 +16,7 @@ const Card = ({ precio, titulo, img, off, antiguo, id, cuotas }) => {
   }
 
   return (
-    <div className="bg-[#060606] w-80 p-1 border border-transparent overflow-hidden text-center mx-1 my-5 relative h-full rounded-none bg-gradient-to-br shadow-2xl">
+    <div className={` bg-[#060606] w-80 p-1  border-transparent overflow-hidden text-center mx-1 my-5 relative h-full rounded-none bg-gradient-to-br shadow-2xl ${className} `}>
       <Link to={`/InspectMap/${id}`} className="block relative">
         <div className="relative">
           <img src={img} alt={titulo} className="w-80 h-96 object-cover" />
@@ -48,10 +48,9 @@ const Card = ({ precio, titulo, img, off, antiguo, id, cuotas }) => {
         </span>
 
         <Button
-          className="transition-transform duration-500 ease-in-out transform-gpu hover:scale-110 py-2 px-4 mt-2 rounded hover:bg-dark hover:text-white"
-          variant="outline"
+          className="transition-transform duration-500 ease-in-out transform-gpu hover:scale-110 py-2 px-2 mt-2 rounded"
         >
-          Agregar al carrito
+          AGREGAR AL CARRITO
         </Button>
       </div>
     </div>

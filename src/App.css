@@ -5,7 +5,7 @@
 }
 body{
     font-family: Arial, sans-serif;
-    background-image: url(/public/UI/bg-black.jpeg);
+    background-color: rgb(15,15,15);
     color: white;
 }
 

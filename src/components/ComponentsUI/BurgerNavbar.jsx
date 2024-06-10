@@ -7,7 +7,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/UI/Sheet";
 import { Link } from "react-router-dom";
 import Products from "../ComponentsUI/Products";
 

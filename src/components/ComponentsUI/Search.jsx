@@ -6,7 +6,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/UI/Sheet";
 import { RiSearchLine } from "react-icons/ri";
 import { CiSearch } from "react-icons/ci";
 import { Input } from "../UI/input";

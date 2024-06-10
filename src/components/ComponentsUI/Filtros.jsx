@@ -8,7 +8,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/ui/sheet";
+} from "@/components/UI/Sheet";
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 import ButtonSize from "./ButtonSize";
 

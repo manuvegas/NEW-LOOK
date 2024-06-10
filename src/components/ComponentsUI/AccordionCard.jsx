@@ -4,7 +4,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "../UI/accordion";
 import { CiCreditCard1, CiDeliveryTruck } from "react-icons/ci";
 import { LiaStoreAltSolid } from "react-icons/lia";
 

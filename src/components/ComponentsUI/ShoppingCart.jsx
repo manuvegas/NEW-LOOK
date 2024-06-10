@@ -7,7 +7,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "@/components/UI/Sheet";
+} from "../UI/sheet";
 
 const ShoppingCart = () => {
   return (

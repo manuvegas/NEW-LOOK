@@ -27,22 +27,20 @@ const CardCompleta = ({ categoria }) => {
   }, [titulo]);
 
   return (
-    <div className="mx-auto px-4 animate__animated animate__fadeIn">
-      <div className="mx-auto text-white">
-        <div className="flex justify-around items-center pt-24 mx-auto sm:justify-between">
-          <div className="rounded-full">
+    <div className="mt-5 animate__animated animate__fadeIn">
+     
+      <div className="text-white flex mb-5">
+        <div className="flex flex-col pt-24">
+          <div className="mb-2">
+            <BreadCumbs />
+          </div>
+          <div className="">
             <Filtros className="flex items-center" />
           </div>
-          <div>
-            <h1 className="text-3xl font-extrabold">{categoria}</h1>
-          </div>
         </div>
-        <div className="mt-3 flex justify-center">
-          <BreadCumbs />
-        </div>
-      </div>
-      <div>
-        <nav className="flex flex-wrap justify-center items-center mx-auto my-1 ">
+      </div> 
+      <div className="flex mx-auto flex-wrap justify-center">
+        <nav className="contenedor2 mb-10">
           {prendas.length === 0 ? (
             <p className="text-white">
               No se encontraron resultados con tu búsqueda.
@@ -53,9 +51,6 @@ const CardCompleta = ({ categoria }) => {
                 id={item.id}
                 titulo={item.titulo}
                 img={item.img}
-                antiguo={item.antiguo}
-                cuotas={item.cuotas}
-                off={item.off}
                 precio={item.precio}
                 key={index}
               />

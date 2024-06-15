@@ -15,7 +15,7 @@ const BurgerNavbar = () => {
   return (
     <Sheet>
         <SheetTrigger>
-          <GiHamburgerMenu  className="h-6 w-6" />
+          <GiHamburgerMenu  className="h-7 w-7" />
         </SheetTrigger>
         <SheetContent className="bg-[#060606] border-none">
           <SheetHeader>

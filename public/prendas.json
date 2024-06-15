@@ -1,19 +1,5 @@
 [
   {
-    "id": 1,
-    "img": "/img(remeras)/remera1.jpeg",
-    "titulo": "JORDAN CLASSIC",
-    "off": 15,
-    "antiguo": 22600,
-    "precio": 19210,
-    "ventas":23,
-    "cuotas": 3,
-    "color": "WHITE",
-    "categoria": "REMERAS",
-    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
-    "talles" :["S","M","L","XL","XXL"]
-  },
-  {
     "id": 2,
     "img": "/img(remeras)/remera2.jpeg",
     "titulo": "L.A OVERSIZE",
@@ -128,7 +114,7 @@
   {
     "id": 10,
     "img": "/img(remeras)/remera10.jpeg",
-    "titulo": "NEW YORK DIVISION",
+    "titulo": "NEW YORK",
     "off": "",
     "antiguo": "",
     "precio": 24000,
@@ -294,34 +280,6 @@
     "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": 22,
-    "img": "/img(buzos)/buzo1.jpeg",
-    "titulo": "BUZO 1",
-    "color": "BLACK",
-    "off": 30,
-    "antiguo": 32000,
-    "precio": 22400,
-    "cuotas": 2,
-    "ventas": 41,
-    "categoria": "BUZOS",
-    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
-    "talles" :["S","M","L","XL","XXL"]
-  },
-  {
-    "id": 23,
-    "img": "/img(buzos)/buzo2.jpeg",
-    "titulo": "BUZO 2",
-    "color": "WHITE",
-    "off": 13,
-    "antiguo": 33000,
-    "precio": 28710,
-    "ventas": 5,
-    "cuotas": 2,
-    "categoria": "BUZOS",
-    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
-    "talles" :["S","M","L","XL","XXL"]
-  },
-  {
     "id": 24,
     "img": "/img(buzos)/buzo3.jpeg",
     "titulo": "BUZO 3",
@@ -378,20 +336,6 @@
     "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": 28,
-    "img": "/img(buzos)/buzo7.jpeg",
-    "titulo": "BUZO 7",
-    "color": "GREY",
-    "off": 3,
-    "antiguo": 40000,
-    "precio": 20000,
-    "ventas": 10,
-    "cuotas": 2,
-    "categoria": "BUZOS",
-    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
-    "talles" :["S","M","L","XL","XXL"]
-  },
-  {
     "id": 29,
     "img": "/img(buzos)/buzo8.jpeg",
     "titulo": "BUZO 8",
@@ -401,20 +345,6 @@
     "precio": 20000,
     "ventas": 15,
     "cuotas": 3,
-    "categoria": "BUZOS",
-    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
-    "talles" :["S","M","L","XL","XXL"]
-  },
-  {
-    "id": 30,
-    "img": "/img(buzos)/buzo9.jpeg",
-    "titulo": "BUZO 9",
-    "color": "BLACK",
-    "off": 24,
-    "antiguo": 40000,
-    "precio": 20000,
-    "ventas": 12,
-    "cuotas": 1,
     "categoria": "BUZOS",
     "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
     "talles" :["S","M","L","XL","XXL"]
@@ -448,20 +378,6 @@
     "talles" :["S","M","L","XL","XXL"]
   },
   {
-    "id": 33,
-    "img": "/img(buzos)/buzo12.jpeg",
-    "titulo": "BUZO 12",
-    "color": "WHITE",
-    "off": "",
-    "antiguo": 40000,
-    "precio": 20000,
-    "ventas": 17,
-    "cuotas": 1,
-    "categoria": "BUZOS",
-    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
-    "talles" :["S","M","L","XL","XXL"]
-  },
-  {
     "id": 34,
     "img": "/img(buzos)/buzo13.jpeg",
     "titulo": "BUZO 13",
@@ -489,20 +405,7 @@
     "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
     "talles" :["S","M","L","XL","XXL"]
   },
-  {
-    "id": 36,
-    "img": "/img(buzos)/buzo15.jpeg",
-    "titulo": "BUZO 15",
-    "color": "BLACK",
-    "off": 11,
-    "antiguo": 40000,
-    "precio": 20000,
-    "ventas": 39,
-    "cuotas": 3,
-    "categoria": "BUZOS",
-    "colores": ["#FFFFFF","#080808","#0C1948","#321D08","#062A0E"],
-    "talles" :["S","M","L","XL","XXL"]
-  },
+  
   {
     "id": 37,
     "img": "/img(buzos)/buzo16.jpeg",

@@ -14,7 +14,7 @@ const ShoppingCart = () => {
     <>
       <Sheet>
         <SheetTrigger>
-          <IoCartSharp className="w-5 h-5 sm:h-6 sm:w-6"/>
+          <IoCartSharp className="w-7 h-7"/>
         </SheetTrigger>
         <SheetContent className="bg-[#060606] border-none">
           <SheetHeader>

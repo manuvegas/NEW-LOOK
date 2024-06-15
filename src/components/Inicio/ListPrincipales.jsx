@@ -1,33 +1,34 @@
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import CardsHome from "./CardsHome";
+import "./Principales.css"
 
 const principales = [
   {
     id: uuidv4(),
     titulo: "REMERAS",
-    img: "./img(remeras)/remera2.jpeg",
+    img: "./img(remeras)/remera15.jpeg",
   },
   {
     id: uuidv4(),
     titulo: "BUZOS",
-    img: "./img(buzos)/buzo9.jpeg",
+    img: "./img(buzos)/buzo5.jpeg",
   },
   {
     id: uuidv4(),
     titulo: "JOGGINS",
-    img: "./img(joggins)/joggin18.jpeg",
+    img: "./img(joggins)/joggin15.jpeg",
   },
   {
     id: uuidv4(),
     titulo: "BERMUDAS",
-    img: "./bermudas/bermuda2.jpeg",
+    img: "./bermudas/bermuda6.jpeg",
   },
 ];
 
 const ListPrincipales = () => {
   return (
-    <div className="flex justify-center flex-wrap xs:max-w-full gap-2 animate__animated animate__fadeIn">
+    <div className="contenedor mt-24">
       {principales.map((item, index) => (
         <CardsHome
           id={item.id}

@@ -1,11 +1,12 @@
 import { React } from "react";
-import  Button  from "../ComponentsUI/Button";
+import Button from "../ComponentsUI/Button";
 import ButtonSize from "../ComponentsUI/ButtonSize";
 import AccordionCard from "../ComponentsUI/AccordionCard";
+import BreadCumbs from "../UI/BreadCumbs";
 
 const CardInspect = ({ titulo, img, precio, cuotas }) => {
   return (
-    <section className="animate__animated animate__fadeIn text-white">
+    <section className="animate__animated animate__fadeIn text-white mt-20">
       <div className="bg-[#060606] rounded-md p-1">
         <div className="flex flex-col lg:flex-row gap-5">
           <div>
@@ -18,7 +19,10 @@ const CardInspect = ({ titulo, img, precio, cuotas }) => {
           </div>
           <div className="text-left">
             <div className="flex flex-col gap-2 h-[760px] md:h-[800px] lg:w-[600px]">
-              <h1 className="text-3xl font-extrabold pt-3">{titulo}</h1>
+              <div className="flex justify-between items-baseline">
+                <h1 className="text-3xl font-extrabold pt-3">{titulo}</h1>
+                <BreadCumbs />
+              </div>
               <div className="flex flex-col gap-4">
                 <div className="flex items-center gap-10 justify-between">
                   <p className="font-bold text-2xl">${precio}</p>

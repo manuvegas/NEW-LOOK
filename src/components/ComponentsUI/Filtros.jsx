@@ -17,7 +17,10 @@ const Filtros = () => {
     <>
       <Sheet>
         <SheetTrigger>
-          <HiAdjustmentsHorizontal size={40} />
+          <div className="px-1 flex items-center gap-2 border">
+            <h2 className="font-bold">FILTROS</h2>
+            <HiAdjustmentsHorizontal size={25} />
+          </div>
         </SheetTrigger>
         <SheetContent className=" text-white p-4 rounded max-w-lg bg-[#060606] border-none">
           <SheetHeader>
@@ -30,9 +33,7 @@ const Filtros = () => {
               <div className="space-y-4">
                 <h2 className="text-2xl font-semibold my-3">COLOR</h2>
                 <div className="flex flex-row gap-2 flex-wrap">
-                  <Button
-                   className={"px-6 py-1"}
-                  />
+                  <Button className={"px-6 py-1"} />
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl font-semibold my-3">PRECIO</h2>

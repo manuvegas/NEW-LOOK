@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import { login } from "@/Fetching/auth.fetching";
 
 const Login = () => {
@@ -22,18 +22,17 @@ const Login = () => {
   };
   return (
     <>
-      <div className="pt-40 pb-60">
-        <div className="bg-[#060606] text-white p-6 rounded-lg max-w-sm lg:max-w-xl mx-auto shadow-lg  animate__animated animate__fadeIn">
+      <div className="pt-32 pb-24">
+        <div className="bg-[#060606] text-white p-6 rounded-lg max-w-sm sm:max-w-xl mx-auto shadow-lg  animate__animated animate__fadeIn">
           <div className="xl:mx-auto xl:w-full shadow-md p-4 xl:max-w-sm 2xl:max-w-md">
             <div className="mb-2 flex justify-center"></div>
-            <h2 className="text-center text-3xl font-bold leading-tight">
+            <h1 className="text-center text-3xl font-bold leading-tight">
               INICIAR SESION
-            </h2>
+            </h1>
             <p className="mt-2 text-center text-sm">
               ¿No tienes un cuenta?
-              <Link to="/Register" className="text-blue-600 ">
-                {" "}
-                Registrate
+              <Link to="/Register" className="text-blue-600 ml-2 hover:underline">
+                Registrate 
               </Link>
             </p>
             <form className="mt-8" onSubmit={handleSubmit}>
@@ -60,7 +59,7 @@ const Login = () => {
                     </label>
                     <Link
                       className="text-sm font-semibold hover:underline"
-                      to="/Password"
+                      to="/ResetPassword"
                     >
                       Olvidaste tu contraseña?
                     </Link>

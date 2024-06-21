@@ -28,7 +28,7 @@ const principales = [
 
 const ListPrincipales = () => {
   return (
-    <div className="contenedor mt-24">
+    <div className="contenedor mt-4">
       {principales.map((item, index) => (
         <CardsHome
           id={item.id}

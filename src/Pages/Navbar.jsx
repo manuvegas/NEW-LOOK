@@ -2,6 +2,7 @@ import React from "react";
 import { FaUser } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import Search from "../components/ComponentsUI/Search";
+import { GrConfigure } from "react-icons/gr";
 import ShoppingCart from "../components/ComponentsUI/ShoppingCart";
 import BurgerNavbar from "../components/ComponentsUI/BurgerNavbar";
 
@@ -25,6 +26,9 @@ const AppNavbar = () => {
               <Search />
               <Link to="/login">
                 <FaUser className="h-5 w-6" />
+              </Link>
+              <Link to="/configs">
+                <GrConfigure className="h-5 w-6"/>
               </Link>
               <ShoppingCart />
               <BurgerNavbar />

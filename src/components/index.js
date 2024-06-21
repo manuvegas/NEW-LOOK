@@ -9,5 +9,9 @@ import CardCompleta from "./Cards/CardCompleta";
 import Login from "../Pages/Login";
 import Register from "../Pages/Register";
 import InspectMap from "./Cards/InspectMap";
+import Cambios from "../Pages/Cambios";
+import Configs from "./configs/Configs";
+import ResetPassword from "../Pages/ResetPassword";
 
-export { AppNavbar,InspectMap, Whatsapp, CardCompleta,Login,Register, Footer, ListPrincipales, Inicio, Contactos }
+
+export { AppNavbar,ResetPassword,InspectMap,Cambios,Configs, Whatsapp, CardCompleta,Login,Register, Footer, ListPrincipales, Inicio, Contactos }

@@ -5,7 +5,7 @@ import BreadCumbs from "../UI/BreadCumbs";
 import "animate.css";
 import Filtros from "../ComponentsUI/Filtros";
 
-const CardCompleta = ({ categoria }) => {
+const CardCompleta = () => {
   const location = useLocation();
   useEffect(() => {
     // Desplázate al principio cada vez que la ruta cambie
@@ -28,21 +28,20 @@ const CardCompleta = ({ categoria }) => {
 
   return (
     <div className="mt-5 animate__animated animate__fadeIn">
-     
-      <div className="text-white flex mb-5">
+      <div className="text-white flex mb-5 max-w-[1100px] mx-auto">
         <div className="flex flex-col pt-24">
           <div className="mb-2">
             <BreadCumbs />
           </div>
-          <div className="">
-            <Filtros className="flex items-center" />
+          <div>
+            <Filtros className="flex items-center"/>
           </div>
         </div>
-      </div> 
-      <div className="flex mx-auto flex-wrap justify-center">
+      </div>
+      <div className="max-w-[1100px] mx-auto">
         <nav className="contenedor2 mb-10">
           {prendas.length === 0 ? (
-            <p className="text-white">
+            <p className="text-white font-extrabold text-center text-xl">
               No se encontraron resultados con tu búsqueda.
             </p>
           ) : (

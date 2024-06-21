@@ -10,7 +10,7 @@ function Contactos() {
 
   return (
     <section className="py-32">
-      <div className="bg-[#060606] text-white p-6 rounded-lg max-w-sm lg:max-w-xl mx-auto shadow-lg  animate__animated animate__fadeIn">
+      <div className="bg-[#060606] text-white p-6 rounded-lg max-w-sm sm:max-w-xl mx-auto shadow-lg  animate__animated animate__fadeIn">
         <div class="xl:mx-auto xl:w-full shadow-md p-4 xl:max-w-sm 2xl:max-w-md">
           <div class="mb-2 flex justify-center"></div>
           <h2 class="text-center text-3xl font-bold leading-tight">

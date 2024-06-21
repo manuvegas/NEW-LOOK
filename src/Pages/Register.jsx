@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
 function Register() {
-  const [ errorText, setErrorText ] = useState(false);
+  const [errorText, setErrorText] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -24,18 +24,15 @@ function Register() {
     } catch (error) {
       console.log(error);
       setErrorText(error.message);
-
     }
   };
-
   return (
-    <section className="py-40">
-      <div className="bg-[#060606] text-white p-6 rounded-lg max-w-sm lg:max-w-xl mx-auto shadow-lg  animate__animated animate__fadeIn">
+    <section className="pt-32 pb-28">
+      <div className="bg-[#060606] text-white p-6 rounded-lg max-w-sm sm:max-w-xl mx-auto shadow-lg  animate__animated animate__fadeIn">
         <div className="xl:mx-auto xl:w-full shadow-md p-4 xl:max-w-sm 2xl:max-w-md">
-          <h2 className="text-center text-3xl font-bold leading-tight">
+          <h1 className="text-center text-3xl font-bold leading-tight">
             REGISTRARSE
-          </h2>
-
+          </h1>
           <form
             className="mt-8"
             method="POST"
@@ -93,7 +90,9 @@ function Register() {
                 </div>
               </div>
               <div>
-                {errorText && <span className=" text-red-800">{errorText}</span>}
+                {errorText && (
+                  <span className=" text-red-800">{errorText}</span>
+                )}
                 <button
                   className="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/60"
                   type="submit"

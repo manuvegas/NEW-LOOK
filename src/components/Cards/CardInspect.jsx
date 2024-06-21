@@ -14,7 +14,7 @@ const CardInspect = ({ titulo, img, precio, cuotas }) => {
               src={img}
               alt={titulo}
               loading="lazy"
-              className="w-[420px] h-[490px] md:w-[100%] md:h-[100%] object-cover"
+              className="w-[100%] h-[100%] md:w-[100%] md:h-[100%] object-cover"
             />
           </div>
           <div className="text-left">
@@ -27,7 +27,7 @@ const CardInspect = ({ titulo, img, precio, cuotas }) => {
                 <div className="flex items-center gap-10 justify-between">
                   <p className="font-bold text-2xl">${precio}</p>
                   {cuotas ? (
-                    <span className="font-bold text-sm">
+                    <span className="font-bold text-md text-blue-500">
                       {cuotas} Cuotas de ${(precio / cuotas).toFixed(2)}
                     </span>
                   ) : null}

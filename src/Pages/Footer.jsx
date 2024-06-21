@@ -9,15 +9,15 @@ const Footer = () => {
   return (
     <footer className="bg-[#060606] mx-auto text-sm  w-full flex flex-col items-center text-center sm:flex-row sm:justify-around sm:items-baseline sm:text-left">
       <div className="mt-5 flex flex-col gap-1 mb-5">
-        <h3 className=" text-lg font-semibold">MEDIOS DE PAGO</h3>
+        <h2 className=" text-lg font-semibold">MEDIOS DE PAGO</h2>
         <CreditCards/>
-        <h3 className=" text-lg font-semibold">FORMAS DE ENVIO</h3>
+        <h2 className=" text-lg font-semibold">FORMAS DE ENVIO</h2>
         <Shipping/>
       </div>
       <div className="mt-5 flex flex-col gap-1">
-        <h3 className=" text-lg font-semibold text-center lg:text-left">
+        <h2 className=" text-lg font-semibold text-center lg:text-left">
           CONTACTANOS
-        </h3>
+        </h2>
         <div className="flex flex-col max-w-[220px] gap-1 pb-8">
           <p className=" flex mt-1 items-center gap-2">
             <FaPhoneAlt size={20}/>

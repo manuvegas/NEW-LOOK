@@ -9,6 +9,10 @@ import {
   Register,
   Configs,
   ResetPassword,
+  PregFrecuentes,
+  Xmayor,
+  Origins,
+  Devolucion,
 } from "@/components";
 import React, { useEffect } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
@@ -24,7 +28,6 @@ const RouteApp = () => {
       }
     });
   }, []);
-
   return (
     <div>
       <Routes>
@@ -37,6 +40,10 @@ const RouteApp = () => {
         <Route path="/inspectMap/:id" element={<InspectMap />} />
         <Route path="/configs" element={<Configs />} />
         <Route path="/ResetPassword" element={<ResetPassword />} />
+        <Route path="/PregFrecuentes" element={<PregFrecuentes />} />
+        <Route path="/Xmayor" element={<Xmayor />} />
+        <Route path="/Devolucion" element={<Devolucion />} />
+        <Route path="/Origins" element={<Origins />} />
       </Routes>
     </div>
   );

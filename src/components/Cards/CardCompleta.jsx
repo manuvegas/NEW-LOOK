@@ -4,26 +4,30 @@ import Card from "./Card";
 import BreadCumbs from "../UI/BreadCumbs";
 import "animate.css";
 import Filtros from "../ComponentsUI/Filtros";
+import { getAllProducts } from "../../Fetching/products.feching";
 
 const CardCompleta = () => {
   const location = useLocation();
   useEffect(() => {
-    // Desplázate al principio cada vez que la ruta cambie
     window.scrollTo(0, 0);
-  }, [location.pathname]); // La dependencia es la ruta actual
+  }, [location.pathname]);
+
   const [prendas, setPrendas] = useState([]);
   const { titulo } = useParams();
 
   useEffect(() => {
-    fetch("../prendas.json") // Asegúrate de que esta ruta sea correcta
-      .then((response) => response.json())
-      .then((data) => {
-        const prendasFiltradas = data.filter(
+    const fetchProducts = async () => {
+      try {
+        const data = await getAllProducts();
+        const prendasFiltradas = data.productos.filter(
           (item) => item.categoria === titulo
         );
         setPrendas(prendasFiltradas);
-      })
-      .catch((error) => console.error("Error al cargar los datos:", error));
+      } catch (error) {
+        console.error("Error al cargar los datos:", error.message);
+      }
+    };
+    fetchProducts();
   }, [titulo]);
 
   return (
@@ -34,17 +38,13 @@ const CardCompleta = () => {
             <BreadCumbs />
           </div>
           <div>
-            <Filtros className="flex items-center"/>
+            <Filtros className="flex items-center" />
           </div>
         </div>
       </div>
       <div className="max-w-[1100px] mx-auto">
         <nav className="contenedor2 mb-10">
-          {prendas.length === 0 ? (
-            <p className="text-white font-extrabold text-center text-xl">
-              No se encontraron resultados con tu búsqueda.
-            </p>
-          ) : (
+          {(
             prendas.map((item, index) => (
               <Card
                 id={item.id}

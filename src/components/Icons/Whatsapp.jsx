@@ -3,7 +3,7 @@ import React from "react";
 const Whatsapp = () => {
   return (
     <div className="fixed z-50 bottom-4 right-4">
-      <a href="https://wa.me/541161856150" target="_blank">
+      <a href="https://wa.me/541133888936" target="_blank">
         <svg
           viewBox="0 0 256 259"
           className="w-10 h-10"

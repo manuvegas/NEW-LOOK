@@ -12,6 +12,9 @@ import InspectMap from "./Cards/InspectMap";
 import Cambios from "../Pages/Cambios";
 import Configs from "./configs/Configs";
 import ResetPassword from "../Pages/ResetPassword";
+import PregFrecuentes from "../Pages/PregFrecuentes";
+import Xmayor from "../Pages/Xmayor";
+import Origins from "../Pages/Origins";
+import Devolucion from "../Pages/Devolucion";
 
-
-export { AppNavbar,ResetPassword,InspectMap,Cambios,Configs, Whatsapp, CardCompleta,Login,Register, Footer, ListPrincipales, Inicio, Contactos }
+export { AppNavbar, ResetPassword, Origins, Xmayor, PregFrecuentes, InspectMap, Cambios, Configs, Whatsapp, CardCompleta, Login, Register, Footer, ListPrincipales, Inicio, Contactos,Devolucion }

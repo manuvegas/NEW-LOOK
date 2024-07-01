@@ -1,29 +1,41 @@
-
-
 export const HTTP = {
   GET: async (url, headers) => {
     const response = await fetch(url, {
       method: "GET",
-      headers:headers  
+      headers: headers
     })
     return response.json()
-
   },
+
   POST: async (url, body) => {
     const response = await fetch(url, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(body)
     })
     return response.json()
   },
-  PUT: () => {
 
+  PUT: async (url, headers) => {
+    const response = await fetch(url, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
+    return response.json();
   },
-  DELETE: () => {
 
+  DELETE: async (url, headers) => {
+    const response = await fetch(url, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
+    return response.json();
   }
 }
 

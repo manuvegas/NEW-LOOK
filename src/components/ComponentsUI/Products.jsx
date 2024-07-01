@@ -10,11 +10,11 @@ import {
 
 import { Link } from "react-router-dom";
 
-const Products = () => {
+const Products = ({className}) => {
   return (
     <>
       <Sheet>
-        <SheetTrigger className="sm:text-left">
+        <SheetTrigger className={`sm:text-left ${className}`}>
           <h1>PRODUCTOS</h1>
         </SheetTrigger>
         <SheetContent className="bg-[#060606] border-none">

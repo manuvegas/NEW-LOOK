@@ -19,7 +19,7 @@ const Cambios = () => {
         </p>
         <p className="font-base text-md py-1">
           Los cambios son por envio escribinos por
-          <span className="text-green-500 font-bold"> Whatsapp</span>
+          <span className="text-green-500 font-bold"> Whatsapp </span>
           informándonos tu CAMBIO, tu nro de orden, la prenda que deseas cambiar
           y el talle que deseas obtener. Te indicaremos qué tenés que hacer para
           enviarlo. El costo de los envíos correrá por cuenta del cliente.

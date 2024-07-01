@@ -25,6 +25,10 @@ const BurgerNavbar = () => {
                 <Products/>
                 <Link to="/Contactos">CONTACTO</Link>
                 <Link to="/Cambios">CAMBIOS</Link>
+                <Link to="/PregFrecuentes">PREGUNTAS FRECUENTES</Link>
+                <Link to="/Devolucion">POLITICAS DE DEVOLUCION</Link>
+                <Link to="/Xmayor">VENTAS X MAYOR</Link>
+                <Link to="/Origins">ORIGINS NEW-LOOK</Link>
               </div>
             </SheetDescription>
           </SheetHeader>

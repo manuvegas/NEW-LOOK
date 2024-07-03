@@ -15,6 +15,7 @@ import ResetPassword from "../Pages/ResetPassword";
 import PregFrecuentes from "../Pages/PregFrecuentes";
 import Xmayor from "../Pages/Xmayor";
 import Origins from "../Pages/Origins";
-import Devolucion from "../Pages/Devolucion";
+import ComoComprar from "@/Pages/ComoComprar";
 
-export { AppNavbar, ResetPassword, Origins, Xmayor, PregFrecuentes, InspectMap, Cambios, Configs, Whatsapp, CardCompleta, Login, Register, Footer, ListPrincipales, Inicio, Contactos,Devolucion }
+
+export { AppNavbar, ResetPassword, Origins, Xmayor, PregFrecuentes, InspectMap, Cambios, Configs, Whatsapp, CardCompleta, Login, Register, Footer, ListPrincipales, Inicio, Contactos,ComoComprar }

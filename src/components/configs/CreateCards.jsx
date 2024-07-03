@@ -7,7 +7,7 @@ const CreateCards = () => {
         <h1 className="text-lg font-extrabold text-center">
           CREACION DE TARJETA
         </h1>
-        <div className="p-3">
+        <form className="p-3">
           <h2 className="text-md font-bold mt-3">TITULO</h2>
           <input
             id="titulo"
@@ -62,7 +62,7 @@ const CreateCards = () => {
             className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
             required
           />
-        </div>
+        </form>
         <div className="flex items-center justify-center">
           <button className=" rounded-md bg-black px-5 py-3 font-semibold leading-7 text-white hover:bg-black/60">
             AGREGAR TARJETA

@@ -7,6 +7,8 @@ import ShoppingCart from "../components/ComponentsUI/ShoppingCart";
 import BurgerNavbar from "../components/ComponentsUI/BurgerNavbar";
 
 const AppNavbar = () => {
+
+  const role = localStorage.getItem("Role");
   return (
     <header className="flex justify-center">
       <nav className="bg-[rgb(15,15,15)] fixed top-0 w-full z-50">
@@ -27,8 +29,8 @@ const AppNavbar = () => {
               <Link to="/login">
                 <FaUser className="h-5 w-6" />
               </Link>
-              <Link to="/configs">
-                <GrConfigure className="h-5 w-6"/>
+              <Link to="/configs" className={role !== "admin" ? "hidden" : ""}>
+                <GrConfigure className="h-5 w-6" />
               </Link>
               <ShoppingCart />
               <BurgerNavbar />

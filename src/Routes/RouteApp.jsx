@@ -12,7 +12,7 @@ import {
   PregFrecuentes,
   Xmayor,
   Origins,
-  Devolucion,
+  ComoComprar,
 } from "@/components";
 import React, { useEffect } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
@@ -28,6 +28,8 @@ const RouteApp = () => {
       }
     });
   }, []);
+
+  const role = localStorage.getItem("Role");
   return (
     <div>
       <Routes>
@@ -38,12 +40,12 @@ const RouteApp = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/cardMap/:titulo" element={<CardCompleta />} />
         <Route path="/inspectMap/:id" element={<InspectMap />} />
-        <Route path="/configs" element={<Configs />} />
+        {role === "admin" && <Route path="/configs" element={<Configs />} />}
         <Route path="/ResetPassword" element={<ResetPassword />} />
         <Route path="/PregFrecuentes" element={<PregFrecuentes />} />
         <Route path="/Xmayor" element={<Xmayor />} />
-        <Route path="/Devolucion" element={<Devolucion />} />
         <Route path="/Origins" element={<Origins />} />
+        <Route path="/ComoComprar" element={<ComoComprar />} />
       </Routes>
     </div>
   );

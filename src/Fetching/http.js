@@ -40,5 +40,5 @@ export const HTTP = {
 }
 
 export const URLS = {
-  URL_API: "http://localhost:4000"
+  URL_API: "http://localhost:4040"
 }

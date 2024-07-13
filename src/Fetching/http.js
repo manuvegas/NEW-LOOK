@@ -38,5 +38,6 @@ export const HTTP = {
 }
 
 export const URLS = {
-  URL_API: "http://localhost:4040"
+  URL_API: "https://new-look-back.vercel.app",
+  URL_2:"http://localhost:4040"
 }

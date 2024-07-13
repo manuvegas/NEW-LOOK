@@ -58,7 +58,7 @@ const Filtros = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-semibold my-3">TALLES</h3>
-                  <ButtonSize />
+                  <ButtonSize className={"border rounded-lg font-extrabold gap-2 px-2 flex flex-wrap"}/>
                 </div>
                 <div className="flex flex-col">
                   <h3 className="text-lg font-semibold">ORDENAR POR:</h3>

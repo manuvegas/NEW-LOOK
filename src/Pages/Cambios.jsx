@@ -2,7 +2,7 @@ import React from "react";
 
 const Cambios = () => {
   return (
-    <div className=" mt-28 mb-5 bg-[#060606] text-white p-6 rounded-lg max-w-sm sm:max-w-xl md:max-w-3xl mx-auto shadow-lg  animate__animated animate__fadeIn">
+    <div className=" mt-28 mb-5 custom-shadow text-white p-6 rounded-lg max-w-sm sm:max-w-xl md:max-w-3xl mx-auto   animate__animated animate__fadeIn">
       <div className="mb-5">
         <h1 className="text-white text-2xl text-center font font-extrabold">
           CAMBIOS Y DEVOLUCIONES

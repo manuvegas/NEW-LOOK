@@ -1,6 +1,4 @@
 import { HTTP, URLS } from "./http";
-
-
 const ROUTE = "/api/auth"
 
 export const login = async (usuario) => {
@@ -43,6 +41,45 @@ export const verificarToken = async () => {
     return resultado;
   } catch (error) {
     console.error("Error en verificarToken:", error);
-    throw error; // Lanza el error para que pueda ser manejado donde se llama a verificarToken
+    throw error;
   }
 }
+
+export const requestPasswordReset = async (email) => {
+  try {
+    const resultado = await HTTP.POST(URLS.URL_API + ROUTE + "/request-password-reset", { email });
+    if (!resultado.ok) {
+      throw resultado;
+    }
+    return resultado;
+  } catch (error) {
+    console.error("Error en requestPasswordReset:", error);
+    throw { message: error.message };
+  }
+};
+
+export const verifyResetCode = async (email, code) => {
+  try {
+    const resultado = await HTTP.POST(URLS.URL_API + ROUTE + "/verify-reset-code", { email, code });
+    if (!resultado.ok) {
+      throw resultado;
+    }
+    return resultado;
+  } catch (error) {
+    console.error("Error en verifyResetCode:", error);
+    throw { message: error.message };
+  }
+};
+
+export const resetPassword = async (email, newPassword) => {
+  try {
+    const resultado = await HTTP.POST(URLS.URL_API + ROUTE + "/reset-password", { email, newPassword });
+    if (!resultado.ok) {
+      throw resultado;
+    }
+    return resultado;
+  } catch (error) {
+    console.error("Error en resetPassword:", error);
+    throw { message: error.message };
+  }
+};

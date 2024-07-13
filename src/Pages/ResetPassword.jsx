@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ResetPassword = () => {
+  const [email, setEmail] = useState("");
+  const [newPassword, setNewPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    if (newPassword !== confirmPassword) {
+      alert("Las contraseñas no coinciden");
+      return;
+    }
+    try {
+      const response = await resetPassword(email, newPassword);
+      alert(response.message);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+
   return (
     <div className="mt-32 mb-32">
-      <div className="bg-[#060606] text-white p-6 rounded-lg max-w-sm sm:max-w-xl mx-auto shadow-lg  animate__animated animate__fadeIn">
+      <div className="custom-shadow text-white p-6 rounded-lg max-w-sm sm:max-w-xl mx-auto   animate__animated animate__fadeIn">
         <h1 className=" mb-4 text-center text-xl font-bold leading-tight">
           RESTABLECER CONTRASEÑA
         </h1>
-        <form action="">
+        <form onSubmit={handleSubmit}>
           <div className="space-y-2">
             <div>
               <label className="text-base font-medium" htmlFor="email">
@@ -19,6 +38,8 @@ const ResetPassword = () => {
                   name="email"
                   placeholder="Lucas@hotmail.com"
                   type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                   required
                 />
@@ -34,6 +55,8 @@ const ResetPassword = () => {
                   name="password"
                   placeholder="Password"
                   type="password"
+                  value={newPassword}
+                  onChange={(e) => setNewPassword(e.target.value)}
                   className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                   required
                 />
@@ -49,6 +72,8 @@ const ResetPassword = () => {
                   name="confirmar_password"
                   placeholder="Confirmar password"
                   type="password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
                   className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
                   required
                 />

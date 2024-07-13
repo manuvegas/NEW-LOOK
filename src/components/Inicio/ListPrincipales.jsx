@@ -6,23 +6,23 @@ import "./Principales.css"
 const principales = [
   {
     id: uuidv4(),
-    titulo: "REMERAS",
-    img: "./img(remeras)/remera15.jpeg",
+    img: "./assets/remera17.jpeg",
+    categoria:"remera"
   },
   {
     id: uuidv4(),
-    titulo: "BUZOS",
-    img: "./img(buzos)/buzo5.jpeg",
+    img: "./assets/buzo5.jpeg",
+    categoria:"buzo"
   },
   {
     id: uuidv4(),
-    titulo: "JOGGINS",
-    img: "./img(joggins)/joggin15.jpeg",
+    img: "./assets/pantalones.png",
+    categoria:"pantalon"
   },
   {
     id: uuidv4(),
-    titulo: "BERMUDAS",
-    img: "./bermudas/bermuda6.jpeg",
+    img: "./assets/abrigos.png",
+    categoria:"campera"
   },
 ];
 
@@ -34,6 +34,7 @@ const ListPrincipales = () => {
           id={item.id}
           titulo={item.titulo}
           img={item.img}
+          categoria={item.categoria}
           key={index}
         />
       ))}

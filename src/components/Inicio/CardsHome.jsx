@@ -1,20 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const CardsHome = ({ titulo, img }) => {
+const CardsHome = ({ titulo, img, categoria }) => {
   return (
-    <>
-      <div className="relative w-full">
-        <Link to={`/CardMap/${titulo}`}>
-          <img src={img} alt={titulo} className="h-full w-full object-cover" />
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
-            <h2 className="text-xl font-bold tracking-wider hover:font-bold">
-              {titulo}
-            </h2>
-          </div>
-        </Link>
-      </div>
-    </>
+    <div className=" w-full overflow-hidden">
+      <Link to={`/CardMap/${categoria}`}>
+        <div className="h-full w-full overflow-hidden group">
+          <img
+            src={img}
+            alt={titulo}
+            className="h-full w-full object-cover transition-transform duration-500 transform-gpu group-hover:scale-105"
+          />
+        </div>
+      </Link>
+    </div>
   );
 };
 

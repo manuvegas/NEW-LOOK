@@ -3,7 +3,7 @@ import React from "react";
 const PregFrecuentes = () => {
   return (
     <section className="pt-32 pb-28">
-      <div className="bg-[#060606] text-white p-6 rounded-lg max-w-sm sm:max-w-xl mx-auto shadow-lg  animate__animated animate__fadeIn">
+      <div className="custom-shadow text-white p-6 rounded-lg max-w-sm sm:max-w-xl mx-auto  animate__animated animate__fadeIn">
         <div className="mb-5">
           <h1 className="font-bold text-lg text-center">
             PREGUNTAS FRECUENTES

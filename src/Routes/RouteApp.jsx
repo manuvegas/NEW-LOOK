@@ -4,7 +4,7 @@ import {
   CardCompleta,
   Contactos,
   Inicio,
-  InspectMap,
+  CardDetail,
   Login,
   Register,
   Configs,
@@ -13,6 +13,9 @@ import {
   Xmayor,
   Origins,
   ComoComprar,
+  RequestPasswordReset,
+  VerifyResetCode,
+  UpdateCard,
 } from "@/components";
 import React, { useEffect } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
@@ -21,9 +24,7 @@ const RouteApp = () => {
   const navigate = useNavigate();
   useEffect(() => {
     verificarToken().then((resultado) => {
-      if (resultado.status == 200) {
-        navigate("/");
-      } else {
+      if (resultado.status !== 200) {
         navigate("/login");
       }
     });
@@ -38,14 +39,17 @@ const RouteApp = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/cambios" element={<Cambios />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/cardMap/:titulo" element={<CardCompleta />} />
-        <Route path="/inspectMap/:id" element={<InspectMap />} />
+        <Route path="/cardMap/:categoria" element={<CardCompleta />} />
+        <Route path="/detail/:pid" element={<CardDetail />} />
         {role === "admin" && <Route path="/configs" element={<Configs />} />}
         <Route path="/ResetPassword" element={<ResetPassword />} />
         <Route path="/PregFrecuentes" element={<PregFrecuentes />} />
         <Route path="/Xmayor" element={<Xmayor />} />
         <Route path="/Origins" element={<Origins />} />
         <Route path="/ComoComprar" element={<ComoComprar />} />
+        <Route path="/requestPasswordReset" element={<RequestPasswordReset />} />
+        <Route path="/verify-reset-code" element={<VerifyResetCode />} />
+        <Route path="/updateCard/:pid" element={<UpdateCard />} />
       </Routes>
     </div>
   );

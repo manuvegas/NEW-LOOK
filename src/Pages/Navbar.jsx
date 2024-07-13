@@ -11,7 +11,7 @@ const AppNavbar = () => {
   const role = localStorage.getItem("Role");
   return (
     <header className="flex justify-center">
-      <nav className="bg-[rgb(15,15,15)] fixed top-0 w-full z-50">
+      <nav className="bg-[rgb(10,10,10)] fixed top-0 w-full z-50">
         <div className=" mx-auto flex flex-col items-center justify-center px-2 sm:px-6 lg:px-6">
           <div className="flex items-center mt-2">
             <Link to="/" className="flex items-center gap-1">
@@ -20,7 +20,7 @@ const AppNavbar = () => {
                 src="../UI/Logo.png"
                 alt="NewLook"
               />
-              <h1 className="font-extrabold text-3xl">NEW LOOK</h1>
+              <h1 className="font-extrabold text-2xl">NEW LOOK</h1>
             </Link>
           </div>
           <div className="flex h-16">

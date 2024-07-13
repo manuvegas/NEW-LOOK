@@ -4,7 +4,7 @@ import ButtonSize from "../ComponentsUI/ButtonSize";
 import AccordionCard from "../ComponentsUI/AccordionCard";
 import BreadCumbs from "../UI/BreadCumbs";
 
-const CardInspect = ({ titulo, img, precio, cuotas }) => {
+const CardInspect = ({ titulo, img, precio, cuotas, colores, descripcion }) => {
   return (
     <section className="animate__animated animate__fadeIn text-white mt-20">
       <div className="bg-[#060606] rounded-md p-1">
@@ -34,7 +34,11 @@ const CardInspect = ({ titulo, img, precio, cuotas }) => {
                 </div>
                 <div className="flex gap-4 items-center">
                   <p>TALLE:</p>
-                  <ButtonSize className={"py-0 px-5 flex flex-wrap"} />
+                  <ButtonSize
+                    className={
+                      "border rounded-lg font-extrabold gap-2 px-2 flex flex-wrap"
+                    }
+                  />
                 </div>
                 <div className="flex justify-center mt-3">
                   <Button className="mx-auto py-2 px-40 bg-lime-500 text-black font-bold hover:bg-lime-600">

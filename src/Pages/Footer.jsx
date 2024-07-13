@@ -9,7 +9,7 @@ import Products from "@/components/ComponentsUI/Products";
 const Footer = () => {
   return (
     <footer>
-      <div className="flex sm:flex-row flex-col items-baseline mb-5 ">
+      <div className="custom-shadow flex sm:flex-row flex-col items-baseline">
         <div className="flex flex-col mx-auto mt-5">
           <div className="flex flex-col font-bold text-center sm:text-left text-sm">
             <Link to="/">INICIO</Link>

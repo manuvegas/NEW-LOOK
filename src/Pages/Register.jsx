@@ -8,9 +8,8 @@ function Register() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Desplázate al principio cada vez que la ruta cambie
     window.scrollTo(0, 0);
-  }, [location.pathname]); // La dependencia es la ruta actual
+  }, [location.pathname]);
   const handleSubmit = async (event) => {
     try {
       event.preventDefault();
@@ -27,8 +26,8 @@ function Register() {
     }
   };
   return (
-    <section className="pt-32 pb-28">
-      <div className="bg-[#060606] text-white p-6 rounded-lg max-w-sm sm:max-w-xl mx-auto shadow-lg  animate__animated animate__fadeIn">
+    <section className="pt-32 pb-52">
+      <div className="custom-shadow text-white p-6 rounded-lg max-w-sm sm:max-w-xl mx-auto animate__animated animate__fadeIn">
         <div className="xl:mx-auto xl:w-full shadow-md p-4 xl:max-w-sm 2xl:max-w-md">
           <h1 className="text-center text-3xl font-bold leading-tight">
             REGISTRARSE
@@ -36,7 +35,6 @@ function Register() {
           <form
             className="mt-8"
             method="POST"
-            action="#"
             onSubmit={handleSubmit}
           >
             <div className="space-y-5">

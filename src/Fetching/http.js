@@ -11,29 +11,27 @@ export const HTTP = {
     const response = await fetch(url, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': localStorage.getItem("token")
       },
       body: JSON.stringify(body)
     })
     return response.json()
   },
 
-  PUT: async (url, headers) => {
+  PUT: async (url, body, headers = { 'Content-Type': 'application/json' }) => {
     const response = await fetch(url, {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      }
+      headers: headers,
+      body: JSON.stringify(body)
     })
-    return response.json();
+    return response.json()
   },
 
-  DELETE: async (url, headers) => {
+  DELETE: async (url, headers = { 'Content-Type': 'application/json' }) => {
     const response = await fetch(url, {
       method: 'DELETE',
-      headers: {
-        'Content-Type': 'application/json',
-      }
+      headers: headers
     })
     return response.json();
   }

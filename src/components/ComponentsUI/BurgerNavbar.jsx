@@ -23,7 +23,6 @@ const BurgerNavbar = () => {
               <div className='flex flex-col gap-2 font-bold mt-10 text-lg '>
                 <Link to="/" >INICIO</Link>
                 <Products/>
-                <Link to="/Contactos">CONTACTO</Link>
                 <Link to="/Cambios">CAMBIOS</Link>
                 <Link to="/PregFrecuentes">PREGUNTAS FRECUENTES</Link>
                 <Link to="/ComoComprar">COMO COMPRAR</Link>

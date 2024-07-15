@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { login } from "@/Fetching/auth.fetching";
+import Loader from "@/components/Icons/Loader";
 
 const Login = () => {
   const [errorText, setErrorText] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     try {
       event.preventDefault();
+      setIsLoading(true);
       const usuario = {
         email: event.target.email.value,
         password: event.target.password.value,
@@ -20,6 +23,9 @@ const Login = () => {
       setErrorText(error.message);
     }
   };
+  if (isLoading) {
+    return <Loader />;
+  }
   return (
     <>
       <div className="pt-32 pb-28">

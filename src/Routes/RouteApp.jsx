@@ -2,7 +2,7 @@ import { verificarToken } from "@/Fetching/auth.fetching";
 import {
   Cambios,
   CardCompleta,
-  Contactos,
+ 
   Inicio,
   CardDetail,
   Login,
@@ -35,7 +35,7 @@ const RouteApp = () => {
     <div>
       <Routes>
         <Route path="/" element={<Inicio />} />
-        <Route path="/contactos" element={<Contactos />} />
+       
         <Route path="/register" element={<Register />} />
         <Route path="/cambios" element={<Cambios />} />
         <Route path="/login" element={<Login />} />
